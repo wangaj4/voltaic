@@ -33,6 +33,7 @@ function Carousel() {
     
 
     const handleMouseDown = (e) => {
+        if(frozen) return;
         setIsDragging(true);
         setHasMoved(false);
         setStartX(e.clientX);
@@ -45,7 +46,7 @@ function Carousel() {
         let newOffsetX = e.clientX - startX;
         const maxDelta = window.innerWidth/2;
         let percent = (newOffsetX/maxDelta) * 100;
-        let maxScroll = 86.2;
+        let maxScroll = 100;
         percent += percentOffsetX;
         percent = percent > 0 ? 0 : percent;
         percent = percent < -maxScroll ? -maxScroll : percent;
@@ -55,11 +56,18 @@ function Carousel() {
 
 
         let increment = 100/images.length;
-        const centeredIndex = Math.floor((-percent+8)/increment);
+        const centeredIndex = Math.min(Math.floor((-percent)/increment),images.length-1);
         setCenteredImageIndex(centeredIndex);
 
         console.log(centeredIndex, percent)
 
+    };
+
+    const handleMouseUp = () => {
+        if(!isDragging || frozen) return;
+        setIsDragging(false);
+        setPercentOffsetX(offsetX);
+        animateImage();
     };
 
     const changeBackground = () => {
@@ -94,12 +102,7 @@ function Carousel() {
             clearTimeout(timer);
         };
     }, [centeredImageIndex]);
-
-    const handleMouseUp = () => {
-        setIsDragging(false);
-        setPercentOffsetX(offsetX);
-        animateImage();
-    };
+    
 
     const animateImage = () => {
         
@@ -119,23 +122,34 @@ function Carousel() {
     };
 
     const handleImageEntry = (index) => {
-        if (!hasMoved){
-            console.log("click!", index)
-            setFrozen(true);
-            mainTrack.children[index].style.left = 0;
-            mainTrack.children[index].style.top = 0;
-            mainTrack.children[index].style.width = "100vw";
-            mainTrack.children[index].style.height = "100vh";
-            mainTrack.children[index].style.zIndex = 3;
-        }
+        //
+        // if(frozen) return;
+        // if (!hasMoved){
+        //     console.log("image clicked");
+        //     console.log("click!", index)
+        //     setFrozen(true);
+        //     // mainTrack.children[index].style.left = 0;
+        //     // mainTrack.children[index].style.top = 0;
+        //     // mainTrack.children[index].style.width = "100vw";
+        //     // mainTrack.children[index].style.height = "100vh";
+        //     const trackLeft = 73 - index*20;
+        //     mainTrack.transformX = 0;
+        //     mainTrack.style.left = trackLeft+"vw";
+        //
+        //     const images = document.querySelectorAll('.carouselImage');
+        //     images.forEach(element =>{
+        //        
+        //     });
+        //
+        // }
 
     };
     
     return (
         <div className = {`whole ${isDragging ? 'dragging' : ''}`} onMouseMove={handleMouseMove}
-             onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp}>
+             onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onMouseDown={handleMouseDown} >
             <div className="backgroundBlurred"/>
-            <div id = "mainTrack" onMouseDown={handleMouseDown} >
+            <div id = "mainTrack">
                 <img className="carouselImage" src = {grandCanyon} alt = "" draggable= "false" onMouseUp={(e) => handleImageEntry(0)}/>
                 <img className="carouselImage" src ={haLongBay} alt = "" draggable= "false" onMouseUp={(e) => handleImageEntry(1)}/>
                 <img className="carouselImage" src ={northernLights} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(2)}/>

@@ -1,6 +1,10 @@
 body{
   background-color: #111111;
-
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .whole{
@@ -38,19 +42,13 @@ body{
 
   font-family: "Helvetica", sans-serif;
 
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 #mainTrack{
   display: flex;
   gap:4vmin;
-  left: 36%;
+  left: 50%;
   top:30%;
-  transform:translate(0);
   z-index:1;
   position: absolute;
 
@@ -68,11 +66,7 @@ body{
 
 
 
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+
 }
 
 .transforming{
