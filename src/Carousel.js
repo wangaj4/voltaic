@@ -1,4 +1,6 @@
 import './Carousel.css';
+import Location from './Location';
+
 import amazonRainforest from './img/amazonRainforest.jpg'
 import grandCanyon from './img/grandCanyon.jpg'
 import haLongBay from './img/haLongBay.jpg'
@@ -8,6 +10,7 @@ import santorini from './img/santorini.jpg'
 import victoriaFalls from './img/victoriaFalls.jpg'
 
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 
 const images = [grandCanyon,haLongBay,northernLights,santorini,macchuPichu,amazonRainforest, victoriaFalls]
 const displayNames = ["Grand Canyon", "Ha Long Bay", "Aurora Borealis", "Santorini", "Macchu Pichu", "Amazon Rainforest", "Victoria Falls"]
@@ -48,7 +51,7 @@ function Carousel() {
         let percent = (newOffsetX/maxDelta) * 100;
         let maxScroll = 100;
         percent += percentOffsetX;
-        percent = percent > -1 ? -1 : percent;
+        percent = percent > -0.3 ? -0.3 : percent;
         percent = percent < -maxScroll ? -maxScroll : percent;
         setOffsetX(percent);
         
@@ -79,10 +82,7 @@ function Carousel() {
         background.style.opacity = 0.5;
         title.style.opacity = 1;
         title.style.left = "14vw";
-        title.style.color = centeredImageIndex===2 ? "white" : "white";
         title.textContent = displayNames[centeredImageIndex];
-        
-
 
     };
 
@@ -114,8 +114,11 @@ function Carousel() {
         const images = document.querySelectorAll('.carouselImage');
         let i = 0;
         images.forEach(element =>{
+            let pad = 0;
+            if(i>=3) pad = 14*i;
             element.animate(
-                { objectPosition: `${85 + i*17 +offsetX*1.7}% 50%` },
+    
+                { objectPosition: `${100 + pad + offsetX*1.7}% 50%` },
                 { duration: 1200, fill: 'forwards' }
             );
             i++;
@@ -123,27 +126,19 @@ function Carousel() {
         
     };
 
+
+    const [showLocation, setShowLocation] = useState(false);
+    const [clickedIndex, setClickedIndex] = useState(0);
     const handleImageEntry = (index) => {
-        //
-        // if(frozen) return;
-        // if (!hasMoved){
-        //     console.log("image clicked");
-        //     console.log("click!", index)
-        //     setFrozen(true);
-        //     // mainTrack.children[index].style.left = 0;
-        //     // mainTrack.children[index].style.top = 0;
-        //     // mainTrack.children[index].style.width = "100vw";
-        //     // mainTrack.children[index].style.height = "100vh";
-        //     const trackLeft = 73 - index*20;
-        //     mainTrack.transformX = 0;
-        //     mainTrack.style.left = trackLeft+"vw";
-        //
-        //     const images = document.querySelectorAll('.carouselImage');
-        //     images.forEach(element =>{
-        //        
-        //     });
-        //
-        // }
+
+        if(frozen) return;
+        if (!hasMoved){
+            console.log("click!", index)
+            setFrozen(true);
+            setClickedIndex(index);
+            setShowLocation(true);
+
+        }
 
     };
     
@@ -162,6 +157,9 @@ function Carousel() {
             </div>
             
             <div className="title"></div>
+            {showLocation && (
+                <Location initialX={50} initialY={30} initialWidth = {40} initialHeight = {56} image={images[clickedIndex]} />
+            )}
             
             
         </div>

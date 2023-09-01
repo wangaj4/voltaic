@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Carousel from './Carousel';
 
@@ -8,6 +7,7 @@ function App() {
 
       <Carousel/>
         <span id = "pointer"></span>
+        <div id="portal"></div>
     </div>
 
   );
