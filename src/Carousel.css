@@ -28,13 +28,13 @@ body{
 }
 
 .title{
-  font-size:5rem;
+  font-size:4rem;
   font-weight: bold;
   position: absolute;
   top: 10vh;
   left:14vw;
 
-  transition: left 0.3s ease-out, opacity 0.2s ease-in-out;
+  transition: left 1.3s ease-out, opacity 0.2s ease-in-out;
 
   font-family: "Helvetica", sans-serif;
 
@@ -59,7 +59,6 @@ body{
 
 .carouselImage{
 
-  border-radius:0.5rem;
 
   width:40vmin;
   height: 56vmin;

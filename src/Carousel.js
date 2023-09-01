@@ -39,7 +39,7 @@ function Carousel() {
     };
 
     const handleMouseMove = (e) => {
-        if (!isDragging) return;
+        if (!isDragging || frozen) return;
         
         setHasMoved(true);
         let newOffsetX = e.clientX - startX;
@@ -57,6 +57,8 @@ function Carousel() {
         let increment = 100/images.length;
         const centeredIndex = Math.floor((-percent+8)/increment);
         setCenteredImageIndex(centeredIndex);
+
+        console.log(centeredIndex, percent)
 
     };
 
@@ -96,6 +98,7 @@ function Carousel() {
     const handleMouseUp = () => {
         setIsDragging(false);
         setPercentOffsetX(offsetX);
+        animateImage();
     };
 
     const animateImage = () => {
@@ -119,7 +122,6 @@ function Carousel() {
         if (!hasMoved){
             console.log("click!", index)
             setFrozen(true);
-            //mainTrack.children[index].style.position = "fixed";
             mainTrack.children[index].style.left = 0;
             mainTrack.children[index].style.top = 0;
             mainTrack.children[index].style.width = "100vw";
