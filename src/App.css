@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+#pointer{
+  position: fixed;
+  bottom: 10vh;
+  left: 50%;
+  background-color: white;
+  height: 10px;
+  width: 10px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
