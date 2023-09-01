@@ -46,7 +46,7 @@ body{
 
 #mainTrack{
   display: flex;
-  gap:4vmin;
+  gap:3vmin;
   left: 50%;
   top:30%;
   z-index:1;

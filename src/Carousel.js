@@ -48,7 +48,7 @@ function Carousel() {
         let percent = (newOffsetX/maxDelta) * 100;
         let maxScroll = 100;
         percent += percentOffsetX;
-        percent = percent > 0 ? 0 : percent;
+        percent = percent > -1 ? -1 : percent;
         percent = percent < -maxScroll ? -maxScroll : percent;
         setOffsetX(percent);
         
@@ -108,15 +108,17 @@ function Carousel() {
         
         mainTrack.animate(
             { transform: `translateX(${offsetX}%)` },
-            { duration: 1500, fill: 'forwards' }
+            { duration: 1200, fill: 'forwards' }
         );
 
         const images = document.querySelectorAll('.carouselImage');
+        let i = 0;
         images.forEach(element =>{
             element.animate(
-                { objectPosition: `${95+offsetX*1.1}% 50%` },
-                { duration: 1500, fill: 'forwards' }
+                { objectPosition: `${85 + i*17 +offsetX*1.7}% 50%` },
+                { duration: 1200, fill: 'forwards' }
             );
+            i++;
         });
         
     };
