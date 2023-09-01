@@ -2,18 +2,20 @@
 import './Location.css';
 import React, { useState, useEffect } from 'react';
 
-function Location({initialX,initialY, initialWidth, initialHeight, image}) {
+function Location({initialX,initialY, initialWidth, initialHeight, initialPos, image}) {
 
     const [style, setStyle] = useState({
-        left: `${initialX}%`,
-        top: `${initialY}%`,
+        left: `${initialX}px`,
+        top: `${initialY}px`,
         width: `${initialWidth}vmin`,
         height: `${initialHeight}vmin`,
+        backgroundPosition: initialPos,
         backgroundImage: `url(${image})`,
     });
 
     useEffect(()=>{
         setTimeout(() => {
+            console.log(initialPos);
             setStyle({
                 left: '0px',
                 top: '0px',

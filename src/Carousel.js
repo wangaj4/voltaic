@@ -129,9 +129,21 @@ function Carousel() {
 
     const [showLocation, setShowLocation] = useState(false);
     const [clickedIndex, setClickedIndex] = useState(0);
+    const [imageX, setImageX] = useState(0);
+    const [imageY, setImageY] = useState(0);
+    const [imagePos, setImagePos] = useState('');
     const handleImageEntry = (index) => {
 
         if(frozen) return;
+        const whichChild = mainTrack.children[index];
+        const computedStyle = window.getComputedStyle(whichChild);
+        setImagePos(computedStyle.getPropertyValue('object-position'));
+
+        const rect = whichChild.getBoundingClientRect();
+
+        setImageX( rect.left + window.scrollX);
+        setImageY(rect.top + window.scrollY);
+
         if (!hasMoved){
             console.log("click!", index)
             setFrozen(true);
@@ -158,7 +170,7 @@ function Carousel() {
             
             <div className="title"></div>
             {showLocation && (
-                <Location initialX={50} initialY={30} initialWidth = {40} initialHeight = {56} image={images[clickedIndex]} />
+                <Location initialX={imageX} initialY={imageY} initialWidth = {40} initialHeight = {56} initialPos = {imagePos} image={images[clickedIndex]} />
             )}
             
             
