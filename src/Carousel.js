@@ -42,7 +42,15 @@ function Carousel() {
         setStartX(e.clientX);
     };
 
+    let isThrottled = false;
     const handleMouseMove = (e) => {
+        if (isThrottled) return;
+        isThrottled = true;
+
+        setTimeout(() => {
+            isThrottled = false;
+        }, 50);
+
         if (!isDragging || frozen) return;
         
         setHasMoved(true);
@@ -62,7 +70,6 @@ function Carousel() {
         const centeredIndex = Math.min(Math.floor((-percent)/increment),images.length-1);
         setCenteredImageIndex(centeredIndex);
 
-        console.log(centeredIndex, percent)
 
     };
 
@@ -79,7 +86,7 @@ function Carousel() {
         const title = document.querySelector('.title');
 
         background.style.backgroundImage = `url(${images[centeredImageIndex]})`;
-        background.style.opacity = 0.5;
+        //background.style.opacity = 0.5;
         title.style.opacity = 1;
         title.style.left = "14vw";
         title.textContent = displayNames[centeredImageIndex];
@@ -108,7 +115,7 @@ function Carousel() {
         
         mainTrack.animate(
             { transform: `translateX(${offsetX}%)` },
-            { duration: 1200, fill: 'forwards' }
+            { duration: 800, fill: 'forwards' }
         );
 
         const images = document.querySelectorAll('.carouselImage');
@@ -119,7 +126,7 @@ function Carousel() {
             element.animate(
     
                 { objectPosition: `${100 + pad + offsetX*1.7}% 50%` },
-                { duration: 1200, fill: 'forwards' }
+                { duration: 800, fill: 'forwards' }
             );
             i++;
         });
@@ -134,7 +141,9 @@ function Carousel() {
     const [imagePos, setImagePos] = useState('');
     const handleImageEntry = (index) => {
 
-        if(frozen) return;
+
+        if(frozen || hasMoved) return;
+        console.log("entering")
         const whichChild = mainTrack.children[index];
         const computedStyle = window.getComputedStyle(whichChild);
         setImagePos(computedStyle.getPropertyValue('object-position'));
@@ -144,14 +153,19 @@ function Carousel() {
         setImageX( rect.left + window.scrollX);
         setImageY(rect.top + window.scrollY);
 
-        if (!hasMoved){
-            console.log("click!", index)
-            setFrozen(true);
-            setClickedIndex(index);
-            setShowLocation(true);
+        setFrozen(true);
+        setClickedIndex(index);
+        setShowLocation(true);
 
-        }
 
+
+    };
+
+
+    const receiveDataFromChild = (data) => {
+        console.log('Received data from child:', data);
+        setFrozen(false);
+        setShowLocation(false);
     };
     
     return (
@@ -170,7 +184,7 @@ function Carousel() {
             
             <div className="title"></div>
             {showLocation && (
-                <Location initialX={imageX} initialY={imageY} initialWidth = {40} initialHeight = {56} initialPos = {imagePos} image={images[clickedIndex]} />
+                <Location sendData = {receiveDataFromChild} initialX={imageX} initialY={imageY} initialWidth = {40} initialHeight = {56} initialPos = {imagePos} image={images[clickedIndex]} />
             )}
             
             
