@@ -1,0 +1,12 @@
+
+
+.descriptionContainer{
+    width:100vw;
+    height:40rem;
+    top:100vh;
+    background-color: #222222;
+    color: white;
+    position: absolute;
+    z-index:6;
+    overflow: scroll;
+}

@@ -21,6 +21,8 @@ const averageColors = ["#89807e", "#988b81", "#3b5778", "#788283","#766c67", "#5
 
 function Carousel() {
 
+
+
     const mainTrack = document.getElementById('mainTrack');
     
 

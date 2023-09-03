@@ -1,8 +1,10 @@
 
 import './Location.css';
+import Description from './Description';
 import React, { useState, useEffect } from 'react';
 
 function Location(props) {
+
 
     const [doneAnimating, setDoneAnimating] = useState(false);
     const [showDescription, setShowDescription] = useState(false);
@@ -20,7 +22,11 @@ function Location(props) {
         display:`block`
     });
 
+   
+
+
     useEffect(()=>{
+        
         setTimeout(() => {
             setStyle({
                 left: '0px',
@@ -56,8 +62,10 @@ function Location(props) {
                 height: `100vh`,
                 backgroundImage: `url(${props.image})`,
                 transition: `none`,
-                backgroundColor: `rgb(0,0,0,0.3)`
-            });
+                backgroundColor: `rgb(0,0,0,0.3)`,
+                backgroundAttachment: `fixed`
+
+        });
             const title = document.getElementById('titleText');
             title.children[0].textContent = props.name;
             title.children[1].textContent = props.country;
@@ -67,7 +75,7 @@ function Location(props) {
             
             setShowDescription(true);
         }, 1450);
-
+        
 
     }, [])
 
@@ -92,9 +100,6 @@ function Location(props) {
     };
 
 
-
-
-    
     return (
         <div className = "container">
             <div className="Location" style = {style}>
@@ -108,7 +113,7 @@ function Location(props) {
                 </div>
             </div>
             {showDescription && (
-                <div className="test">Test</div>
+                <Description/>
             )}
         </div>
     
