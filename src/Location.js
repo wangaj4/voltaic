@@ -3,6 +3,8 @@ import './Location.css';
 import Description from './Description';
 import React, { useState, useEffect } from 'react';
 
+
+
 function Location(props) {
 
 
@@ -62,8 +64,7 @@ function Location(props) {
                 height: `100vh`,
                 backgroundImage: `url(${props.image})`,
                 transition: `none`,
-                backgroundColor: `rgb(0,0,0,0.3)`,
-                backgroundAttachment: `fixed`
+                // backgroundAttachment: `fixed`
 
         });
             const title = document.getElementById('titleText');
@@ -91,13 +92,27 @@ function Location(props) {
             width: `100vw`,
             height: `100vh`,
             backgroundImage: `url(${props.image})`,
-            backgroundColor: `rgb(0,0,0,0.3)`
         });
         const self = document.querySelector('.Location');
         props.sendData("test");
 
 
     };
+
+
+
+    let parallaxImage = document.querySelector('.Location');
+    window.addEventListener('scroll', () => {
+        if(parallaxImage === null) parallaxImage = document.querySelector('.Location');
+
+        const rect = parallaxImage.getBoundingClientRect();
+        let yOffset = rect.top;
+        
+        console.log(rect.top)
+        
+        parallaxImage.style.transform = `translateY(${-yOffset * 0.6}px)`;
+        
+    }, {capture: true});
 
 
     return (

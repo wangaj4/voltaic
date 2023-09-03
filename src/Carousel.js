@@ -149,7 +149,7 @@ function Carousel() {
 
         const rect = whichChild.getBoundingClientRect();
 
-        setImageX( rect.left + window.scrollX);
+        setImageX(rect.left + window.scrollX);
         setImageY(rect.top + window.scrollY);
 
         setFrozen(true);
