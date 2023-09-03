@@ -7,7 +7,6 @@ function App() {
 
       <Carousel/>
         <span id = "pointer"></span>
-        <div id="portal"></div>
     </div>
 
   );

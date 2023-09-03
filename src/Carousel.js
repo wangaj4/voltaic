@@ -4,7 +4,7 @@ import Location from './Location';
 import amazonRainforest from './img/amazonRainforest.jpg'
 import grandCanyon from './img/grandCanyon.jpg'
 import haLongBay from './img/haLongBay.jpg'
-import macchuPichu from './img/macchuPichu.jpg'
+import machuPicchu from './img/macchuPichu.jpg'
 import northernLights from './img/northernLights.jpg'
 import santorini from './img/santorini.jpg'
 import victoriaFalls from './img/victoriaFalls.jpg'
@@ -12,8 +12,9 @@ import victoriaFalls from './img/victoriaFalls.jpg'
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
-const images = [grandCanyon,haLongBay,northernLights,santorini,macchuPichu,amazonRainforest, victoriaFalls]
-const displayNames = ["Grand Canyon", "Ha Long Bay", "Aurora Borealis", "Santorini", "Macchu Pichu", "Amazon Rainforest", "Victoria Falls"]
+const images = [grandCanyon,haLongBay,northernLights,santorini,machuPicchu,amazonRainforest, victoriaFalls]
+const displayNames = ["Grand Canyon", "Ha Long Bay", "Aurora Borealis", "Santorini", "Machu Picchu", "Amazon Rainforest", "Victoria Falls"]
+const countries = ["America", "Vietnam", "Norway", "Greece", "Peru", "Brazil", "Zimbabwe"]
 const averageColors = ["#89807e", "#988b81", "#3b5778", "#788283","#766c67", "#55635c", "#98765a"]
 
 
@@ -42,15 +43,9 @@ function Carousel() {
         setStartX(e.clientX);
     };
 
-    let isThrottled = false;
+    
     const handleMouseMove = (e) => {
-        if (isThrottled) return;
-        isThrottled = true;
-
-        setTimeout(() => {
-            isThrottled = false;
-        }, 50);
-
+        
         if (!isDragging || frozen) return;
         
         setHasMoved(true);
@@ -63,7 +58,7 @@ function Carousel() {
         percent = percent < -maxScroll ? -maxScroll : percent;
         setOffsetX(percent);
         
-        animateImage();
+        animateImage(800);
 
 
         let increment = 100/images.length;
@@ -77,7 +72,7 @@ function Carousel() {
         if(!isDragging || frozen) return;
         setIsDragging(false);
         setPercentOffsetX(offsetX);
-        animateImage();
+        //animateImage(800);
     };
 
     const changeBackground = () => {
@@ -86,7 +81,7 @@ function Carousel() {
         const title = document.querySelector('.title');
 
         background.style.backgroundImage = `url(${images[centeredImageIndex]})`;
-        //background.style.opacity = 0.5;
+        background.style.opacity = 0.5;
         title.style.opacity = 1;
         title.style.left = "14vw";
         title.textContent = displayNames[centeredImageIndex];
@@ -94,7 +89,6 @@ function Carousel() {
     };
 
     useEffect(() => {
-        // This effect will be triggered whenever 'centeredImageIndex' changes
         const background = document.querySelector('.backgroundBlurred');
         const title = document.querySelector('.title');
         
@@ -110,12 +104,14 @@ function Carousel() {
         };
     }, [centeredImageIndex]);
     
+    
+    
 
-    const animateImage = () => {
+    const animateImage = (len) => {
         
         mainTrack.animate(
             { transform: `translateX(${offsetX}%)` },
-            { duration: 800, fill: 'forwards' }
+            { duration: len, fill: 'forwards' }
         );
 
         const images = document.querySelectorAll('.carouselImage');
@@ -126,7 +122,7 @@ function Carousel() {
             element.animate(
     
                 { objectPosition: `${100 + pad + offsetX*1.7}% 50%` },
-                { duration: 800, fill: 'forwards' }
+                { duration: len, fill: 'forwards' }
             );
             i++;
         });
@@ -144,6 +140,7 @@ function Carousel() {
 
         if(frozen || hasMoved) return;
         console.log("entering")
+        
         const whichChild = mainTrack.children[index];
         const computedStyle = window.getComputedStyle(whichChild);
         setImagePos(computedStyle.getPropertyValue('object-position'));
@@ -157,15 +154,46 @@ function Carousel() {
         setClickedIndex(index);
         setShowLocation(true);
 
+        const title = document.querySelector('.title');
+        const background = document.querySelector('.backgroundBlurred');
+        background.style.opacity = 0;
+        title.style.opacity = 0;
+        title.style.left = "12vw";
 
 
     };
 
 
     const receiveDataFromChild = (data) => {
-        console.log('Received data from child:', data);
-        setFrozen(false);
-        setShowLocation(false);
+        
+        setTimeout(()=>{
+            setShowLocation(false);
+        },300);
+        
+        const images = document.querySelectorAll('.carouselImage');
+        let i = 0;
+        images.forEach(element =>{
+            element.style.transitionProperty = "none";
+            element.style.marginTop = "30%";
+            setTimeout(() => {
+                element.style.transitionProperty = "all";
+                element.style.marginTop = "0";
+                
+            }, 300 + 50*i);
+            i+=1;
+        });
+
+
+        
+        setTimeout(() => {
+            changeBackground();
+        }, 500);
+
+        setTimeout(() => {
+            setFrozen(false);
+        }, 1000);
+        
+        
     };
     
     return (
@@ -177,14 +205,14 @@ function Carousel() {
                 <img className="carouselImage" src ={haLongBay} alt = "" draggable= "false" onMouseUp={(e) => handleImageEntry(1)}/>
                 <img className="carouselImage" src ={northernLights} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(2)}/>
                 <img className="carouselImage" src ={santorini} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(3)}/>
-                <img className="carouselImage" src ={macchuPichu} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(4)}/>
+                <img className="carouselImage" src ={machuPicchu} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(4)}/>
                 <img className="carouselImage" src ={amazonRainforest} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(5)}/>
                 <img className="carouselImage" src ={victoriaFalls} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(6)}/>
             </div>
             
             <div className="title"></div>
             {showLocation && (
-                <Location sendData = {receiveDataFromChild} initialX={imageX} initialY={imageY} initialWidth = {40} initialHeight = {56} initialPos = {imagePos} image={images[clickedIndex]} />
+                <Location country = {countries[clickedIndex]} name = {displayNames[clickedIndex]} sendData = {receiveDataFromChild} initialX={imageX} initialY={imageY} initialWidth = {40} initialHeight = {56} initialPos = {imagePos} image={images[clickedIndex]} />
             )}
             
             
@@ -192,7 +220,7 @@ function Carousel() {
         
     
     );
-    
+
     
 
 

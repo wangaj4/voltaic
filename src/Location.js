@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 function Location(props) {
 
     const [doneAnimating, setDoneAnimating] = useState(false);
+    const [showDescription, setShowDescription] = useState(false);
     const pointer = document.getElementById('pointer');
 
 
@@ -57,9 +58,15 @@ function Location(props) {
                 transition: `none`,
                 backgroundColor: `rgb(0,0,0,0.3)`
             });
-            document.getElementById('titleText').textContent = "Macchu Pichu";
+            const title = document.getElementById('titleText');
+            title.children[0].textContent = props.name;
+            title.children[1].textContent = props.country;
+            const back = document.querySelector('.Back');
+            back.style.opacity = 1;
             setDoneAnimating(true);
-        }, 1400);
+            
+            setShowDescription(true);
+        }, 1450);
 
 
     }, [])
@@ -70,8 +77,15 @@ function Location(props) {
         pointer.classList.remove('pointer-extend');
         pointer.classList.remove('pointer-go');
         setStyle({
-            display:`none`
+            transitionDuration: '2s',
+            left: '0px',
+            top: '-200vh',
+            width: `100vw`,
+            height: `100vh`,
+            backgroundImage: `url(${props.image})`,
+            backgroundColor: `rgb(0,0,0,0.3)`
         });
+        const self = document.querySelector('.Location');
         props.sendData("test");
 
 
@@ -82,16 +96,21 @@ function Location(props) {
 
     
     return (
-        <div className="Location" style = {style}>
-            <div className = "locationCover"></div>
-            <div id = "titleText">
-
+        <div className = "container">
+            <div className="Location" style = {style}>
+                <div className = "locationCover"></div>
+                <div id = "titleText">
+                    <p></p>
+                    <p></p>
+                </div>
+                <div className = "Back" onClick={goBack}>
+                    Back
+                </div>
             </div>
-            <div className = "Back" onClick={goBack}>
-                Back
-            </div>
+            {showDescription && (
+                <div className="test">Test</div>
+            )}
         </div>
-        
     
     );
     
