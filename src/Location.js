@@ -28,6 +28,7 @@ function Location(props) {
 
 
     useEffect(()=>{
+        const title = document.getElementById('titleText');
         
         setTimeout(() => {
             setStyle({
@@ -55,15 +56,18 @@ function Location(props) {
             pointer.classList.add('pointer-go');
             const locationCover = document.querySelector('.locationCover');
             locationCover.classList.add('tint');
+
+            
         }, 1200);
         setTimeout(() => {
-            const title = document.getElementById('titleText');
-            title.children[0].textContent = props.name;
-            title.children[1].textContent = props.country;
             const back = document.querySelector('.Back');
             back.style.opacity = 1;
             setDoneAnimating(true);
             setShowDescription(true);
+            
+            title.children[0].textContent = props.name;
+            title.children[1].textContent = props.country;
+            title.classList.add('reveal');
         }, 1450);
         
 

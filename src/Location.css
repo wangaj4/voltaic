@@ -51,9 +51,19 @@
     transition-property: all;
     transition-timing-function: cubic-bezier(0.3, 0.1, 0, 1);
     transition-duration: 1s;
-    animation: revealText 2s ease-in-out;
+}
 
+.reveal{
+    animation: revealAnimation 0.15s ease forwards;
+}
 
+@keyframes revealAnimation {
+    0% {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 }
 
 

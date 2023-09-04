@@ -109,7 +109,7 @@ function Carousel() {
     
 
     const animateImage = (len) => {
-        
+
         mainTrack.animate(
             { transform: `translateX(${offsetX}%)` },
             { duration: len, fill: 'forwards' }
