@@ -114,6 +114,8 @@ function Carousel() {
             { transform: `translateX(${offsetX}%)` },
             { duration: len, fill: 'forwards' }
         );
+        
+        //mainTrack.style.transform = `translateX(${offsetX}%)`;
 
         const images = document.querySelectorAll('.carouselImage');
         let i = 0;
@@ -121,7 +123,7 @@ function Carousel() {
             let pad = 0;
             if(i>=3) pad = 14*i;
             element.animate(
-    
+
                 { objectPosition: `${100 + pad + offsetX*1.7}% 50%` },
                 { duration: len, fill: 'forwards' }
             );

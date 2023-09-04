@@ -20,7 +20,7 @@ function Description(props) {
     
     return (
         <div id = "descriptionContainer">
-            Test
+            Scroll
         </div>
     
     );

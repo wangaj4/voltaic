@@ -10,7 +10,7 @@
     z-index:6;
     overflow-y: scroll;
 
-    transition-property: all;
+    transition-property: top;
     transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
-    transition-duration: 1.2s;
+    transition-duration: 1s;
 }

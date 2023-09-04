@@ -83,6 +83,8 @@ function Location(props) {
             backgroundImage: `url(${props.image})`,
         });
         const self = document.querySelector('.Location');
+        const description = document.getElementById('descriptionContainer');
+        description.style.top = '110vh';
         props.sendData("test");
 
 
@@ -97,7 +99,7 @@ function Location(props) {
         const rect = parallaxImage.getBoundingClientRect();
         let yOffset = rect.top;
         
-        const parallaxPos = yOffset * 0.1 + 50;
+        const parallaxPos = yOffset * 0.3 + 50;
         parallaxImage.style.backgroundPositionY = `${parallaxPos}%`;
         
     }, {capture: true});
