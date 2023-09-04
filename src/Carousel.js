@@ -60,7 +60,7 @@ function Carousel() {
         percent = percent < -maxScroll ? -maxScroll : percent;
         setOffsetX(percent);
         
-        animateImage(800);
+        animateImage(400);//adjust for smoothness
 
 
         let increment = 100/images.length;
@@ -74,7 +74,6 @@ function Carousel() {
         if(!isDragging || frozen) return;
         setIsDragging(false);
         setPercentOffsetX(offsetX);
-        //animateImage(800);
     };
 
     const changeBackground = () => {

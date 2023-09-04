@@ -13,7 +13,9 @@ body{
   position: absolute;
   transition: background-color 0.5s ease-in;
   z-index:2;
+  overflow-x:hidden;
   overflow-y:scroll;
+  top: 0;
 
 }
 

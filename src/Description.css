@@ -1,6 +1,6 @@
 
 
-.descriptionContainer{
+#descriptionContainer{
     width:100vw;
     height:40rem;
     top:100vh;
@@ -8,5 +8,9 @@
     color: white;
     position: absolute;
     z-index:6;
-    overflow: scroll;
+    overflow-y: scroll;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
+    transition-duration: 1.2s;
 }

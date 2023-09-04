@@ -57,23 +57,12 @@ function Location(props) {
             locationCover.classList.add('tint');
         }, 1200);
         setTimeout(() => {
-            setStyle({
-                left: '0px',
-                top: '0px',
-                width: `100vw`,
-                height: `100vh`,
-                backgroundImage: `url(${props.image})`,
-                transition: `none`,
-                // backgroundAttachment: `fixed`
-
-        });
             const title = document.getElementById('titleText');
             title.children[0].textContent = props.name;
             title.children[1].textContent = props.country;
             const back = document.querySelector('.Back');
             back.style.opacity = 1;
             setDoneAnimating(true);
-            
             setShowDescription(true);
         }, 1450);
         
@@ -108,9 +97,8 @@ function Location(props) {
         const rect = parallaxImage.getBoundingClientRect();
         let yOffset = rect.top;
         
-        console.log(rect.top)
-        
-        parallaxImage.style.transform = `translateY(${-yOffset * 0.6}px)`;
+        const parallaxPos = yOffset * 0.1 + 50;
+        parallaxImage.style.backgroundPositionY = `${parallaxPos}%`;
         
     }, {capture: true});
 
