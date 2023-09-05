@@ -60,7 +60,7 @@ function Carousel() {
         percent = percent < -maxScroll ? -maxScroll : percent;
         setOffsetX(percent);
         
-        animateImage(400);//adjust for smoothness
+        animateImage(800);//adjust for smoothness
 
 
         let increment = 100/images.length;
@@ -115,7 +115,7 @@ function Carousel() {
             { duration: len, fill: 'forwards' }
         );
         
-        //mainTrack.style.transform = `translateX(${offsetX}%)`;
+        // mainTrack.style.transform = `translateX(${offsetX}%)`;
 
         const images = document.querySelectorAll('.carouselImage');
         let i = 0;
@@ -142,7 +142,7 @@ function Carousel() {
 
 
         if(frozen || hasMoved) return;
-        console.log("entering")
+        setIsDragging(false);
         
         const whichChild = mainTrack.children[index];
         const computedStyle = window.getComputedStyle(whichChild);
@@ -171,7 +171,7 @@ function Carousel() {
         
         setTimeout(()=>{
             setShowLocation(false);
-        },300);
+        },500);
         
         const images = document.querySelectorAll('.carouselImage');
         let i = 0;
@@ -215,7 +215,7 @@ function Carousel() {
             
             <div className="title"></div>
             {showLocation && (
-                <Location country = {countries[clickedIndex]} name = {displayNames[clickedIndex]} sendData = {receiveDataFromChild} initialX={imageX} initialY={imageY} initialWidth = {40} initialHeight = {56} initialPos = {imagePos} image={images[clickedIndex]} />
+                <Location index = {clickedIndex} country = {countries[clickedIndex]} name = {displayNames[clickedIndex]} sendData = {receiveDataFromChild} initialX={imageX} initialY={imageY} initialWidth = {40} initialHeight = {56} initialPos = {imagePos} image={images[clickedIndex]} />
             )}
             
             

@@ -43,7 +43,10 @@ body{
   letter-spacing: -1px;
   color:white;
 
-  transition: left 1.3s ease-out, opacity 0.2s ease-in-out;
+  transition-property: left, opacity;
+  transition-timing-function: cubic-bezier(0.3, 0.1, 0, 1);
+  transition-duration: 1s, 0.3s;
+
 
   font-family: "Helvetica", sans-serif;
 
@@ -71,7 +74,8 @@ body{
   height: 56vmin;
   object-fit: cover;
   object-position: 100% 50%;
-  transition-property: all;
+
+  transition-property:all;
   transition-timing-function: cubic-bezier(0.3, 0.1, 0, 1);
   transition-duration: 1s;
 

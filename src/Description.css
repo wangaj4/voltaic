@@ -2,10 +2,10 @@
 
 #descriptionContainer{
     width:100vw;
-    height:40rem;
+    height:auto;
+    min-height: 100vh;
     top:100vh;
     background-color: #222222;
-    color: white;
     position: absolute;
     z-index:6;
     overflow-y: scroll;
@@ -13,4 +13,99 @@
     transition-property: top;
     transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
     transition-duration: 1s;
+
+    color: white;
+
+
+    padding-bottom: 5rem;
+
+}
+
+.scroll{
+    margin-top:1.3rem;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+.main{
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-top:5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:60vw;
+    min-width:50rem;
+
+}
+
+
+.pair{
+    margin-left: auto;
+    margin-right: auto;
+    width:60vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+    min-width:50rem;
+    justify-content: center;
+
+    transition: opacity 2s ease;
+    opacity: 0;
+}
+
+.left{
+    flex-basis: 50%;
+}
+
+.left img{
+    max-width:80%;
+    border-radius: 1rem;
+}
+
+.right{
+    flex-basis: 50%;
+    text-align: left;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+
+.reveal{
+    opacity: 1;
+}
+
+
+
+@media(max-width: 864px){
+
+
+    .main{
+        min-width:80%;
+    }
+    .pair{
+        width:100%;
+        min-width: 0;
+        margin:0
+    }
+
+
+    .left{
+        flex-basis: 100%;
+        padding-top: 0;
+    }
+
+
+    .left img{
+        max-width:65%;
+        border-radius: 1rem;
+    }
+
+    .right{
+        flex-basis: 100%;
+        max-width:80%;
+        padding-top: 3rem;
+        text-align: center;
+    }
 }

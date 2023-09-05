@@ -6,8 +6,7 @@ function App() {
 
   return (
     <div className="App">
-
-      <Carousel/>
+        <Carousel/>
         <span id = "pointer"></span>
     </div>
 

@@ -81,7 +81,7 @@ function Location(props) {
         setStyle({
             transitionDuration: '2s',
             left: '0px',
-            top: '-200vh',
+            top: '-180vh',
             width: `100vw`,
             height: `100vh`,
             backgroundImage: `url(${props.image})`,
@@ -96,17 +96,6 @@ function Location(props) {
 
 
 
-    let parallaxImage = document.querySelector('.Location');
-    window.addEventListener('scroll', () => {
-        if(parallaxImage === null) parallaxImage = document.querySelector('.Location');
-
-        const rect = parallaxImage.getBoundingClientRect();
-        let yOffset = rect.top;
-        
-        const parallaxPos = yOffset * 0.3 + 50;
-        parallaxImage.style.backgroundPositionY = `${parallaxPos}%`;
-        
-    }, {capture: true});
 
 
     return (
@@ -122,7 +111,7 @@ function Location(props) {
                 </div>
             </div>
             {showDescription && (
-                <Description/>
+                <Description index = {props.index}/>
             )}
         </div>
     
