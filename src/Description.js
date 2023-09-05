@@ -69,9 +69,13 @@ function Description(props) {
 
 
 
+    let revealed = false;
     useEffect(()=>{
-        console.log(fromTop);
-        if(fromTop < -500) document.querySelector('.pair').classList.add('reveal');
+        if(revealed) return;
+        if(fromTop < -500) {
+            document.querySelector('.pair').classList.add('reveal');
+            revealed = true;
+        }
     }, [fromTop]);
     
     return (
