@@ -74,17 +74,16 @@
     transition: all 0.7s ease-out;
 }
 
-
-.reveal{
-    opacity: 1;
-    transform: translateX(0%);
+.culture{
+    display: flex;
+    margin-top: 15rem;
+    flex-wrap: wrap;
 }
 
 
-.culture{
-    display: flex;
-    margin-top: 7rem;
-    flex-wrap: wrap;
+.timelineContainer{
+    flex-basis: 40%;
+    opacity: 0;
 }
 
 .timeline{
@@ -95,6 +94,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
+
 }
 
 .bar{
@@ -126,12 +126,52 @@
 .timeline-content {
     padding-left:3rem;
     min-width: 8rem;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(-5%);
+    transition: transform 0.7s ease, opacity 1.3s ease;
+}
+
+.timeline-content:hover{
+    transform: translateX(1rem);
 }
 
 .cultureInfo{
+    text-align: left;
+    flex-basis: 30%;
+    margin: 5rem 0;
+    margin-left:10rem;
+    padding:2rem;
+    border: 1px solid #333;
+    background-color: #444;
 
+    font-size: 1.3rem;
+    line-height: 1.6;
+
+    opacity: 0;
 }
 
+
+
+
+.reveal{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.reveal2{
+    opacity:1;
+    animation: revealWipe 1s ease forwards;
+}
+
+@keyframes revealWipe {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
 
 
 @media(max-width: 864px){
@@ -163,5 +203,14 @@
         max-width:80%;
         padding-top: 3rem;
         text-align: center;
+    }
+
+    .cultureInfo{
+        flex-basis: 100%;
+        margin: 5rem;
+    }
+
+    .timelineContainer{
+        flex-basis: 90%;
     }
 }

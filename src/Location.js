@@ -77,6 +77,7 @@ function Location(props) {
 
     const goBack = () =>{
         console.log("going back");
+        
         const background = document.querySelector('.Location');
         background.style.backgroundAttachment = 'scroll';
         pointer.classList.remove('pointer-extend');

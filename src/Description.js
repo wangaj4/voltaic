@@ -58,6 +58,8 @@ const descriptionImg = [grandCanyon, haLongBay, northernLights, santorini, machu
 
 
 
+
+
 function Description(props) {
 
     
@@ -112,9 +114,25 @@ function Description(props) {
     useEffect(()=>{
         if(revealed) return;
         console.log(fromTop);
-        if(fromTop < -500) {
-            document.querySelector('.right').classList.add('reveal');
+        if(fromTop < -600) {
+            document.getElementById('history').classList.add('reveal');
+        }
+        if(fromTop < -1400) {
+            document.getElementById('timeline').classList.add('reveal2');
+            setTimeout(() => {
+                document.getElementById('cultureInfo').classList.add('reveal2');
+                const timelineContents = document.querySelectorAll('.timeline-content');
+                let index = 0;
+                timelineContents.forEach(element =>{
+                    setTimeout(() =>{
+                        element.classList.add('reveal');
+                    }, 100 * index);
+                    index++;
+                    
+                });
+            }, 800);
             setRevealed(true);
+            
         }
     }, [fromTop]);
     
@@ -128,10 +146,10 @@ function Description(props) {
                 <div className = "left">
                     <img src ={descriptionImg[props.index]}></img>
                 </div>
-                <div className = "right">{history[props.index]}</div>
+                <div className = "right" id = "history">{history[props.index]}</div>
             </div>
             <div className = "culture">
-                <div className = "left">
+                <div className = "timelineContainer" id = "timeline">
                     <div className="timeline">
                         <div className="bar"></div>
                         <div className="timeline-item">
@@ -157,6 +175,9 @@ function Description(props) {
                         </div>
                         <div className="bar"></div>
                     </div>
+                </div>
+                <div className = "cultureInfo" id = "cultureInfo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint laborum.
                 </div>
 
             </div>
