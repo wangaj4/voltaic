@@ -52,22 +52,23 @@ function Location(props) {
                 backgroundImage: `url(${props.image})`,
                 transition: `none`
             });
-            setDoneAnimating(true);
             pointer.classList.add('pointer-go');
             const locationCover = document.querySelector('.locationCover');
             locationCover.classList.add('tint');
+            setDoneAnimating(true);
 
-            
+
+
         }, 1200);
         setTimeout(() => {
-            const back = document.querySelector('.Back');
-            back.style.opacity = 1;
-            setDoneAnimating(true);
             setShowDescription(true);
             
             title.children[0].textContent = props.name;
             title.children[1].textContent = props.country;
             title.classList.add('reveal');
+
+            const back = document.querySelector('.Back');
+            back.style.opacity = 1;
         }, 1450);
         
 
@@ -76,6 +77,8 @@ function Location(props) {
 
     const goBack = () =>{
         console.log("going back");
+        const background = document.querySelector('.Location');
+        background.style.backgroundAttachment = 'scroll';
         pointer.classList.remove('pointer-extend');
         pointer.classList.remove('pointer-go');
         setStyle({
@@ -106,9 +109,11 @@ function Location(props) {
                     <p></p>
                     <p></p>
                 </div>
-                <div className = "Back" onClick={goBack}>
-                    Back
-                </div>
+                {doneAnimating && (
+                    <div className = "Back" onClick={goBack}>
+                        Back
+                    </div>
+                )}
             </div>
             {showDescription && (
                 <Description index = {props.index}/>

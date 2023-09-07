@@ -164,11 +164,12 @@ function Carousel() {
         title.style.left = "12vw";
 
 
+
     };
 
 
     const receiveDataFromChild = (data) => {
-        
+
         setTimeout(()=>{
             setShowLocation(false);
         },500);
