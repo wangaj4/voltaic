@@ -82,7 +82,7 @@ function Carousel() {
         const title = document.querySelector('.title');
 
         background.style.backgroundImage = `url(${images[centeredImageIndex]})`;
-        //background.style.opacity = 0.5;
+        background.style.opacity = 0.5;
         title.style.opacity = 1;
         title.style.left = "14vw";
         title.textContent = displayNames[centeredImageIndex];
