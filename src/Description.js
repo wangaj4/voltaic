@@ -2,7 +2,13 @@
 import './Description.css';
 import React, { useState, useEffect } from 'react';
 
+import amazonRainforest from './img/Description/amazonRainforest.jpg'
 import grandCanyon from './img/Description/grandCanyonDescription.jpg'
+import haLongBay from './img/Description/haLongBayDescription.jpg'
+import machuPicchu from './img/Description/machuPicchuDescription.jpg'
+import northernLights from './img/Description/auroraBorealisDescription.jpg'
+import santorini from './img/Description/santoriniDescription.jpg'
+import victoriaFalls from './img/Description/victoriaFallsDescription.jpg'
 
 const Introductions = [
     "A colossal, breathtaking chasm carved by the Colorado River, the Grand Canyon is known for " +
@@ -48,7 +54,7 @@ const history = [
 ]
 
 
-const descriptionImg = [grandCanyon];
+const descriptionImg = [grandCanyon, haLongBay, northernLights, santorini, machuPicchu, amazonRainforest, victoriaFalls];
 
 
 
@@ -120,7 +126,7 @@ function Description(props) {
             </div>
             <div className = "pair">
                 <div className = "left">
-                    <img src ={descriptionImg[props.index]} loading="lazy"></img>
+                    <img src ={descriptionImg[props.index]}></img>
                 </div>
                 <div className = "right">{history[props.index]}</div>
             </div>
