@@ -2,7 +2,7 @@
 import './Description.css';
 import React, { useState, useEffect } from 'react';
 
-import amazonRainforest from './img/Description/amazonRainforest.jpg'
+import amazonRainforest from './img/Description/amazonRainforestDescription.jpg'
 import grandCanyon from './img/Description/grandCanyonDescription.jpg'
 import haLongBay from './img/Description/haLongBayDescription.jpg'
 import machuPicchu from './img/Description/machuPicchuDescription.jpg'
