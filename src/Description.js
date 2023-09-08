@@ -36,7 +36,7 @@ const Introductions = [
 const history = [
     "The Grand Canyon's history is a story of natural wonder and geological time. Over millions of years, " +
     "the Colorado River has skillfully carved this majestic chasm into the Earth's crust, exposing a stunning " +
-    "tapestry of rock layers that reveal the planet's ancient past and deep history.",
+    "tapestry of layers that reveal the planet's ancient past and deep history.",
 
     "",
 
@@ -57,6 +57,23 @@ const history = [
 const descriptionImg = [grandCanyon, haLongBay, northernLights, santorini, machuPicchu, amazonRainforest, victoriaFalls];
 
 
+const events = [
+    ["Creation", "~6 Million Years Ago", "Here is the description of how the grand canyon came to be",
+    "Exploration","1869","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint laborum.",
+    "National Park","1919",""],
+
+    [],
+
+    [],
+
+    [],
+
+    [],
+
+    [],
+
+    [],
+]
 
 
 
@@ -72,6 +89,8 @@ function Description(props) {
 
     useEffect(()=>{
         
+        console.log("initial");
+        
         setTimeout(() =>{
             container = document.getElementById('descriptionContainer');
             container.style.top = '90vh';
@@ -85,6 +104,16 @@ function Description(props) {
 
 
 
+    const changeTimeline = (i) =>{
+        console.log("changing timeline description", i);
+        setTimeout(() =>{
+            const descriptionInfo = document.getElementById('cultureInfo');
+            descriptionInfo.textContent = events[props.index][3*i+2];
+        },100);
+
+    };
+
+
 
     let parallaxImage = document.querySelector('.Location');
     const [fromTop, setFromTop] = useState(0);
@@ -95,7 +124,7 @@ function Description(props) {
 
         const rect = parallaxImage.getBoundingClientRect();
         let yOffset = rect.top;
-        
+
         setFromTop(yOffset);
 
         // const parallaxPos = yOffset * 0.3 + 50;
@@ -135,6 +164,9 @@ function Description(props) {
             
         }
     }, [fromTop]);
+
+
+
     
     return (
         <div id = "descriptionContainer">
@@ -154,23 +186,23 @@ function Description(props) {
                         <div className="bar"></div>
                         <div className="timeline-item">
                             <div className="timeline-circle"></div>
-                            <div className="timeline-content">
-                                <h3>Event 1</h3>
-                                <p>Description of Event 1</p>
+                            <div className="timeline-content" onClick={()=>changeTimeline(0)}>
+                                <h3>{events[props.index][0]}</h3>
+                                <p>{events[props.index][1]}</p>
                             </div>
                         </div>
                         <div className="timeline-item">
                             <div className="timeline-circle"></div>
-                            <div className="timeline-content">
-                                <h3>Event 2</h3>
-                                <p>Description of Event 2</p>
+                            <div className="timeline-content" onClick={()=>changeTimeline(1)}>
+                                <h3>{events[props.index][3]}</h3>
+                                <p>{events[props.index][4]}</p>
                             </div>
                         </div>
                         <div className="timeline-item">
                             <div className="timeline-circle"></div>
-                            <div className="timeline-content">
-                                <h3>Event 3</h3>
-                                <p>Description of Event 3</p>
+                            <div className="timeline-content" onClick={()=>changeTimeline(2)}>
+                                <h3>{events[props.index][6]}</h3>
+                                <p>{events[props.index][7]}</p>
                             </div>
                         </div>
                         <div className="bar"></div>

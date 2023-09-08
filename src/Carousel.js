@@ -60,7 +60,7 @@ function Carousel() {
         percent = percent < -maxScroll ? -maxScroll : percent;
         setOffsetX(percent);
         
-        animateImage(800);//adjust for smoothness
+        animateImage(1200);//adjust for smoothness
 
 
         let increment = 100/images.length;
@@ -209,13 +209,13 @@ function Carousel() {
              onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onMouseDown={handleMouseDown} >
             <div className="backgroundBlurred"/>
             <div id = "mainTrack">
-                <img className="carouselImage" src = {grandCanyon} alt = "" draggable= "false" onMouseUp={(e) => handleImageEntry(0)}/>
-                <img className="carouselImage" src ={haLongBay} alt = "" draggable= "false" onMouseUp={(e) => handleImageEntry(1)}/>
-                <img className="carouselImage" src ={northernLights} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(2)}/>
-                <img className="carouselImage" src ={santorini} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(3)}/>
-                <img className="carouselImage" src ={machuPicchu} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(4)}/>
-                <img className="carouselImage" src ={amazonRainforest} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(5)}/>
-                <img className="carouselImage" src ={victoriaFalls} alt = "" draggable= "false"onMouseUp={(e) => handleImageEntry(6)}/>
+                <img className="carouselImage" src = {grandCanyon} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(0)}/>
+                <img className="carouselImage" src ={haLongBay} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(1)}/>
+                <img className="carouselImage" src ={northernLights} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(2)}/>
+                <img className="carouselImage" src ={santorini} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(3)}/>
+                <img className="carouselImage" src ={machuPicchu} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(4)}/>
+                <img className="carouselImage" src ={amazonRainforest} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(5)}/>
+                <img className="carouselImage" src ={victoriaFalls} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(6)}/>
             </div>
             
             <div className="title"></div>
