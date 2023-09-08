@@ -38,17 +38,29 @@ const history = [
     "the Colorado River has skillfully carved this majestic chasm into the Earth's crust, exposing a stunning " +
     "tapestry of layers that reveal the planet's ancient past and deep history.",
 
-    "",
+    "Ha Long Bay's history is a testament to the enduring dance of nature and time. Over eons, the sea has " +
+    "sculpted this ethereal seascape, crafting a mesmerizing ensemble of limestone islets. These mystical " +
+    "formations, adorned with lush foliage, hold ancient secrets of Earth's geological legacy.",
 
-    "",
+    "The history of the Aurora Borealis is a cosmic tale that unfolds in Norway's Arctic skies. Across the ages, " +
+    "these celestial lights have adorned the night canvas with their vivid hues, a result of interactions " +
+    "between solar winds and Earth's magnetic field. This celestial dance has fascinated and inspired generations.",
 
-    "",
+    "Santorini's history is one of volcanic drama and mythic allure. Millennia ago, a cataclysmic eruption shaped " +
+    "the island's crescent form, resulting in its stunning cliffs and vibrant sunsets. Steeped in ancient legends, " +
+    "this enchanting jewel of the Aegean holds tales of lost civilizations and enduring beauty.",
 
-    "",
+    "Machu Picchu's history is an enigmatic journey into the heart of the Incan empire. Perched high in the Andes," +
+    " this ancient citadel was built in the 15th century and remained hidden from the world for centuries. " +
+    "Its purpose, shrouded in mystery, offers a glimpse into the architectural and cultural brilliance of its creators.",
 
-    "",
+    "The Amazon Rainforest's history is a testament to the resilience of life on Earth. Over millions of years, " +
+    "it has evolved into the planet's most biodiverse ecosystem. With each passing era, this lush expanse has " +
+    "witnessed the rise and fall of species, becoming a sanctuary for countless forms of life.",
 
-    ""
+    "Victoria Falls carries the legacy of untamed waters and natural grandeur. For millennia, the Zambezi River " +
+    "has carved this colossal curtain of water into the Earth's crust. The result is a spectacle that inspires " +
+    "wonder and reverence, nestled within a rainforest that teems with life."
 
 
 ]
@@ -159,7 +171,7 @@ function Description(props) {
                     index++;
                     
                 });
-            }, 800);
+            }, 500);
             setRevealed(true);
             
         }
@@ -174,11 +186,11 @@ function Description(props) {
             <div className="main">
                 {Introductions[props.index]}
             </div>
-            <div className = "pair">
+            <div className = "pair" id = "history">
                 <div className = "left">
                     <img src ={descriptionImg[props.index]}></img>
                 </div>
-                <div className = "right" id = "history">{history[props.index]}</div>
+                <div className = "right">{history[props.index]}</div>
             </div>
             <div className = "culture">
                 <div className = "timelineContainer" id = "timeline">
