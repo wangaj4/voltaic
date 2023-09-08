@@ -9,10 +9,23 @@ import northernLights from './img/northernLights.jpg'
 import santorini from './img/santorini.jpg'
 import victoriaFalls from './img/victoriaFalls.jpg'
 
+import amazonRainforestMin from './img/min/amazonRainforest-min.jpg'
+import grandCanyonMin from './img/min/grandCanyon-min.jpg'
+import haLongBayMin from './img/min/haLongBay-min.jpg'
+import machuPicchuMin from './img/min/macchuPichu-min.jpg'
+import northernLightsMin from './img/min/northernLights-min.jpg'
+import santoriniMin from './img/min/santorini-min.jpg'
+import victoriaFallsMin from './img/min/victoriaFalls-min.jpg'
+
+
+
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 const images = [grandCanyon,haLongBay,northernLights,santorini,machuPicchu,amazonRainforest, victoriaFalls]
+
+const imagesMin = [grandCanyonMin,haLongBayMin,northernLightsMin,santoriniMin,machuPicchuMin,amazonRainforestMin, victoriaFallsMin]
+
 const displayNames = ["Grand Canyon", "Ha Long Bay", "Aurora Borealis", "Santorini", "Machu Picchu", "Amazon Rainforest", "Victoria Falls"]
 const countries = ["America", "Vietnam", "Norway", "Greece", "Peru", "Brazil", "Zimbabwe"]
 const averageColors = ["#89807e", "#988b81", "#3b5778", "#788283","#766c67", "#55635c", "#98765a"]
@@ -44,6 +57,15 @@ function Carousel() {
         setHasMoved(false);
         setStartX(e.clientX);
     };
+
+
+    useEffect(() =>{
+        images.forEach((imagePath) => {
+            console.log("preloading");
+            const img = new Image();
+            img.src = imagePath;
+        });
+    }, [])
 
     
     const handleMouseMove = (e) => {
@@ -81,13 +103,14 @@ function Carousel() {
         const background = document.querySelector('.backgroundBlurred');
         const title = document.querySelector('.title');
 
-        background.style.backgroundImage = `url(${images[centeredImageIndex]})`;
+        background.style.backgroundImage = `url(${imagesMin[centeredImageIndex]})`;
         background.style.opacity = 0.5;
         title.style.opacity = 1;
         title.style.left = "14vw";
         title.textContent = displayNames[centeredImageIndex];
 
     };
+
 
     useEffect(() => {
         const background = document.querySelector('.backgroundBlurred');
@@ -209,13 +232,13 @@ function Carousel() {
              onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onMouseDown={handleMouseDown} >
             <div className="backgroundBlurred"/>
             <div id = "mainTrack">
-                <img className="carouselImage" src = {grandCanyon} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(0)}/>
-                <img className="carouselImage" src ={haLongBay} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(1)}/>
-                <img className="carouselImage" src ={northernLights} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(2)}/>
-                <img className="carouselImage" src ={santorini} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(3)}/>
-                <img className="carouselImage" src ={machuPicchu} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(4)}/>
-                <img className="carouselImage" src ={amazonRainforest} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(5)}/>
-                <img className="carouselImage" src ={victoriaFalls} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(6)}/>
+                <img className="carouselImage" src = {grandCanyonMin} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(0)}/>
+                <img className="carouselImage" src ={haLongBayMin} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(1)}/>
+                <img className="carouselImage" src ={northernLightsMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(2)}/>
+                <img className="carouselImage" src ={santoriniMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(3)}/>
+                <img className="carouselImage" src ={machuPicchuMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(4)}/>
+                <img className="carouselImage" src ={amazonRainforestMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(5)}/>
+                <img className="carouselImage" src ={victoriaFallsMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(6)}/>
             </div>
             
             <div className="title"></div>

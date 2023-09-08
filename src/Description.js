@@ -23,12 +23,14 @@ const Introductions = [
     "A picturesque jewel in the Aegean Sea, Santorini enchants with its iconic sunsets, unique and beautiful white-washed architecture, " +
     "and stunning seascapes.",
 
-    "Hidden high in the Andes, Machu Picchu beckons with its ancient mystery, rich Incan history, and awe-inspiring panoramic mountain vistas.",
+    "Hidden high in the Andes, Machu Picchu beckons with its ancient mystery, rich Incan history, " +
+    "and awe-inspiring panoramic mountain vistas.",
 
     "Deep within the Amazon Rainforest's lush heart, a symphony of life unfolds, where dense jungle, mighty rivers, " +
     "and vibrant wildlife create a sanctuary of spectacular biodiversity.",
 
-    "Nature's majesty in all its glory, Victoria Falls astounds with its immense water curtain and lush, misty rainforest surroundings."
+    "Nature's majesty in all its glory, Victoria Falls - the world's largest waterfall - astounds with its " +
+    "immense water curtain and lush, misty rainforest surroundings."
 
 ];
 
