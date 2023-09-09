@@ -50,9 +50,6 @@
     min-width:50rem;
     justify-content: center;
 
-    opacity: 0;
-    transform: translateX(-5%);
-    transition: all 0.7s ease-out;
 
 }
 
@@ -73,6 +70,11 @@
     margin-bottom: auto;
     font-size: 1.3rem;
     line-height: 1.6;
+
+
+    opacity: 0;
+    transform: translateX(-5%);
+    transition: all 0.7s ease-out;
 
 }
 

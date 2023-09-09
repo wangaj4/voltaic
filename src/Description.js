@@ -172,7 +172,7 @@ function Description(props) {
         if(revealed) return;
         console.log(fromTop);
         if(fromTop < -600) {
-            document.getElementById('history').classList.add('reveal');
+            document.getElementById('historyDescription').classList.add('reveal');
         }
         if(fromTop < -1400) {
             document.getElementById('timeline').classList.add('reveal2');
@@ -205,7 +205,7 @@ function Description(props) {
                 <div className = "left">
                     <img src ={descriptionImg[props.index]} priority={'true'}></img>
                 </div>
-                <div className = "right">{history[props.index]}</div>
+                <div className = "right" id = "historyDescription">{history[props.index]}</div>
             </div>
             
             <div className = "culture">
