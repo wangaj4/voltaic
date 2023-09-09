@@ -125,6 +125,7 @@ function Carousel() {
     
 
     const animateImage = (len) => {
+        console.log(offsetX);
 
         mainTrack.animate(
             { transform: `translateX(${offsetX}%)` },
