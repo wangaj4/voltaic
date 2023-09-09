@@ -52,7 +52,7 @@
 }
 
 .reveal{
-    animation: revealAnimation 0.15s ease forwards;
+    animation: revealAnimation 0.18s ease forwards;
 }
 
 @keyframes revealAnimation {

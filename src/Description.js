@@ -34,7 +34,6 @@ const Introductions = [
 
 ];
 
-
 const history = [
     "The Grand Canyon's history is a story of natural wonder and geological time. Over millions of years, " +
     "the Colorado River has skillfully carved this majestic chasm into the Earth's crust, exposing a stunning " +
@@ -67,14 +66,13 @@ const history = [
 
 ]
 
-
 const descriptionImg = [grandCanyon, haLongBay, northernLights, santorini, machuPicchu, amazonRainforest, victoriaFalls];
 
 
 const events = [
     ["Creation", "~6 Million Years Ago", "Here is the description of how the grand canyon came to be",
-    "Exploration","1869","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint laborum.",
-    "National Park","1919",""],
+    "Exploration","1869","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+    "National Park","1919","Became a national park pog"],
 
     [],
 
@@ -119,11 +117,14 @@ function Description(props) {
 
 
     const changeTimeline = (i) =>{
-        console.log("changing timeline description", i);
-        setTimeout(() =>{
-            const descriptionInfo = document.getElementById('cultureInfo');
-            descriptionInfo.textContent = events[props.index][3*i+2];
-        },100);
+        const newContent = events[props.index][3 * i + 2];
+        setShowNewInfo(false);
+
+        setTimeout(() => {
+            document.getElementById('currentInfo').textContent = newContent;
+
+            setShowNewInfo(true);
+        }, 300); 
 
     };
 
@@ -180,6 +181,8 @@ function Description(props) {
     }, [fromTop]);
 
 
+    const [showNewInfo, setShowNewInfo] = useState(false);
+    
 
     
     return (
@@ -223,7 +226,9 @@ function Description(props) {
                     </div>
                 </div>
                 <div className = "cultureInfo" id = "cultureInfo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint laborum.
+                    <div id = "currentInfo" className={`new-info ${showNewInfo ? 'reveal3' : ''}`}>
+                        {events[props.index][2]}
+                    </div>
                 </div>
 
             </div>

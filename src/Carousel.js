@@ -11,7 +11,7 @@ import victoriaFalls from './img/victoriaFalls.jpg'
 
 import amazonRainforestMin from './img/min/amazonRainforest-min.jpg'
 import grandCanyonMin from './img/min/grandCanyon-min.jpg'
-import haLongBayMin from './img/min/haLongBay-min.jpg'
+import haLongBayMin from './img/haLongBay.jpg'
 import machuPicchuMin from './img/min/macchuPichu-min.jpg'
 import northernLightsMin from './img/min/northernLights-min.jpg'
 import santoriniMin from './img/min/santorini-min.jpg'
@@ -23,6 +23,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 const images = [grandCanyon,haLongBay,northernLights,santorini,machuPicchu,amazonRainforest, victoriaFalls]
+const imageLinks = ['./img/amazonRainforest.jpg', './img/grandCanyon.jpg', './img/haLongBay.jpg', './img/macchuPichu.jpg', './img/northernLights.jpg', './img/santorini.jpg', './img/victoriaFalls.jpg']
 
 const imagesMin = [grandCanyonMin,haLongBayMin,northernLightsMin,santoriniMin,machuPicchuMin,amazonRainforestMin, victoriaFallsMin]
 
