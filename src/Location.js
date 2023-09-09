@@ -3,6 +3,9 @@ import './Location.css';
 import Description from './Description';
 import React, { useState, useEffect } from 'react';
 
+import { preloadImages, preloadedImages } from './Preload';
+
+
 
 
 function Location(props) {
@@ -28,6 +31,11 @@ function Location(props) {
 
 
     useEffect(()=>{
+        
+        preloadImages().then(() => {
+            const image = preloadedImages[props.index];
+        });
+        
         const title = document.getElementById('titleText');
         
         setTimeout(() => {

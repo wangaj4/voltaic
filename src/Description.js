@@ -103,9 +103,6 @@ function Description(props) {
 
 
     useEffect(()=>{
-        const img = new Image();
-        img.src = descriptionImg[props.index];
-        
         console.log("initial");
         
         setTimeout(() =>{

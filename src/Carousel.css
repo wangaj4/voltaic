@@ -32,6 +32,8 @@ body{
   background-repeat: no-repeat;
   filter: blur(40px);
   transition: opacity 0.4s ease-in-out;
+
+  opacity: 0;
 }
 
 .title{
