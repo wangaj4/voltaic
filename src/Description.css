@@ -141,7 +141,7 @@
 .cultureInfo{
     text-align: left;
     flex-basis: 30%;
-    margin: 5rem 0;
+    margin: 4rem 0;
     margin-left:10rem;
     padding:2rem;
     border: 1px solid #333;
@@ -157,6 +157,11 @@
     min-height:20rem;
 
 
+}
+
+
+.event{
+    font-weight: 800;
 }
 
 .new-info {

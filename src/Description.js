@@ -96,10 +96,15 @@ function Description(props) {
     
     const [yOffset, setYOffset] = useState(0);
 
+    const [showNewInfo, setShowNewInfo] = useState(true);
+
+
     let scroll = document.querySelector('.scroll');
 
 
     useEffect(()=>{
+        const img = new Image();
+        img.src = descriptionImg[props.index];
         
         console.log("initial");
         
@@ -116,12 +121,20 @@ function Description(props) {
 
 
 
+    const [currentEvent, setCurrentEvent] = useState(0);
+
     const changeTimeline = (i) =>{
+        console.log("changing");
+        if(i===currentEvent) return;
         const newContent = events[props.index][3 * i + 2];
         setShowNewInfo(false);
 
         setTimeout(() => {
             document.getElementById('currentInfo').textContent = newContent;
+
+            document.querySelector('.event').textContent = events[props.index][3 * i];
+
+            setCurrentEvent(i);
 
             setShowNewInfo(true);
         }, 300); 
@@ -181,22 +194,20 @@ function Description(props) {
     }, [fromTop]);
 
 
-    const [showNewInfo, setShowNewInfo] = useState(false);
-    
-
-    
     return (
         <div id = "descriptionContainer">
             <div className = "scroll">Scroll Down</div>
             <div className="main">
                 {Introductions[props.index]}
             </div>
+            
             <div className = "pair" id = "history">
                 <div className = "left">
-                    <img src ={descriptionImg[props.index]}></img>
+                    <img src ={descriptionImg[props.index]} priority={'true'}></img>
                 </div>
                 <div className = "right">{history[props.index]}</div>
             </div>
+            
             <div className = "culture">
                 <div className = "timelineContainer" id = "timeline">
                     <div className="timeline">
@@ -226,15 +237,19 @@ function Description(props) {
                     </div>
                 </div>
                 <div className = "cultureInfo" id = "cultureInfo">
+                    <div className="event">
+                        {events[props.index][0]}
+                    </div>
                     <div id = "currentInfo" className={`new-info ${showNewInfo ? 'reveal3' : ''}`}>
                         {events[props.index][2]}
                     </div>
                 </div>
-
             </div>
+            
             <div className = "tips">
 
             </div>
+            
             <div className = "gallery">
 
             </div>

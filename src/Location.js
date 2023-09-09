@@ -32,8 +32,8 @@ function Location(props) {
         
         setTimeout(() => {
             setStyle({
-                left: '0px',
-                top: '0px',
+                left: '0',
+                top: '0',
                 width: `100vw`,
                 height: `100vh`,
                 backgroundImage: `url(${props.image})`,
@@ -45,8 +45,8 @@ function Location(props) {
         }, 900);
         setTimeout(() => {
             setStyle({
-                left: '0px',
-                top: '0px',
+                left: '0',
+                top: '0',
                 width: `100vw`,
                 height: `100vh`,
                 backgroundImage: `url(${props.image})`,
@@ -84,7 +84,7 @@ function Location(props) {
         pointer.classList.remove('pointer-go');
         setStyle({
             transitionDuration: '2s',
-            left: '0px',
+            left: '0',
             top: '-180vh',
             width: `100vw`,
             height: `100vh`,

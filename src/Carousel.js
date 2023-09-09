@@ -60,14 +60,6 @@ function Carousel() {
     };
 
 
-    useEffect(() =>{
-        images.forEach((imagePath) => {
-            console.log("preloading");
-            const img = new Image();
-            img.src = imagePath;
-        });
-    }, [])
-
     
     const handleMouseMove = (e) => {
         
@@ -141,9 +133,9 @@ function Carousel() {
         
         //mainTrack.style.transform = `translateX(${offsetX}%)`;
 
-        const images = document.querySelectorAll('.carouselImage');
+        const carouselImages = document.querySelectorAll('.carouselImage');
         let i = 0;
-        images.forEach(element =>{
+        carouselImages.forEach(element =>{
             let pad = 0;
             if(i>=3) pad = 14*i;
             element.animate(
@@ -202,9 +194,9 @@ function Carousel() {
             setShowLocation(false);
         },500);
         
-        const images = document.querySelectorAll('.carouselImage');
+        const carouselImages = document.querySelectorAll('.carouselImage');
         let i = 0;
-        images.forEach(element =>{
+        carouselImages.forEach(element =>{
             element.style.transitionProperty = "none";
             element.style.marginTop = "30%";
             setTimeout(() => {
