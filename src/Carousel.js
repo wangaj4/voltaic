@@ -37,7 +37,7 @@ function Carousel() {
 
 
 
-    const mainTrack = document.getElementById('mainTrack');
+    let mainTrack = document.getElementById('mainTrack');
     
 
     const [frozen, setFrozen] = useState(false);
@@ -126,6 +126,8 @@ function Carousel() {
     
 
     const animateImage = (len) => {
+        
+        if(mainTrack===null)mainTrack = document.getElementById('mainTrack');
 
         mainTrack.animate(
             { transform: `translateX(${offsetX}%)` },
