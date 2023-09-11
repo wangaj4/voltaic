@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1809799.css",
+    "main.js": "/static/js/main.525752e6.js",
+    "static/js/787.c4c2a9e7.chunk.js": "/static/js/787.c4c2a9e7.chunk.js",
+    "static/media/amazonRainforest.jpg": "/static/media/amazonRainforest.f6af9eac7b01231a088a.jpg",
+    "static/media/macchuPichu.jpg": "/static/media/macchuPichu.32ec1b3d5a4820c7d93d.jpg",
+    "static/media/grandCanyon.jpg": "/static/media/grandCanyon.1a115901854cc68479ed.jpg",
+    "static/media/santorini.jpg": "/static/media/santorini.d100ea3d91c3ae62f437.jpg",
+    "static/media/grandCanyon-min.jpg": "/static/media/grandCanyon-min.1b756ba4bfd7066ef2a9.jpg",
+    "static/media/macchuPichu-min.jpg": "/static/media/macchuPichu-min.98ebea60de5a53dd6774.jpg",
+    "static/media/amazonRainforest-min.jpg": "/static/media/amazonRainforest-min.e38e45ebb2965cdd1c94.jpg",
+    "static/media/santorini-min.jpg": "/static/media/santorini-min.03237aab1effb5cc20db.jpg",
+    "static/media/auroraBorealisDescription.jpg": "/static/media/auroraBorealisDescription.123fa1b44f2f63815758.jpg",
+    "static/media/machuPicchuDescription.jpg": "/static/media/machuPicchuDescription.ebb275c22fbc0a265346.jpg",
+    "static/media/haLongBayDescription.jpg": "/static/media/haLongBayDescription.34658ac19568ef5268f6.jpg",
+    "static/media/santoriniDescription.jpg": "/static/media/santoriniDescription.483e4ac218eb56215547.jpg",
+    "static/media/grandCanyonDescription.jpg": "/static/media/grandCanyonDescription.49049c9bab18bf7a7a2e.jpg",
+    "static/media/victoriaFalls-min.jpg": "/static/media/victoriaFalls-min.b688450b371ccd0de161.jpg",
+    "static/media/victoriaFalls.jpg": "/static/media/victoriaFalls.b688450b371ccd0de161.jpg",
+    "static/media/haLongBay.jpg": "/static/media/haLongBay.2538cd23c06a1095c715.jpg",
+    "static/media/northernLights.jpg": "/static/media/northernLights.cacdd3d67e5511a4e83a.jpg",
+    "static/media/amazonRainforestDescription.jpg": "/static/media/amazonRainforestDescription.ee805f798886193172b2.jpg",
+    "static/media/victoriaFallsDescription.jpg": "/static/media/victoriaFallsDescription.62535c7de46f1f499bdb.jpg",
+    "static/media/northernLights-min.jpg": "/static/media/northernLights-min.6677d2ea652f3cd6c4e5.jpg",
+    "index.html": "/index.html",
+    "main.c1809799.css.map": "/static/css/main.c1809799.css.map",
+    "main.525752e6.js.map": "/static/js/main.525752e6.js.map",
+    "787.c4c2a9e7.chunk.js.map": "/static/js/787.c4c2a9e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1809799.css",
+    "static/js/main.525752e6.js"
+  ]
+}
