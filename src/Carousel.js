@@ -182,16 +182,16 @@ function Carousel() {
         title.style.opacity = 0;
         title.style.left = "12vw";
 
-        setTimeout(()=>{
-            mainTrack.style.display = "none";
-        },1200);
+        // setTimeout(()=>{
+        //     mainTrack.style.display = "none";
+        // },1200);
         
 
     };
 
 
     const receiveDataFromChild = (data) => {
-        mainTrack.style.display = "flex";
+        // mainTrack.style.display = "flex";
 
         setTimeout(()=>{
             setShowLocation(false);

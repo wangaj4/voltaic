@@ -100,7 +100,9 @@ function Location(props) {
         });
         const self = document.querySelector('.Location');
         const description = document.getElementById('descriptionContainer');
-        description.style.top = '110vh';
+
+        if(description != null) description.style.top = '110vh';
+
         props.sendData("test");
 
 
