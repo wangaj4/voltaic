@@ -63,7 +63,6 @@ function Carousel() {
             // It's a mouse event, use e.clientX directly
             setStartX(e.clientX);
         }
-        console.log(startX);
     };
 
 
@@ -218,7 +217,7 @@ function Carousel() {
         let i = 0;
         carouselImages.forEach(element =>{
             element.style.transitionProperty = "none";
-            element.style.marginTop = "30%";
+            element.style.marginTop = "100%";
             setTimeout(() => {
                 element.style.transitionProperty = "all";
                 element.style.marginTop = "0";

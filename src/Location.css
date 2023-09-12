@@ -106,12 +106,13 @@
 
 @media(max-width: 864px) {
 
-    #titleText{
-        top:30vh;
-    }
 
     .perhapsFixed{
         background-attachment: fixed;
+    }
+
+    #titleText p{
+        font-size: 3rem;
     }
 
 }

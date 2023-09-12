@@ -105,16 +105,15 @@ body{
     width:100%;
     text-align: center;
     left:0 !important;
-    top:5vh;
+    top:10vh;
     justify-self: center;
     position: fixed;
   }
 
-  .carouselImage{
-    width:20rem;
-    height: 50vh;
-
+  #mainTrack{
+    top:40%;
   }
+
 
 
 }
