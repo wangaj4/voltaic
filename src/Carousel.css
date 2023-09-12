@@ -100,17 +100,22 @@ body{
 
 @media(max-width: 864px) {
 
+
   .title{
     width:100%;
     text-align: center;
     left:0 !important;
     top:5vh;
     justify-self: center;
+    position: fixed;
   }
 
   .carouselImage{
     width:20rem;
     height: 50vh;
+
   }
+
+
 }
 

@@ -56,7 +56,14 @@ function Carousel() {
         if(frozen) return;
         setIsDragging(true);
         setHasMoved(false);
-        setStartX(e.clientX);
+        if (e.touches && e.touches.length > 0) {
+            // Use the first touch point for the coordinates
+            setStartX(e.touches[0].clientX);
+        } else {
+            // It's a mouse event, use e.clientX directly
+            setStartX(e.clientX);
+        }
+        console.log(startX);
     };
 
 
@@ -65,7 +72,17 @@ function Carousel() {
         
         if (!isDragging || frozen) return;
         setHasMoved(true);
-        let newOffsetX = e.clientX - startX;
+        
+        let x = 0;
+        if (e.touches && e.touches.length > 0) {
+            // Use the first touch point for the coordinates
+            x = e.touches[0].clientX;
+        } else {
+            // It's a mouse event, use e.clientX directly
+            x = e.clientX;
+        }
+        
+        let newOffsetX = x - startX;
         const maxDelta = window.innerWidth/2;
         let percent = (newOffsetX/maxDelta) * 100;
         let maxScroll = 100;
@@ -98,7 +115,7 @@ function Carousel() {
         const title = document.querySelector('.title');
 
         background.style.backgroundImage = `url(${images[centeredImageIndex]})`;
-        background.style.opacity = 0.5;
+        // background.style.opacity = 0.5;
         title.style.opacity = 1;
         title.style.left = "14vw";
         title.textContent = displayNames[centeredImageIndex];
@@ -225,7 +242,8 @@ function Carousel() {
     
     return (
         <div className = {`whole ${isDragging ? 'dragging' : ''}`} onMouseMove={handleMouseMove}
-             onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onMouseDown={handleMouseDown} >
+             onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onMouseDown={handleMouseDown}
+            onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp}>
             <div className="backgroundBlurred"/>
             <div id = "mainTrack">
                 <img className="carouselImage" src = {grandCanyon} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(0)}/>
