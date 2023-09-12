@@ -97,3 +97,24 @@ body{
   animation-play-state: paused;
 }
 
+
+@media(max-width: 864px) {
+
+  #mainTrack{
+    top:40%;
+  }
+
+  .title{
+    width:100%;
+    text-align: center;
+    left:0 !important;
+    top:5vh;
+    justify-self: center;
+  }
+
+  .carouselImage{
+    width:60vmin;
+    height: 80vmin;
+  }
+}
+
