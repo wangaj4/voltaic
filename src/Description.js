@@ -2,6 +2,8 @@
 import './Description.css';
 import React, { useState, useEffect } from 'react';
 
+import Traveling from './Traveling';
+
 import amazonRainforest from './img/Description/amazonRainforestDescription.jpg'
 import grandCanyon from './img/Description/grandCanyonDescription.jpg'
 import haLongBay from './img/Description/haLongBayDescription.jpg'
@@ -9,6 +11,8 @@ import machuPicchu from './img/Description/machuPicchuDescription.jpg'
 import northernLights from './img/Description/auroraBorealisDescription.jpg'
 import santorini from './img/Description/santoriniDescription.jpg'
 import victoriaFalls from './img/Description/victoriaFallsDescription.jpg'
+
+import grandCanyonTip from './img/TipBackground/grandCanyonTip.jpg'
 
 const Introductions = [
     "A colossal, breathtaking chasm carved by the Colorado River, the Grand Canyon is known for " +
@@ -67,7 +71,7 @@ const history = [
 ]
 
 const descriptionImg = [grandCanyon, haLongBay, northernLights, santorini, machuPicchu, amazonRainforest, victoriaFalls];
-
+const tipImg = [grandCanyonTip]
 
 const events = [
     ["Creation", "~6 Million Years Ago", "Six million years ago, a remarkable transformation began deep within the Earth, giving birth to what we now know as the Grand Canyon. It was a time when the Colorado River's tireless flow, like an artist's brushstroke, began its patient work. Over the eons, this relentless force gradually sculpted and hewed away layer upon layer of rock.",
@@ -202,8 +206,10 @@ function Description(props) {
                     
                 });
             }, 500);
-            setRevealed(true);
-            
+
+        }
+        if(fromTop < -2200) {
+            document.getElementById('tipTitle').classList.add('reveal4');
         }
     }, [fromTop]);
 
@@ -260,9 +266,7 @@ function Description(props) {
                 </div>
             </div>
             
-            <div className = "tips">
-
-            </div>
+            <Traveling background = {tipImg[props.index]}/>
             
             <div className = "gallery">
 
