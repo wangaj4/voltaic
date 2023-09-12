@@ -11,6 +11,9 @@
     transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
     transition-duration: 1.1s;
 
+}
+
+.perhapsFixed{
 
 }
 
@@ -46,7 +49,7 @@
     top: 38vh;
     text-align: center;
     color:whitesmoke;
-    font-family: "Helvetica", sans-serif;
+    font-family: "Times New Roman", "Helvetica", sans-serif;
     font-weight: lighter;
 
 }
@@ -103,7 +106,12 @@
 
 @media(max-width: 864px) {
 
-    #titleText p{
-        padding:1rem;
+    #titleText{
+        top:30vh;
     }
+
+    .perhapsFixed{
+        background-attachment: fixed;
+    }
+
 }

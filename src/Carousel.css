@@ -100,10 +100,6 @@ body{
 
 @media(max-width: 864px) {
 
-  #mainTrack{
-    top:40%;
-  }
-
   .title{
     width:100%;
     text-align: center;
@@ -113,8 +109,8 @@ body{
   }
 
   .carouselImage{
-    width:60vmin;
-    height: 80vmin;
+    width:20rem;
+    height: 50vh;
   }
 }
 
