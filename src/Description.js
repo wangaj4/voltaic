@@ -122,7 +122,7 @@ function Description(props) {
             container.style.top = '90vh';
             
             const background = document.querySelector('.Location');
-            background.style.backgroundAttachment = 'fixed';
+            //background.style.backgroundAttachment = 'fixed';
         },100);
         
         
@@ -164,8 +164,8 @@ function Description(props) {
 
         setFromTop(yOffset);
 
-        // const parallaxPos = yOffset * 0.3 + 50;
-        // parallaxImage.style.backgroundPositionY = `${parallaxPos}%`;
+        const parallaxPos = yOffset * 0.3 + 50;
+        parallaxImage.style.backgroundPositionY = `${parallaxPos}%`;
 
         if(scroll === null) scroll = document.querySelector('.scroll');
 
