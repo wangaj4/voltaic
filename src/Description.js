@@ -185,7 +185,7 @@ function Description(props) {
     useEffect(()=>{
         if(revealed) return;
         console.log(fromTop);
-        if(fromTop < -600) {
+        if(fromTop < -700) {
             document.getElementById('historyDescription').classList.add('reveal');
         }
         if(fromTop < -1400) {
