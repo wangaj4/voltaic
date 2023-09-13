@@ -14,7 +14,7 @@ const tipImg = [grandCanyonTip,haLongBayTip, auroraBorealisTip, santoriniTip, ma
 
 
 const tip1 = [
-    "",
+    "Safety First",
 
     "",
 
@@ -30,7 +30,7 @@ const tip1 = [
 ]
 
 const tip2 = [
-    "",
+    "Plan Ahead",
 
     "",
 
@@ -92,10 +92,22 @@ function Traveling(props){
             </div>
 
             <div className="container">
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
+                <div className="box">
+                    <div className = "boxBack"/>
+                    <h1>Best Time to Visit</h1>
+                </div>
+                <div className="box">
+                    <div className = "boxBack"/>
+                    <h1>Safety</h1>
+                </div>
+                <div className="box">
+                    <div className = "boxBack"/>
+                    <h1>Responsible Tourism</h1>
+                </div>
+                <div className="box">
+                    <div className = "boxBack"/>
+                    <h1>Planning and Preparation</h1>
+                </div>
             </div>
 
             
