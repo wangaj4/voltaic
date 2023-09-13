@@ -208,6 +208,7 @@ function Description(props) {
         }
         if(fromTop < -2000) {
             document.getElementById('tipTitle').classList.add('reveal4');
+            setRevealed(true);
         }
     }, [fromTop]);
 

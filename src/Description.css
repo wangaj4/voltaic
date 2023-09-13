@@ -1,10 +1,12 @@
 
 
 #descriptionContainer{
-    width:100vw;
+    width:90vw;
+
     height:auto;
     min-height: 100vh;
     top:100vh;
+    left:5vw;
     background-color: #222222;
     position: absolute;
     z-index:6;
@@ -200,7 +202,16 @@
 }
 
 
+@media(max-width: 1330px){
+
+    #descriptionContainer{
+        left:0;
+        width:100vw;
+    }
+}
+
 @media(max-width: 864px){
+
 
 
     .main{

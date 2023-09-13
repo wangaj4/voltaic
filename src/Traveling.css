@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom:50rem;
 
 }
 
@@ -34,4 +33,32 @@
     100% {
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
+}
+
+
+
+.container {
+
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.box {
+    cursor: pointer;
+
+    flex-basis: 40%; /* Adjust the flex-basis of the boxes */
+    height: 15rem;
+    background-color: #ccc;
+    transition: flex-basis 0.3s, height 0.3s;
+    margin:0.5rem;
+    margin-bottom:2rem;
+}
+
+.box:hover {
+    flex-basis: 45%;
 }

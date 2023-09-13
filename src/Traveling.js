@@ -13,7 +13,69 @@ import victoriaTip from './img/TipBackground/victoriaTip.jpg'
 const tipImg = [grandCanyonTip,haLongBayTip, auroraBorealisTip, santoriniTip, machuPicchuTip, amazonTip, victoriaTip]
 
 
+const tip1 = [
+    "",
 
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    ""
+]
+
+const tip2 = [
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    ""
+]
+
+const tip3 = [
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    ""
+]
+
+const tip4 = [
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    "",
+
+    ""
+]
 
 function Traveling(props){
     
@@ -28,6 +90,14 @@ function Traveling(props){
             <div className = "fixedBanner">
                 <p id = "tipTitle">Traveler's Insights</p>
             </div>
+
+            <div className="container">
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+            </div>
+
             
         </div>
     );

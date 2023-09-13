@@ -76,6 +76,7 @@
 #titleText p:nth-child(2){
     margin-top:0.5rem;
     font-size:2rem;
+    opacity:0.75;
 }
 
 .Back{
