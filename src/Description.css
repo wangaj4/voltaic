@@ -10,7 +10,8 @@
     background-color: #222222;
     position: absolute;
     z-index:6;
-    overflow-y: scroll;
+
+    overflow: hidden;
 
     transition-property: top;
     transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
