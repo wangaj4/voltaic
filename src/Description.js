@@ -190,7 +190,7 @@ function Description(props) {
         if(fromTop < -700) {
             document.getElementById('historyDescription').classList.add('reveal');
         }
-        if(fromTop < -1400) {
+        if(fromTop < -1300) {
             document.getElementById('timeline').classList.add('reveal2');
             setTimeout(() => {
                 document.getElementById('cultureInfo').classList.add('reveal2');

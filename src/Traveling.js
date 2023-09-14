@@ -10,8 +10,19 @@ import machuPicchuTip from './img/TipBackground/machuPicchuTip.jpg'
 import amazonTip from './img/TipBackground/amazonTip.jpg'
 import victoriaTip from './img/TipBackground/victoriaTip.jpg'
 
+
+
+import canyon3 from './img/Tips/canyon3.jpg'
+
+
+
 const tipImg = [grandCanyonTip,haLongBayTip, auroraBorealisTip, santoriniTip, machuPicchuTip, amazonTip, victoriaTip]
 
+
+const tip1Img = []
+const tip2Img = []
+const tip3Img = [canyon3]
+const tip4Img = []
 
 const tip1 = [
     "Safety First",
@@ -92,21 +103,26 @@ function Traveling(props){
             </div>
 
             <div className="container">
-                <div className="box">
-                    <div className = "boxBack"/>
-                    <h1>Best Time to Visit</h1>
+                <div className="box" style={{ backgroundImage: `url(${tip1Img[props.index]})` }}>
+                    <div className = "boxBack">
+                        <h1>Best Time to Visit</h1>
+                    </div>
                 </div>
-                <div className="box">
-                    <div className = "boxBack"/>
-                    <h1>Safety</h1>
+                <div className="box" style={{ backgroundImage: `url(${tip2Img[props.index]})` }}>
+                    <div className = "boxBack">
+                        <h1>Safety</h1>
+                    </div>
                 </div>
-                <div className="box">
-                    <div className = "boxBack"/>
-                    <h1>Responsible Tourism</h1>
+                <div className="box" style={{ backgroundImage: `url(${tip3Img[props.index]})` }}>
+                    <div className = "boxBack">
+                        <h1>Responsible Tourism</h1>
+                    </div>
+
                 </div>
-                <div className="box">
-                    <div className = "boxBack"/>
-                    <h1>Planning and Preparation</h1>
+                <div className="box" style={{ backgroundImage: `url(${tip4Img[props.index]})` }}>
+                    <div className = "boxBack">
+                        <h1>Planning and Preparation</h1>
+                    </div>
                 </div>
             </div>
 
