@@ -12,7 +12,7 @@ import victoriaFalls from './img/victoriaFalls.jpg'
 import amazonRainforestMin from './img/min/amazonRainforest-min.jpg'
 import grandCanyonMin from './img/min/grandCanyon-min.jpg'
 import haLongBayMin from './img/haLongBay.jpg'
-import machuPicchuMin from './img/min/macchuPichu-min.jpg'
+import machuPicchuMin from './img/min/machuPicchu-min.jpg'
 import northernLightsMin from './img/min/northernLights-min.jpg'
 import santoriniMin from './img/min/santorini-min.jpg'
 import victoriaFallsMin from './img/min/victoriaFalls-min.jpg'
@@ -245,13 +245,13 @@ function Carousel() {
             onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp}>
             <div className="backgroundBlurred"/>
             <div id = "mainTrack">
-                <img className="carouselImage" src = {grandCanyon} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(0)}/>
-                <img className="carouselImage" src ={haLongBay} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(1)}/>
-                <img className="carouselImage" src ={northernLights} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(2)}/>
-                <img className="carouselImage" src ={santorini} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(3)}/>
-                <img className="carouselImage" src ={machuPicchu} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(4)}/>
-                <img className="carouselImage" src ={amazonRainforest} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(5)}/>
-                <img className="carouselImage" src ={victoriaFalls} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(6)}/>
+                <img className="carouselImage" src = {grandCanyonMin} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(0)}/>
+                <img className="carouselImage" src ={haLongBayMin} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(1)}/>
+                <img className="carouselImage" src ={northernLightsMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(2)}/>
+                <img className="carouselImage" src ={santoriniMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(3)}/>
+                <img className="carouselImage" src ={machuPicchuMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(4)}/>
+                <img className="carouselImage" src ={amazonRainforestMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(5)}/>
+                <img className="carouselImage" src ={victoriaFallsMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(6)}/>
             </div>
             
             <div className="title"></div>
