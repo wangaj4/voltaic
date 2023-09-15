@@ -94,6 +94,25 @@ function Traveling(props){
         document.querySelector('.fixedBanner').style.backgroundImage = `url(${tipImg[props.index]})`;
 
     }, []);
+
+
+    const [expand0, setExpand0] = useState(false);
+    const [expand1, setExpand1] = useState(false);
+    const [expand2, setExpand2] = useState(false);
+    const [expand3, setExpand3] = useState(false);
+
+    const handleTipClick = (i) => {
+        //const name = "box" + i;
+        const tipBox = document.getElementById("tipBox");
+        tipBox.style.display="block";
+
+    };
+
+    const handleTipX = () => {
+        const tipBox = document.getElementById("tipBox");
+        tipBox.style.display="none";
+
+    };
     
     
     return (
@@ -102,24 +121,29 @@ function Traveling(props){
                 <p id = "tipTitle">Traveler's Insights</p>
             </div>
 
-            <div className="container">
-                <div className="box" style={{ backgroundImage: `url(${tip1Img[props.index]})` }}>
+            <div className="boxContainer">
+                <div id = "tipBox">
+                    <div id = "tipX" onClick={()=>handleTipX()}>
+                        <div className="bar"/>
+                        <div className="bar"/>
+                    </div>
+                </div>
+                <div className="box" id = "box0" style={{ backgroundImage: `url(${tip1Img[props.index]})` }} onClick={()=>handleTipClick(0)}>
                     <div className = "boxBack">
                         <h1>Best Time to Visit</h1>
                     </div>
                 </div>
-                <div className="box" style={{ backgroundImage: `url(${tip2Img[props.index]})` }}>
+                <div className="box" id = "box1" style={{ backgroundImage: `url(${tip2Img[props.index]})` }} onClick={()=>handleTipClick(1)}>
                     <div className = "boxBack">
                         <h1>Safety</h1>
                     </div>
                 </div>
-                <div className="box" style={{ backgroundImage: `url(${tip3Img[props.index]})` }}>
+                <div className="box" id = "box2" style={{ backgroundImage: `url(${tip3Img[props.index]})` }} onClick={()=>handleTipClick(2)}>
                     <div className = "boxBack">
                         <h1>Responsible Tourism</h1>
                     </div>
-
                 </div>
-                <div className="box" style={{ backgroundImage: `url(${tip4Img[props.index]})` }}>
+                <div className="box" id = "box3" style={{ backgroundImage: `url(${tip4Img[props.index]})` }} onClick={()=>handleTipClick(3)}>
                     <div className = "boxBack">
                         <h1>Planning and Preparation</h1>
                     </div>

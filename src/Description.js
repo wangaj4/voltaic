@@ -230,7 +230,7 @@ function Description(props) {
             <div className = "culture">
                 <div className = "timelineContainer" id = "timeline">
                     <div className="timeline">
-                        <div className="bar"></div>
+                        <div className="timelineBar"></div>
                         <div className="timeline-item">
                             <div className="timeline-circle"></div>
                             <div className="timeline-content" onClick={()=>changeTimeline(0)}>
@@ -252,7 +252,7 @@ function Description(props) {
                                 <p>{events[props.index][7]}</p>
                             </div>
                         </div>
-                        <div className="bar"></div>
+                        <div className="timelineBar"></div>
                     </div>
                 </div>
                 <div className = "cultureInfo" id = "cultureInfo">
