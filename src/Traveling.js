@@ -104,13 +104,24 @@ function Traveling(props){
     const handleTipClick = (i) => {
         //const name = "box" + i;
         const tipBox = document.getElementById("tipBox");
-        tipBox.style.display="block";
+        tipBox.classList.add('revealBox');
+
+        const x = document.getElementById("tipX");
+
+        setTimeout(()=>{
+            x.style.display = "block";
+        },100);
+
 
     };
 
     const handleTipX = () => {
         const tipBox = document.getElementById("tipBox");
-        tipBox.style.display="none";
+        tipBox.classList.remove('revealBox');
+
+        const x = document.getElementById("tipX");
+        x.style.display = "none";
+        
 
     };
     
