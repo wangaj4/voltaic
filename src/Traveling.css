@@ -23,13 +23,16 @@
     background-color: #222222;
     opacity:0;
 }
-
-
 #tipTitle.reveal4{
     opacity: 1;
     background-color: rgba(0,0,0,0.55);
     transition: all 1s ease-out;
 }
+
+#tipName{
+    margin-top:4rem;
+}
+
 
 @keyframes revealWipeLeftRight {
     0% {
@@ -169,4 +172,68 @@
 
 #tipX:hover .bar{
     background-color: #aaa;
+}
+
+
+
+
+
+.tipPair{
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+
+    width:95%;
+    display: none;
+    justify-content: center;
+
+
+}
+
+.tipLeft{
+    flex-basis: 50%;
+}
+
+.tipLeft img{
+    margin-top:2rem;
+    max-width:90%;
+    max-height:30rem;
+    border-radius: 0.5rem;
+}
+
+.tipRight{
+    flex-basis: 50%;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.3rem;
+    line-height: 1.6;
+
+}
+
+
+
+@media(max-width:1064px){
+    .tipLeft{
+        flex-basis: 0;
+        display: none;
+    }
+
+    .tipRight{
+        flex-basis: 100%;
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+
+}
+
+@media(max-width:600px){
+    #tipName{
+        display: none;
+    }
+
+    .tipRight{
+        margin-top: 2rem;
+    }
 }

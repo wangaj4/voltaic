@@ -107,7 +107,7 @@ const tip3 = [
 ]
 
 const tip4 = [
-    "Thoroughly research the Grand Canyon before your visit. Create an itinerary based on your interests, and make reservations for camping, lodging, or popular activities well in advance. Check the weather forecast, pack accordingly, and carry essentials like maps, water, snacks, and a first-aid kit. Familiarize yourself with emergency contacts and park regulations to ensure a safe and enjoyable trip.",
+    "Create an itinerary based on your interests, and make reservations for camping, lodging, or popular activities well in advance. Check the weather forecast, pack accordingly, and carry essentials like maps, water, snacks, and a first-aid kit. Familiarize yourself with emergency contacts and park regulations to ensure a safe and enjoyable trip.",
 
     "",
 
@@ -207,11 +207,11 @@ function Traveling(props){
                         <div className="bar"/>
                     </div>
                     <h1 id = "tipName"></h1>
-                    <div className="pair" id = "tipPair" style ={{display: "none"}}>
-                        <div className = "left">
+                    <div className="tipPair" id = "tipPair">
+                        <div className = "tipLeft">
                             <img src ={tip1Img[props.index]} id = "tipImg"></img>
                         </div>
-                        <div className = "right">
+                        <div className = "tipRight">
                             <p id = "tipContent">
                             </p>
                         </div>
