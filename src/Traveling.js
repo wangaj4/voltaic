@@ -31,6 +31,21 @@ import santorini2 from './img/Tips/santorini2.jpg'
 import santorini3 from './img/Tips/santorini3.jpg'
 import santorini4 from './img/Tips/santorini4.jpg'
 
+import machu1 from './img/Tips/machu1.jpg'
+import machu2 from './img/Tips/machu2.jpg'
+import machu3 from './img/Tips/machu3.jpg'
+import machu4 from './img/Tips/machu4.jpg'
+
+import forest1 from './img/Tips/forest1.jpg'
+import forest2 from './img/Tips/forest2.jpg'
+import forest3 from './img/Tips/forest3.jpg'
+import forest4 from './img/Tips/forest4.jpg'
+
+import victoria1 from './img/Tips/victoria1.jpg'
+import victoria2 from './img/Tips/victoria2.jpg'
+import victoria3 from './img/Tips/victoria3.jpg'
+import victoria4 from './img/Tips/victoria4.jpg'
+
 
 const tipTitles = ["Best Time to Visit", "Safety", "Responsible Tourism", "Planning and Preparation"]
 
@@ -38,10 +53,10 @@ const tipImg = [grandCanyonTip,haLongBayTip, auroraBorealisTip, santoriniTip, ma
 
 
 
-const tip1Img = [canyon1, bay1, lights1, santorini1]
-const tip2Img = [canyon2, bay2, lights2, santorini2]
-const tip3Img = [canyon3, bay3, lights3, santorini3]
-const tip4Img = [canyon4, bay4, lights4, santorini4]
+const tip1Img = [canyon1, bay1, lights1, santorini1, machu1, forest1, victoria1]
+const tip2Img = [canyon2, bay2, lights2, santorini2, machu2, forest2, victoria2]
+const tip3Img = [canyon3, bay3, lights3, santorini3, machu3, forest3, victoria3]
+const tip4Img = [canyon4, bay4, lights4, santorini4, machu4, forest4, victoria4]
 
 const tip1 = [
     "Grand Canyon time to visit test",
