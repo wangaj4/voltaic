@@ -59,7 +59,7 @@ const tip3Img = [canyon3, bay3, lights3, santorini3, machu3, forest3, victoria3]
 const tip4Img = [canyon4, bay4, lights4, santorini4, machu4, forest4, victoria4]
 
 const tip1 = [
-    "Grand Canyon time to visit test",
+    "The Grand Canyon is at its most pleasant in the spring (March to May) and fall (September to November) when temperatures are mild, and crowds are less dense. Avoid the scorching summer heat and frigid winter conditions, but plan accordingly if visiting during these seasons.",
 
     "",
 
@@ -75,7 +75,7 @@ const tip1 = [
 ]
 
 const tip2 = [
-    "Grand Canyon safety test",
+    "Safety is paramount at the Grand Canyon. Stay hydrated, especially during hot months, and protect against sunburn with sunscreen, hats, and sunglasses. Dress in layers as temperatures can vary, and wear sturdy, comfortable footwear. Stay on marked trails and adhere to park rules, especially regarding cliff edges.",
 
     "",
 
@@ -91,7 +91,7 @@ const tip2 = [
 ]
 
 const tip3 = [
-    "Grand Canyon responsibility test",
+    "Practice responsible tourism by adhering to Leave No Trace principles. Carry out all trash, minimize noise to respect the park's tranquility, and avoid disturbing wildlife. Respect the cultural significance of the Grand Canyon to Native American tribes by not removing artifacts or disrupting archaeological sites.",
 
     "",
 
@@ -107,7 +107,7 @@ const tip3 = [
 ]
 
 const tip4 = [
-    "Grand Canyon planning test",
+    "Thoroughly research the Grand Canyon before your visit. Create an itinerary based on your interests, and make reservations for camping, lodging, or popular activities well in advance. Check the weather forecast, pack accordingly, and carry essentials like maps, water, snacks, and a first-aid kit. Familiarize yourself with emergency contacts and park regulations to ensure a safe and enjoyable trip.",
 
     "",
 
@@ -136,13 +136,19 @@ function Traveling(props){
     const [expand3, setExpand3] = useState(false);
 
     let tipName = document.getElementById("tipName");
-    let tipContent = document.getElementById("tipContent");
+    
     
     const handleTipClick = (i) => {
         const tipBox = document.getElementById("tipBox");
         tipBox.classList.add('revealBox');
 
         const x = document.getElementById("tipX");
+        const tipPair = document.getElementById("tipPair");
+        const tipContent = document.getElementById("tipContent");
+        const tipImg = document.getElementById("tipImg");
+
+        tipPair.style.display="flex";
+        tipPair.style.paddingTop="0";
 
 
         setTimeout(()=>{
@@ -152,18 +158,23 @@ function Traveling(props){
             switch (i){
                 case 0:
                     tipInfo = tip1[props.index];
+                    tipImg.src = tip1Img[props.index];
                     break;
                 case 1:
                     tipInfo = tip2[props.index];
+                    tipImg.src = tip2Img[props.index];
                     break;
                 case 2:
                     tipInfo = tip3[props.index];
+                    tipImg.src = tip3Img[props.index];
                     break;
                 case 3:
                     tipInfo = tip4[props.index];
+                    tipImg.src = tip4Img[props.index];
             }
             tipContent.textContent = tipInfo;
-        },100);
+            tipContent.style.opacity=1;
+        },0);
 
 
     };
@@ -176,8 +187,9 @@ function Traveling(props){
         x.style.display = "none";
 
         tipName.textContent = "";
-        tipContent.textContent = "";
-        
+
+        const tipPair = document.getElementById("tipPair");
+        tipPair.style.display="none";
 
     };
     
@@ -195,7 +207,16 @@ function Traveling(props){
                         <div className="bar"/>
                     </div>
                     <h1 id = "tipName"></h1>
-                    <p id = "tipContent"></p>
+                    <div className="pair" id = "tipPair" style ={{display: "none"}}>
+                        <div className = "left">
+                            <img src ={tip1Img[props.index]} id = "tipImg"></img>
+                        </div>
+                        <div className = "right">
+                            <p id = "tipContent">
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div className="box" id = "box0" style={{ backgroundImage: `url(${tip1Img[props.index]})` }} onClick={()=>handleTipClick(0)}>
                     <div className = "boxBack">
