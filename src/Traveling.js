@@ -26,6 +26,10 @@ import lights2 from './img/Tips/lights2.jpg'
 import lights3 from './img/Tips/lights3.jpg'
 import lights4 from './img/Tips/lights4.jpg'
 
+import santorini1 from './img/Tips/santorini1.jpg'
+import santorini2 from './img/Tips/santorini2.jpg'
+import santorini3 from './img/Tips/santorini3.jpg'
+import santorini4 from './img/Tips/santorini4.jpg'
 
 
 const tipTitles = ["Best Time to Visit", "Safety", "Responsible Tourism", "Planning and Preparation"]
@@ -34,10 +38,10 @@ const tipImg = [grandCanyonTip,haLongBayTip, auroraBorealisTip, santoriniTip, ma
 
 
 
-const tip1Img = [canyon1, bay1, lights1]
-const tip2Img = [canyon2, bay2, lights2]
-const tip3Img = [canyon3, bay3, lights3]
-const tip4Img = [canyon4, bay4, lights4]
+const tip1Img = [canyon1, bay1, lights1, santorini1]
+const tip2Img = [canyon2, bay2, lights2, santorini2]
+const tip3Img = [canyon3, bay3, lights3, santorini3]
+const tip4Img = [canyon4, bay4, lights4, santorini4]
 
 const tip1 = [
     "Grand Canyon time to visit test",

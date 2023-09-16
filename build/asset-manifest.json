@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a76ca976.css",
-    "main.js": "/static/js/main.40dede75.js",
+    "main.css": "/static/css/main.cffb16a4.css",
+    "main.js": "/static/js/main.45458053.js",
     "static/js/787.c4c2a9e7.chunk.js": "/static/js/787.c4c2a9e7.chunk.js",
     "static/media/amazonRainforest.jpg": "/static/media/amazonRainforest.f6af9eac7b01231a088a.jpg",
     "static/media/macchuPichu.jpg": "/static/media/macchuPichu.32ec1b3d5a4820c7d93d.jpg",
@@ -22,22 +22,33 @@
     "static/media/northernLights-min.jpg": "/static/media/northernLights-min.58bea57751862566c47c.jpg",
     "static/media/santorini-min.jpg": "/static/media/santorini-min.78127e8c0ed566e4d6d5.jpg",
     "static/media/amazonRainforestDescription.jpg": "/static/media/amazonRainforestDescription.d3a3bf34bf97e4343b70.jpg",
+    "static/media/canyon1.jpg": "/static/media/canyon1.b42d66bdd1b79d5c00ab.jpg",
     "static/media/victoriaFalls-min.jpg": "/static/media/victoriaFalls-min.d7e89ee55070eb8bfce7.jpg",
     "static/media/santoriniDescription.jpg": "/static/media/santoriniDescription.9a30849d2d78ab519dd1.jpg",
     "static/media/canyon3.jpg": "/static/media/canyon3.b02642ca92a647485f6f.jpg",
     "static/media/grandCanyonDescription.jpg": "/static/media/grandCanyonDescription.0616d7963e591f4c1583.jpg",
     "static/media/auroraBorealisTip.jpg": "/static/media/auroraBorealisTip.9eeebd1a6d97189d6f27.jpg",
+    "static/media/canyon4.jpg": "/static/media/canyon4.80eb6ced3ac33269e5ea.jpg",
+    "static/media/lights2.jpg": "/static/media/lights2.e3193f0a7733f93ea39d.jpg",
     "static/media/auroraBorealisDescription.jpg": "/static/media/auroraBorealisDescription.4f96aea149254fc60955.jpg",
+    "static/media/bay2.jpg": "/static/media/bay2.78821082748600563dad.jpg",
     "static/media/haLongBayDescription.jpg": "/static/media/haLongBayDescription.9826bb874981daf379ef.jpg",
     "static/media/victoriaFallsDescription.jpg": "/static/media/victoriaFallsDescription.87d9442ad4e160ead697.jpg",
     "static/media/machuPicchuDescription.jpg": "/static/media/machuPicchuDescription.484d604c2b36e9747932.jpg",
+    "static/media/bay1.jpg": "/static/media/bay1.89da7e24cfcc59c7c896.jpg",
+    "static/media/bay3.jpg": "/static/media/bay3.323925d219141056583a.jpg",
+    "static/media/bay4.jpg": "/static/media/bay4.a9a50d74baea29203a36.jpg",
+    "static/media/canyon2.jpg": "/static/media/canyon2.c5c9cfe6c1cef4e44926.jpg",
+    "static/media/lights1.jpg": "/static/media/lights1.8ebcfe3e541298743102.jpg",
+    "static/media/lights3.jpg": "/static/media/lights3.33649a0c26e6355b77f7.jpg",
+    "static/media/lights4.jpg": "/static/media/lights4.a756ac374a66d7eef58c.jpg",
     "index.html": "/index.html",
-    "main.a76ca976.css.map": "/static/css/main.a76ca976.css.map",
-    "main.40dede75.js.map": "/static/js/main.40dede75.js.map",
+    "main.cffb16a4.css.map": "/static/css/main.cffb16a4.css.map",
+    "main.45458053.js.map": "/static/js/main.45458053.js.map",
     "787.c4c2a9e7.chunk.js.map": "/static/js/787.c4c2a9e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a76ca976.css",
-    "static/js/main.40dede75.js"
+    "static/css/main.cffb16a4.css",
+    "static/js/main.45458053.js"
   ]
 }
