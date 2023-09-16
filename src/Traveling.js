@@ -11,21 +11,36 @@ import amazonTip from './img/TipBackground/amazonTip.jpg'
 import victoriaTip from './img/TipBackground/victoriaTip.jpg'
 
 
-
+import canyon1 from './img/Tips/canyon1.jpg'
+import canyon2 from './img/Tips/canyon2.jpg'
 import canyon3 from './img/Tips/canyon3.jpg'
+import canyon4 from './img/Tips/canyon4.jpg'
+
+import bay1 from './img/Tips/bay1.jpg'
+import bay2 from './img/Tips/bay2.jpg'
+import bay3 from './img/Tips/bay3.jpg'
+import bay4 from './img/Tips/bay4.jpg'
+
+import lights1 from './img/Tips/lights1.jpg'
+import lights2 from './img/Tips/lights2.jpg'
+import lights3 from './img/Tips/lights3.jpg'
+import lights4 from './img/Tips/lights4.jpg'
 
 
+
+const tipTitles = ["Best Time to Visit", "Safety", "Responsible Tourism", "Planning and Preparation"]
 
 const tipImg = [grandCanyonTip,haLongBayTip, auroraBorealisTip, santoriniTip, machuPicchuTip, amazonTip, victoriaTip]
 
 
-const tip1Img = []
-const tip2Img = []
-const tip3Img = [canyon3]
-const tip4Img = []
+
+const tip1Img = [canyon1, bay1, lights1]
+const tip2Img = [canyon2, bay2, lights2]
+const tip3Img = [canyon3, bay3, lights3]
+const tip4Img = [canyon4, bay4, lights4]
 
 const tip1 = [
-    "Safety First",
+    "Grand Canyon time to visit test",
 
     "",
 
@@ -41,7 +56,7 @@ const tip1 = [
 ]
 
 const tip2 = [
-    "Plan Ahead",
+    "Grand Canyon safety test",
 
     "",
 
@@ -57,7 +72,7 @@ const tip2 = [
 ]
 
 const tip3 = [
-    "",
+    "Grand Canyon responsibility test",
 
     "",
 
@@ -73,7 +88,7 @@ const tip3 = [
 ]
 
 const tip4 = [
-    "",
+    "Grand Canyon planning test",
 
     "",
 
@@ -101,15 +116,34 @@ function Traveling(props){
     const [expand2, setExpand2] = useState(false);
     const [expand3, setExpand3] = useState(false);
 
+    let tipName = document.getElementById("tipName");
+    let tipContent = document.getElementById("tipContent");
+    
     const handleTipClick = (i) => {
-        //const name = "box" + i;
         const tipBox = document.getElementById("tipBox");
         tipBox.classList.add('revealBox');
 
         const x = document.getElementById("tipX");
 
+
         setTimeout(()=>{
             x.style.display = "block";
+            tipName.textContent = tipTitles[i];
+            let tipInfo = "";
+            switch (i){
+                case 0:
+                    tipInfo = tip1[props.index];
+                    break;
+                case 1:
+                    tipInfo = tip2[props.index];
+                    break;
+                case 2:
+                    tipInfo = tip3[props.index];
+                    break;
+                case 3:
+                    tipInfo = tip4[props.index];
+            }
+            tipContent.textContent = tipInfo;
         },100);
 
 
@@ -121,6 +155,9 @@ function Traveling(props){
 
         const x = document.getElementById("tipX");
         x.style.display = "none";
+
+        tipName.textContent = "";
+        tipContent.textContent = "";
         
 
     };
@@ -138,25 +175,27 @@ function Traveling(props){
                         <div className="bar"/>
                         <div className="bar"/>
                     </div>
+                    <h1 id = "tipName"></h1>
+                    <p id = "tipContent"></p>
                 </div>
                 <div className="box" id = "box0" style={{ backgroundImage: `url(${tip1Img[props.index]})` }} onClick={()=>handleTipClick(0)}>
                     <div className = "boxBack">
-                        <h1>Best Time to Visit</h1>
+                        <h1>{tipTitles[0]}</h1>
                     </div>
                 </div>
                 <div className="box" id = "box1" style={{ backgroundImage: `url(${tip2Img[props.index]})` }} onClick={()=>handleTipClick(1)}>
                     <div className = "boxBack">
-                        <h1>Safety</h1>
+                        <h1>{tipTitles[1]}</h1>
                     </div>
                 </div>
                 <div className="box" id = "box2" style={{ backgroundImage: `url(${tip3Img[props.index]})` }} onClick={()=>handleTipClick(2)}>
                     <div className = "boxBack">
-                        <h1>Responsible Tourism</h1>
+                        <h1>{tipTitles[2]}</h1>
                     </div>
                 </div>
                 <div className="box" id = "box3" style={{ backgroundImage: `url(${tip4Img[props.index]})` }} onClick={()=>handleTipClick(3)}>
                     <div className = "boxBack">
-                        <h1>Planning and Preparation</h1>
+                        <h1>{tipTitles[3]}</h1>
                     </div>
                 </div>
             </div>
