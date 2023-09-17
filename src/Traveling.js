@@ -174,7 +174,7 @@ function Traveling(props){
         tipContent.textContent = tipInfo;
 
         setTimeout(()=>{
-            tipPair.classList.add('reveal');
+            tipPair.classList.add('reveal3');
             tipName.classList.add('reveal');
         }, 200);
 
@@ -192,7 +192,7 @@ function Traveling(props){
 
         const tipPair = document.getElementById("tipPair");
         tipPair.style.display="none";
-        tipPair.classList.remove('reveal');
+        tipPair.classList.remove('reveal3');
 
         tipName.classList.remove('reveal');
 
