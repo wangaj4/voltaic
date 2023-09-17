@@ -241,6 +241,12 @@
 
 
     .tipPair{
-        margin-top:3rem;
+        margin-top:2.4rem;
+    }
+}
+
+@media(max-width:400px){
+    #tipContent{
+        font-size:1.2rem;
     }
 }
