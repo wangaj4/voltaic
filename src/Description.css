@@ -179,18 +179,18 @@
 
 
 .reveal{
-    opacity: 1;
+    opacity: 1 !important;
     transform: translateX(0%);
 }
 
 .reveal2{
-    opacity:1;
+    opacity:1 !important;
     animation: revealWipe 1s ease forwards;
 }
 
 
 .reveal3{
-    opacity:1;
+    opacity:1 !important;
     animation: revealWipe 0.5s ease forwards;
 }
 

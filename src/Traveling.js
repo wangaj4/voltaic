@@ -149,32 +149,34 @@ function Traveling(props){
 
         tipPair.style.display="flex";
         tipPair.style.paddingTop="0";
+        
+        let tipInfo = "";
+        switch (i){
+            case 0:
+                tipInfo = tip1[props.index];
+                tipImg.src = tip1Img[props.index];
+                break;
+            case 1:
+                tipInfo = tip2[props.index];
+                tipImg.src = tip2Img[props.index];
+                break;
+            case 2:
+                tipInfo = tip3[props.index];
+                tipImg.src = tip3Img[props.index];
+                break;
+            case 3:
+                tipInfo = tip4[props.index];
+                tipImg.src = tip4Img[props.index];
+        }
 
+        x.style.display = "block";
+        tipName.textContent = tipTitles[i];
+        tipContent.textContent = tipInfo;
 
         setTimeout(()=>{
-            x.style.display = "block";
-            tipName.textContent = tipTitles[i];
-            let tipInfo = "";
-            switch (i){
-                case 0:
-                    tipInfo = tip1[props.index];
-                    tipImg.src = tip1Img[props.index];
-                    break;
-                case 1:
-                    tipInfo = tip2[props.index];
-                    tipImg.src = tip2Img[props.index];
-                    break;
-                case 2:
-                    tipInfo = tip3[props.index];
-                    tipImg.src = tip3Img[props.index];
-                    break;
-                case 3:
-                    tipInfo = tip4[props.index];
-                    tipImg.src = tip4Img[props.index];
-            }
-            tipContent.textContent = tipInfo;
-            tipContent.style.opacity=1;
-        },0);
+            tipPair.classList.add('reveal');
+            tipName.classList.add('reveal');
+        }, 200);
 
 
     };
@@ -190,6 +192,9 @@ function Traveling(props){
 
         const tipPair = document.getElementById("tipPair");
         tipPair.style.display="none";
+        tipPair.classList.remove('reveal');
+
+        tipName.classList.remove('reveal');
 
     };
     
