@@ -1,5 +1,5 @@
 body{
-  background-color: #111111;
+  background-color: #1a1a1a;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -38,10 +38,7 @@ body{
 
 .title{
   font-size:4rem;
-  font-weight: lighter;
-  position: absolute;
-  top: 10vh;
-  left:14vw;
+  font-weight: 100;
   letter-spacing: -1px;
   color:white;
 
@@ -52,6 +49,13 @@ body{
 
   font-family: "Helvetica", sans-serif;
 
+
+  width:100%;
+  text-align: center;
+  left:0 !important;
+  top:10vh;
+  justify-self: center;
+  position: fixed;
 }
 
 
@@ -100,15 +104,6 @@ body{
 
 @media(max-width: 864px) {
 
-
-  .title{
-    width:100%;
-    text-align: center;
-    left:0 !important;
-    top:10vh;
-    justify-self: center;
-    position: fixed;
-  }
 
   #mainTrack{
     top:40%;

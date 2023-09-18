@@ -6,6 +6,7 @@ function App() {
 
     useEffect(()=>{
         console.log("test");
+        document.getElementById('coverStuff').style.color='whitesmoke';
     },[]);
 
 
@@ -21,7 +22,11 @@ function App() {
   return (
     <div className="App" onClick={()=>handleEnterCarousel()} onTouchEnd={()=>handleEnterCarousel()}>
         <div id="initialCover">
-            
+            <div id = "coverStuff">
+                <h1 id = "tutorial1">Click and drag to browse locations<br/><br/>Click on an image for more information</h1>
+                <h3 id = "tutorial2">Click anywhere to continue...</h3>
+            </div>
+
         </div>
         <Carousel/>
         <span id = "pointer"></span>

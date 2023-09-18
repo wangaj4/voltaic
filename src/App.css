@@ -43,6 +43,25 @@
   transition: opacity 0.6s ease-in;
 }
 
+#coverStuff{
+  color:transparent;
+  transition: color 1s ease-in;
+}
+
+#tutorial1{
+  font-weight: 100;
+  margin-top:22vh;
+  margin-left:3rem;
+  margin-right:3rem;
+}
+
+
+
+#tutorial2{
+  font-weight: 100;
+  margin-top:30vh;
+}
+
 .loadingImages{
   display: none;
 }

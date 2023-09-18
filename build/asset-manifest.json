@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.8351f89a.css",
-    "main.js": "/static/js/main.6cb73f9d.js",
+    "main.css": "/static/css/main.37f05aa5.css",
+    "main.js": "/static/js/main.677a3dcb.js",
     "static/js/787.c4c2a9e7.chunk.js": "/static/js/787.c4c2a9e7.chunk.js",
     "static/media/victoria4.jpg": "/static/media/victoria4.638416b5592d7ec1161f.jpg",
-    "static/media/amazonRainforest.jpg": "/static/media/amazonRainforest.f6af9eac7b01231a088a.jpg",
     "static/media/macchuPichu.jpg": "/static/media/macchuPichu.32ec1b3d5a4820c7d93d.jpg",
     "static/media/grandCanyon.jpg": "/static/media/grandCanyon.1a115901854cc68479ed.jpg",
+    "static/media/amazonRainforest.jpg": "/static/media/amazonRainforest.07643d1f9da82ac8686c.jpg",
     "static/media/santorini.jpg": "/static/media/santorini.d100ea3d91c3ae62f437.jpg",
     "static/media/amazonTip.jpg": "/static/media/amazonTip.1e4a939a08029e201e3b.jpg",
     "static/media/haLongBayTip.jpg": "/static/media/haLongBayTip.06f506d08a6a8a1c162d.jpg",
@@ -21,7 +21,6 @@
     "static/media/victoriaTip.jpg": "/static/media/victoriaTip.5e0c929346311fc168a9.jpg",
     "static/media/grandCanyonTip.jpg": "/static/media/grandCanyonTip.1ff3b3114231b275e8ca.jpg",
     "static/media/northernLights-min.jpg": "/static/media/northernLights-min.58bea57751862566c47c.jpg",
-    "static/media/santorini-min.jpg": "/static/media/santorini-min.78127e8c0ed566e4d6d5.jpg",
     "static/media/amazonRainforestDescription.jpg": "/static/media/amazonRainforestDescription.d3a3bf34bf97e4343b70.jpg",
     "static/media/victoria3.jpg": "/static/media/victoria3.d49e92d09ccb58290e47.jpg",
     "static/media/canyon1.jpg": "/static/media/canyon1.b42d66bdd1b79d5c00ab.jpg",
@@ -36,7 +35,6 @@
     "static/media/grandCanyonDescription.jpg": "/static/media/grandCanyonDescription.0616d7963e591f4c1583.jpg",
     "static/media/auroraBorealisTip.jpg": "/static/media/auroraBorealisTip.9eeebd1a6d97189d6f27.jpg",
     "static/media/santorini3.jpg": "/static/media/santorini3.9b8704e5bcb930ea1be3.jpg",
-    "static/media/forest4.jpg": "/static/media/forest4.53b0efc80bd6987bb45d.jpg",
     "static/media/victoria1.jpg": "/static/media/victoria1.9a9485fd9b611cd44eb8.jpg",
     "static/media/canyon4.jpg": "/static/media/canyon4.80eb6ced3ac33269e5ea.jpg",
     "static/media/lights2.jpg": "/static/media/lights2.e3193f0a7733f93ea39d.jpg",
@@ -46,6 +44,7 @@
     "static/media/victoria2.jpg": "/static/media/victoria2.85f59b008291eb539eef.jpg",
     "static/media/santorini4.jpg": "/static/media/santorini4.642771a5620ef5f79845.jpg",
     "static/media/haLongBayDescription.jpg": "/static/media/haLongBayDescription.9826bb874981daf379ef.jpg",
+    "static/media/forest4.jpg": "/static/media/forest4.e76b7fe1303a959ca704.jpg",
     "static/media/machu1.jpg": "/static/media/machu1.73784139a34302049746.jpg",
     "static/media/victoriaFallsDescription.jpg": "/static/media/victoriaFallsDescription.87d9442ad4e160ead697.jpg",
     "static/media/machuPicchuDescription.jpg": "/static/media/machuPicchuDescription.484d604c2b36e9747932.jpg",
@@ -59,12 +58,12 @@
     "static/media/lights3.jpg": "/static/media/lights3.33649a0c26e6355b77f7.jpg",
     "static/media/lights4.jpg": "/static/media/lights4.a756ac374a66d7eef58c.jpg",
     "index.html": "/index.html",
-    "main.8351f89a.css.map": "/static/css/main.8351f89a.css.map",
-    "main.6cb73f9d.js.map": "/static/js/main.6cb73f9d.js.map",
+    "main.37f05aa5.css.map": "/static/css/main.37f05aa5.css.map",
+    "main.677a3dcb.js.map": "/static/js/main.677a3dcb.js.map",
     "787.c4c2a9e7.chunk.js.map": "/static/js/787.c4c2a9e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8351f89a.css",
-    "static/js/main.6cb73f9d.js"
+    "static/css/main.37f05aa5.css",
+    "static/js/main.677a3dcb.js"
   ]
 }
