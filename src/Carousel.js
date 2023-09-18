@@ -14,7 +14,7 @@ import grandCanyonMin from './img/min/grandCanyon-min.jpg'
 import haLongBayMin from './img/haLongBay.jpg'
 import machuPicchuMin from './img/min/machuPicchu-min.jpg'
 import northernLightsMin from './img/min/northernLights-min.jpg'
-import santoriniMin from './img/min/santorini-min.jpg'
+import santoriniMin from './img/santorini.jpg'
 import victoriaFallsMin from './img/min/victoriaFalls-min.jpg'
 
 
@@ -256,7 +256,7 @@ function Carousel() {
             
             <div className="title"></div>
             {showLocation && (
-                <Location index = {clickedIndex} country = {countries[clickedIndex]} name = {displayNames[clickedIndex]} sendData = {receiveDataFromChild} initialX={imageX} initialY={imageY} initialWidth = {40} initialHeight = {56} initialPos = {imagePos} image={images[clickedIndex]} />
+                <Location index = {clickedIndex} country = {countries[clickedIndex]} name = {displayNames[clickedIndex]} sendData = {receiveDataFromChild} initialX={imageX} initialY={imageY} initialWidth = {40} initialHeight = {56} initialPos = {imagePos} image={imagesMin[clickedIndex]} />
             )}
             
             
