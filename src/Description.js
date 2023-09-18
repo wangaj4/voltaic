@@ -169,9 +169,9 @@ function Description(props) {
 
         const parallaxPos = yOffset * 0.3 + 50;
 
-        if (parallaxImage.style.backgroundAttachment != 'fixed') {
-            parallaxImage.style.backgroundPositionY = `${parallaxPos}%`;
-        }
+        // if (parallaxImage.style.backgroundAttachment != 'fixed') {
+        //     parallaxImage.style.backgroundPositionY = `${parallaxPos}%`;
+        // }
 
 
         if(scroll === null) scroll = document.querySelector('.scroll');
