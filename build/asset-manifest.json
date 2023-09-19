@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.140a1bbe.css",
-    "main.js": "/static/js/main.12e46e89.js",
+    "main.css": "/static/css/main.f6ad847d.css",
+    "main.js": "/static/js/main.551b97fd.js",
     "static/js/787.c4c2a9e7.chunk.js": "/static/js/787.c4c2a9e7.chunk.js",
     "static/media/victoria4.jpg": "/static/media/victoria4.638416b5592d7ec1161f.jpg",
     "static/media/macchuPichu.jpg": "/static/media/macchuPichu.32ec1b3d5a4820c7d93d.jpg",
     "static/media/grandCanyon.jpg": "/static/media/grandCanyon.1a115901854cc68479ed.jpg",
+    "static/media/amazonRainforest-min.jpg": "/static/media/amazonRainforest-min.a321e3d2e5a89846793f.jpg",
+    "static/media/grandCanyon-min.jpg": "/static/media/grandCanyon-min.5afe9b288eaf8e308cf5.jpg",
     "static/media/amazonRainforest.jpg": "/static/media/amazonRainforest.07643d1f9da82ac8686c.jpg",
     "static/media/santorini.jpg": "/static/media/santorini.d100ea3d91c3ae62f437.jpg",
     "static/media/amazonTip.jpg": "/static/media/amazonTip.1e4a939a08029e201e3b.jpg",
     "static/media/haLongBayTip.jpg": "/static/media/haLongBayTip.06f506d08a6a8a1c162d.jpg",
-    "static/media/grandCanyon-min.jpg": "/static/media/grandCanyon-min.f4db5421ee1d9343e64f.jpg",
     "static/media/machuPicchuTip.jpg": "/static/media/machuPicchuTip.b9eb07dbbb9248a48e6a.jpg",
     "static/media/machuPicchu-min.jpg": "/static/media/machuPicchu-min.3b8f9ed76ce5c2c30b01.jpg",
     "static/media/victoriaFalls.jpg": "/static/media/victoriaFalls.b688450b371ccd0de161.jpg",
     "static/media/haLongBay.jpg": "/static/media/haLongBay.2538cd23c06a1095c715.jpg",
-    "static/media/amazonRainforest-min.jpg": "/static/media/amazonRainforest-min.ca5bd25d386c74532744.jpg",
     "static/media/santoriniTip.jpg": "/static/media/santoriniTip.ae7e98ec8ec985ab5589.jpg",
     "static/media/northernLights.jpg": "/static/media/northernLights.cacdd3d67e5511a4e83a.jpg",
     "static/media/victoriaTip.jpg": "/static/media/victoriaTip.5e0c929346311fc168a9.jpg",
@@ -58,12 +58,12 @@
     "static/media/lights3.jpg": "/static/media/lights3.33649a0c26e6355b77f7.jpg",
     "static/media/lights4.jpg": "/static/media/lights4.a756ac374a66d7eef58c.jpg",
     "index.html": "/index.html",
-    "main.140a1bbe.css.map": "/static/css/main.140a1bbe.css.map",
-    "main.12e46e89.js.map": "/static/js/main.12e46e89.js.map",
+    "main.f6ad847d.css.map": "/static/css/main.f6ad847d.css.map",
+    "main.551b97fd.js.map": "/static/js/main.551b97fd.js.map",
     "787.c4c2a9e7.chunk.js.map": "/static/js/787.c4c2a9e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.140a1bbe.css",
-    "static/js/main.12e46e89.js"
+    "static/css/main.f6ad847d.css",
+    "static/js/main.551b97fd.js"
   ]
 }
