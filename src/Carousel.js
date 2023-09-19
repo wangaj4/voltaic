@@ -245,13 +245,13 @@ function Carousel() {
             onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp}>
             <div className="backgroundBlurred"/>
             <div id = "mainTrack">
-                <img className="carouselImage" src = {grandCanyonMin} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(0)}/>
-                <img className="carouselImage" src ={haLongBayMin} alt = "" draggable= "false" onMouseUp={() => handleImageEntry(1)}/>
-                <img className="carouselImage" src ={northernLightsMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(2)}/>
-                <img className="carouselImage" src ={santoriniMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(3)}/>
-                <img className="carouselImage" src ={machuPicchuMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(4)}/>
-                <img className="carouselImage" src ={amazonRainforestMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(5)}/>
-                <img className="carouselImage" src ={victoriaFallsMin} alt = "" draggable= "false"onMouseUp={() => handleImageEntry(6)}/>
+                <img className="carouselImage" src = {grandCanyonMin} alt = "Grand Canyon" draggable= "false" onMouseUp={() => handleImageEntry(0)}/>
+                <img className="carouselImage" src ={haLongBayMin} alt = "Ha Long Bay" draggable= "false" onMouseUp={() => handleImageEntry(1)}/>
+                <img className="carouselImage" src ={northernLightsMin} alt = "Northern Lights" draggable= "false"onMouseUp={() => handleImageEntry(2)}/>
+                <img className="carouselImage" src ={santoriniMin} alt = "Santorini" draggable= "false"onMouseUp={() => handleImageEntry(3)}/>
+                <img className="carouselImage" src ={machuPicchuMin} alt = "Machu Picchu" draggable= "false"onMouseUp={() => handleImageEntry(4)}/>
+                <img className="carouselImage" src ={amazonRainforestMin} alt = "Amazon Rainforest" draggable= "false"onMouseUp={() => handleImageEntry(5)}/>
+                <img className="carouselImage" src ={victoriaFallsMin} alt = "Victoria Falls" draggable= "false"onMouseUp={() => handleImageEntry(6)}/>
             </div>
             
             <div className="title"></div>

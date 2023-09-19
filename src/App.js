@@ -25,6 +25,7 @@ function App() {
             <div id = "coverStuff">
                 <h1 id = "tutorial1">Click and drag to browse locations<br/><br/>Click on an image for more information</h1>
                 <h3 id = "tutorial2">Click anywhere to continue...</h3>
+                <h5 id = "tag">Created by Andrew Wang</h5>
             </div>
 
         </div>
