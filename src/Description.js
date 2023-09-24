@@ -136,10 +136,6 @@ function Description(props) {
     const [currentEvent, setCurrentEvent] = useState(0);
 
     const changeTimeline = (i) =>{
-        if(i===currentEvent) return;
-        const newContent = events[props.index][3 * i + 2];
-        setShowNewInfo(false);
-        
         const timeline = document.querySelector('.timeline');
         for(let childIndex = 0;childIndex < timeline.childNodes.length;childIndex++){
             const child = timeline.childNodes[childIndex];
@@ -149,6 +145,11 @@ function Description(props) {
                 child.classList.remove('timelineHighlight');
             }
         }
+        
+        if(i===currentEvent) return;
+        const newContent = events[props.index][3 * i + 2];
+        setShowNewInfo(false);
+        
         
         setTimeout(() => {
             document.getElementById('currentInfo').textContent = newContent;
@@ -240,7 +241,7 @@ function Description(props) {
                 <div className = "timelineContainer" id = "timeline">
                     <div className="timeline">
                         <div className="timelineBar"></div>
-                        <div className="timeline-item">
+                        <div className="timeline-item timelineHighlight">
                             <div className="timeline-circle"></div>
                             <div className="timeline-content" onClick={()=>changeTimeline(0)}>
                                 <h3>{events[props.index][0]}</h3>
