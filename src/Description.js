@@ -136,11 +136,20 @@ function Description(props) {
     const [currentEvent, setCurrentEvent] = useState(0);
 
     const changeTimeline = (i) =>{
-        console.log("changing");
         if(i===currentEvent) return;
         const newContent = events[props.index][3 * i + 2];
         setShowNewInfo(false);
-
+        
+        const timeline = document.querySelector('.timeline');
+        for(let childIndex = 0;childIndex < timeline.childNodes.length;childIndex++){
+            const child = timeline.childNodes[childIndex];
+            if(childIndex===i+1){
+                child.classList.add('timelineHighlight');
+            }else{
+                child.classList.remove('timelineHighlight');
+            }
+        }
+        
         setTimeout(() => {
             document.getElementById('currentInfo').textContent = newContent;
 
@@ -199,7 +208,7 @@ function Description(props) {
                 timelineContents.forEach(element =>{
                     setTimeout(() =>{
                         element.classList.add('reveal');
-                    }, 100 * index);
+                    }, 200 * index);
                     index++;
                     
                 });

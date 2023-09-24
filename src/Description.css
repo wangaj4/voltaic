@@ -123,6 +123,11 @@
 }
 
 
+.timelineHighlight{
+    filter: drop-shadow(0 0 0.3rem rgba(255,255,255,1));
+}
+
+
 
 .timeline-circle {
     width: 1rem;
