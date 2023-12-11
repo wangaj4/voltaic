@@ -159,7 +159,7 @@ function Carousel() {
             if(i>=3) pad = 14*i;
             element.animate(
 
-                { objectPosition: `${100 + pad + offsetX*1.7}% 50%` },
+                { objectPosition: `${100 + pad + offsetX*1.7}%` },
                 { duration: len, fill: 'forwards' }
             );
             i++;
