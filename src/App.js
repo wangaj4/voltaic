@@ -1,39 +1,55 @@
-import './App.css';
-import Carousel from './Carousel';
-import React, { useState, useEffect } from 'react';
+import './main.css';
+
+import Navbar from './Navbar';
+import Bottombar from './Bottombar';
+
+import Home from './Home';
+import Services from './Services';
+
+
+import React, {useState, useEffect, Fragment} from 'react';
 
 function App() {
 
+    const [Page, setPage] = useState(0);
+
     useEffect(()=>{
         console.log("test");
-        document.getElementById('coverStuff').style.color='whitesmoke';
     },[]);
 
 
-    const handleEnterCarousel = ()=> {
-        const cover = document.getElementById('initialCover');
-        cover.style.opacity='0';
-        setTimeout(()=>{
-            cover.style.display='none';
-        },600)
+    const handlePageChange = (data) =>{
+        console.log(data);
+        setPage(data);
     };
-    
 
   return (
-    <div className="App" onClick={()=>handleEnterCarousel()} onTouchEnd={()=>handleEnterCarousel()}>
-        <div id="initialCover">
-            <div id = "coverStuff">
-                <h1 id = "tutorial1">Click and drag to browse locations<br/><br/>Click on an image for more information</h1>
-                <h3 id = "tutorial2">Click anywhere to continue...</h3>
-                <h5 id = "tag">Created by Andrew Wang</h5>
-            </div>
+      <Fragment>
+          <Navbar viewSwapper = {handlePageChange}/>
+          {(Page===0) && (
+            <Home/>
+          )}
+          {(Page===1) && (
+              <Home/>
+          )}
+          {(Page===2) && (
+              <Services/>
+          )}
+          {(Page===3) && (
+              <Home/>
+          )}
+          {(Page===4) && (
+              <Home/>
+          )}
+          
+          <Bottombar/>
+      </Fragment>
 
-        </div>
-        <Carousel/>
-        <span id = "pointer"></span>
-    </div>
+
 
   );
 }
 
 export default App;
+
+

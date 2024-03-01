@@ -1,0 +1,41 @@
+:root{
+    --primary-color: #e9e9e9;
+    --secondary-color: #423f61;
+    --tertiary-color: #55725d;
+    --fourth-color: #8cb27f;
+    --fifth-color: #141c17;
+
+    --text-color1: black;
+    --text-hover1: gray;
+
+    --main-font: "Helvetica Neue";
+
+    --navbar-height:4rem;
+}
+
+@font-face {
+    font-family: acumin;
+    src: url("./fonts/Acumin-RPro.woff");
+}
+
+html{
+    background-color: var(--secondary-color);
+}
+body{
+    background: linear-gradient(var(--primary-color),lightgray);
+    margin:0;
+
+}
+
+.testSpace{
+    min-height:9rem;
+    background-color: var(--secondary-color);
+}
+
+
+.bannerDark{
+    width:100%;
+    background-color: var(--secondary-color);
+    min-height:100rem;
+
+}

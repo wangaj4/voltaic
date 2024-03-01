@@ -1,0 +1,118 @@
+:root{
+    --titleBannerHeight: 40rem;
+}
+
+.titleBanner{
+    width:100%;
+    height: var(--titleBannerHeight);
+    background: url("./img/temporarytitle.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.darkTint{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: var(--titleBannerHeight);
+    background: linear-gradient(to left, transparent,black 95%);
+    opacity: 60%;
+}
+
+.most{
+    flex-basis: 60%;
+}
+
+.titleText{
+    position: relative;
+    margin-top:10%;
+    padding-block: 5%;
+    padding-left:12%;
+    line-height: 110%;
+    font-size:3.5rem;
+    color:white;
+    font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
+    z-index:1;
+
+    right: 3rem;
+    opacity:0;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
+    transition-duration: 0.6s;
+
+}
+
+.titleText.entry{
+    right:0;
+    opacity:1;
+}
+
+
+.subText{
+    position: relative;
+    padding-left:12%;
+    line-height: 150%;
+    font-size:1.15rem;
+    color:white;
+    font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
+    z-index:1;
+}
+
+.button{
+    position: relative;
+    margin: 3% 12%;
+    padding:1rem;
+    text-align:center;
+    display: inline-block;
+    background-color: var(--fourth-color);
+    color: whitesmoke;
+    font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.4);
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--tertiary-color);
+}
+
+
+.contentBanner{
+    background: linear-gradient(to center, lightgray,var(--primary-color) 25%);
+    width:100%;
+    min-height:20rem;
+}
+
+.centerText{
+    text-align: center;
+    padding:10%;
+    padding-top:7%;
+    position: relative;
+    font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
+    font-size:1.5rem;
+    line-height:1.5;
+}
+
+.hidden{
+    opacity:0;
+    top:3rem;
+    transition: 0.5s ease-in-out;
+}
+
+.appear{
+    opacity:1;
+    top:0;
+}
+
+
+
+
+
+
+
