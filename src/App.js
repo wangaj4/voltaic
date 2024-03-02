@@ -13,11 +13,6 @@ function App() {
 
     const [Page, setPage] = useState(0);
 
-    useEffect(()=>{
-        console.log("test");
-    },[]);
-
-
     const handlePageChange = (data) =>{
         console.log(data);
         setPage(data);
