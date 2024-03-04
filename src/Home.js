@@ -47,6 +47,7 @@ function Home() {
                 <div className={"centerHeader"}>
                     WHAT WE DO
                 </div>
+                <div className={"separateBar"}/>
                 <div className={"centerText hidden"} id = "mainDescription">
                     Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -84,15 +85,40 @@ function Home() {
 
             <div className={"spacer2"}/>
             <div className={"spacer"}>
-                <div className={"centerHeader"}>Our Team</div>
+                <div className={"centerHeader"}>Who We Are</div>
             </div>
 
             <div className={"flexBanner"}>
                 <div className={"sixty"}>
-                    <div className={"centerHeader"}>Dr. Ula</div>
+                    <div className={"centerHeader"}>Experience</div>
+                    <div className={"separateBar"}/>
+                    <div className={"centerText hiddenLeft"} id = "team1">
+                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br/><br/>
+                    </div>
                 </div>
                 <div className={"forty"}>
                     <div className={"teamImage"}/>
+                </div>
+            </div>
+
+            <div className={"flexBanner"}>
+                <div className={"forty"}>
+                    <div className={"teamImage"}/>
+                </div>
+                <div className={"sixty"}>
+                    <div className={"centerHeader"}>Talent</div>
+                    <div className={"separateBar"}/>
+                    <div className={"centerText hiddenRight"} id = "team2">
+                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br/><br/>
+                    </div>
                 </div>
             </div>
 
@@ -118,12 +144,22 @@ function homeTransitions() {
     if (document.documentElement.scrollTop > 1100){
         var items = document.getElementsByClassName("item");
         for(let i = 0;i < items.length;i++){
-            console.log("xd");
             setTimeout(()=>{
                 items[i].classList.add("appear");
             },i*200);
 
         }
     }
+
+    if (document.documentElement.scrollTop > 1900){
+        var team1 = document.getElementById("team1");
+        team1.classList.add("appearLeft");
+    }
+
+    if (document.documentElement.scrollTop > 2400){
+        var team2 = document.getElementById("team2");
+        team2.classList.add("appearRight");
+    }
+
 }
 

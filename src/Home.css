@@ -122,7 +122,6 @@
     padding-top:5%;
     font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
     font-size:2rem;
-    font-weight: bolder;
 }
 
 .centerText{
@@ -132,6 +131,7 @@
     font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
     font-size:1.5rem;
     line-height:1.5;
+    font-weight:lighter;
 }
 
 .hidden{
@@ -143,9 +143,37 @@
     transition-duration: 1.1s;
 }
 
+.hiddenLeft{
+    opacity:0;
+    left:3rem;
+    position: relative;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
+    transition-duration: 1.1s;
+}
+
+.hiddenRight{
+    opacity:0;
+    right:3rem;
+    position: relative;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
+    transition-duration: 1.1s;
+}
+
 .appear{
     opacity:1;
     top:0;
+}
+
+.appearRight{
+    right:0;
+    opacity:1;
+}
+
+.appearLeft{
+    opacity:1;
+    left:0;
 }
 
 
@@ -258,13 +286,15 @@
 
 
 .teamImage{
-    height:15rem;
-    width:20rem;
-    background-size: cover !important;
-    display: inline-flex;
-    cursor: pointer;
-    border-radius: 5px;
-    background: url("./img/temporarytitle.jpg");
+    height:100%;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-block:2%;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background: url("./img/ucr.jpeg");
 }
 
 
