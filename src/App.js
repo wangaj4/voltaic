@@ -11,29 +11,34 @@ import React, {useState, useEffect, Fragment} from 'react';
 
 function App() {
 
-    const [Page, setPage] = useState(0);
+    const [Page, setPage] = useState("home");
 
     const handlePageChange = (data) =>{
         console.log(data);
+
+        window.scrollTo({
+            top:0,
+            behavior: "instant"
+        });
         setPage(data);
     };
 
   return (
       <Fragment>
           <Navbar viewSwapper = {handlePageChange}/>
-          {(Page===0) && (
+          {(Page==="home") && (
             <Home/>
           )}
-          {(Page===1) && (
+          {(Page==="about") && (
               <Home/>
           )}
-          {(Page===2) && (
+          {(Page==="services") && (
               <Services/>
           )}
-          {(Page===3) && (
+          {(Page==="portfolio") && (
               <Home/>
           )}
-          {(Page===4) && (
+          {(Page==="media") && (
               <Home/>
           )}
           

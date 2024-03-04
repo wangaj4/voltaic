@@ -11,13 +11,13 @@ function Navbar(props){
 
     return (
         <div id = "navbarBody">
-            <img src = {templogo} id="logo" onClick={() => navbarHandle(0)}/>
+            <img src = {templogo} id="logo" onClick={() => navbarHandle("home")}/>
             <div id = "linkContainer">
-                <span className = "navbarItem" onClick={() => navbarHandle(1)}>About Us</span>
-                <span className = "navbarItem" onClick={() => navbarHandle(2)}>Our Services</span>
-                <span className = "navbarItem" onClick={() => navbarHandle(3)}>Portfolio</span>
-                <span className = "navbarItem" onClick={() => navbarHandle(4)}>Media</span>
-                <span className = "navbarFocus" onClick={() => navbarHandle(5)}>Contact</span>
+                <span className = "navbarItem" onClick={() => navbarHandle("about")}>About Us</span>
+                <span className = "navbarItem" onClick={() => navbarHandle("services")}>Our Services</span>
+                <span className = "navbarItem" onClick={() => navbarHandle("portfolio")}>Portfolio</span>
+                <span className = "navbarItem" onClick={() => navbarHandle("media")}>Media</span>
+                <span className = "navbarFocus" onClick={() => navbarHandle("contact")}>Contact</span>
             </div>
 
         </div>

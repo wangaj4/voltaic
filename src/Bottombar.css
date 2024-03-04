@@ -2,7 +2,22 @@
 
 #bottomBar{
     width:100%;
-    height: 25rem;
+    height: 10rem;
     background-color: var(--secondary-color);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.45);
+    padding-block:120px;
+    color:var(--primary-color);
+}
+
+.bottomContent{
+    position: relative;
+    width:90%;
+    margin-left: auto;
+    margin-right:auto;
+    display:flex;
+    justify-content: space-around;
+}
+
+.bottomCol{
+
 }

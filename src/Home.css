@@ -19,8 +19,8 @@
     left:0;
     width:100%;
     height: var(--titleBannerHeight);
-    background: linear-gradient(to left, transparent,black 95%);
-    opacity: 60%;
+    background: linear-gradient(to bottom, transparent,black 99%);
+    opacity: 45%;
 }
 
 .most{
@@ -72,8 +72,8 @@
     background-color: var(--fourth-color);
     color: whitesmoke;
     font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
-    border-radius: 10px;
-    box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
     transition: 0.3s all;
     cursor: pointer;
 }
@@ -84,10 +84,36 @@
 
 
 .contentBanner{
-    background: linear-gradient(to center, lightgray,var(--primary-color) 25%);
-    width:100%;
+    background: white;
+    width:80%;
+    margin-inline:10%;
     min-height:20rem;
     text-align: center;
+
+}
+
+.flexBanner{
+    background: white;
+    display: flex;
+    width:80%;
+    padding-inline:10%;
+    margin-block:4rem;
+}
+
+.seventy{
+    flex-basis: 70%;
+}
+
+.thirty{
+    .flex-basis:30%;
+}
+
+.sixty{
+    flex-basis:60%;
+}
+
+.forty{
+    flex-basis: 40%;
 }
 
 
@@ -101,7 +127,7 @@
 
 .centerText{
     text-align: center;
-    padding-inline:10%;
+    padding-inline:20%;
     padding-top:4%;
     font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
     font-size:1.5rem;
@@ -124,20 +150,122 @@
 
 
 .spacer{
-    height:15rem;
+    height:5rem;
+}
+
+.spacer2{
+    height:10rem;
 }
 
 
 .contain{
     display: flex;
     justify-content: space-evenly;
+    padding-block:5rem;
 }
 
 .item{
-    position:relative;
+    height:15rem;
+    width:25%;
+    background-size: cover !important;
+    background-attachment: fixed;
+    display: inline-flex;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.item:hover{
+    top:-1rem;
+}
+
+.image1{
+    background: url("./img/temporarytitle.jpg");
+}
+
+.image2{
+    background: url("./img/temporarytitle.jpg");
+}
+
+.image3{
+    background: url("./img/temporarytitle.jpg");
 }
 
 
+.infoBox{
+    display: inline-flex;
+    position: absolute;
+    width:90%;
+    height:30rem;
+    justify-self: center;
+    background-color: var(--secondary-color);
+    margin-top:-3rem;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
+    transition-duration: 0.6s;
+
+}
+
+.flat{
+    width:0;
+}
+
+.wide{
+    width: 90%;
+}
+
+
+#x{
+    font-weight:400;
+    font-size:3rem;
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+
+    margin:1rem;
+
+    transition:0.2s all;
+
+
+
+}
+
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 6px auto;
+    transition: background-color 0.3s;
+}
+
+#x .bar:nth-child(1){
+    transform:translateY(9px) rotate(45deg);
+}
+
+#x .bar:nth-child(2){
+    transform:rotate(-45deg);
+}
+
+#x:hover .bar{
+    background-color: #aaa;
+}
+
+
+
+
+.teamImage{
+    height:15rem;
+    width:20rem;
+    background-size: cover !important;
+    display: inline-flex;
+    cursor: pointer;
+    border-radius: 5px;
+    background: url("./img/temporarytitle.jpg");
+}
 
 
 
