@@ -14,17 +14,25 @@ function App() {
     const [Page, setPage] = useState("home");
 
     const handlePageChange = (data) =>{
+        if(data===Page){
+            return;
+        }
         console.log(data);
 
-        //document.getElementsByClassName("encompass")[0].classList.add("fade");
-        setPage("");
-        window.scrollTo({
-            top:0,
-            behavior: "instant"
-        });
+        document.getElementsByClassName("encompass")[0].classList.add("fade");
+
+
         setTimeout(()=>{
+            window.scrollTo({
+                top:0,
+                behavior: "instant"
+            });
             setPage(data);
-        },0);
+
+        },300)
+
+
+
 
 
 

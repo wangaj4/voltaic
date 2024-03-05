@@ -56,9 +56,9 @@ body{
 
 .encompass{
     opacity:1;
+    transition: 0.3s opacity;
 }
 
 .fade{
-    transition: 0.1s opacity;
     opacity:0;
 }

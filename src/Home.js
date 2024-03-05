@@ -9,10 +9,13 @@ function Home() {
     
 
     useEffect(()=>{
+
         setTimeout(()=>{
+            document.getElementsByClassName("encompass")[0].classList.remove("fade");
             var title = document.getElementsByClassName("titleText")[0];
             title.classList.add("entry");
         },200);
+
         
     },[]);
 
@@ -29,7 +32,7 @@ function Home() {
     }
     
     return (
-        <div className={"encompass"}>
+        <div className={"encompass fade"}>
 
             <div className={"titleBanner"}>
                 <div className={"darkTint"}/>
