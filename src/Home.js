@@ -20,6 +20,7 @@ function Home() {
         console.log(index);
         document.getElementById("infoBox").classList.add("wide");
         document.getElementById("x").classList.add("appear");
+
     };
 
     const closeInfoBox = () =>{
@@ -28,7 +29,7 @@ function Home() {
     }
     
     return (
-        <div>
+        <div className={"encompass"}>
 
             <div className={"titleBanner"}>
                 <div className={"darkTint"}/>
@@ -85,7 +86,7 @@ function Home() {
 
             <div className={"spacer2"}/>
             <div className={"spacer"}>
-                <div className={"centerHeader"}>Who We Are</div>
+                <div className={"centerHeader"}>WHO WE ARE</div>
             </div>
 
             <div className={"flexBanner"}>
@@ -97,7 +98,11 @@ function Home() {
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        <br/><br/>
+                        <br/>
+                        <div className={"button"}>
+                            Our Story
+                        </div>
+                        <div className={"spacer"}></div>
                     </div>
                 </div>
                 <div className={"forty"}>
@@ -117,7 +122,11 @@ function Home() {
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        <br/><br/>
+                        <br/>
+                        <div className={"button"}>
+                            Our Team
+                        </div>
+                        <div className={"spacer"}></div>
                     </div>
                 </div>
             </div>

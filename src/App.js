@@ -16,11 +16,18 @@ function App() {
     const handlePageChange = (data) =>{
         console.log(data);
 
+        //document.getElementsByClassName("encompass")[0].classList.add("fade");
+        setPage("");
         window.scrollTo({
             top:0,
             behavior: "instant"
         });
-        setPage(data);
+        setTimeout(()=>{
+            setPage(data);
+        },0);
+
+
+
     };
 
   return (

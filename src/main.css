@@ -8,7 +8,7 @@
     --text-color1: black;
     --text-hover1: gray;
 
-    --main-font: "Helvetica Neue";
+    --main-font: DMSans, "Helvetica Neue", acumin, "Times New Roman", sans-serif;;
 
     --navbar-height:4rem;
 }
@@ -16,6 +16,11 @@
 @font-face {
     font-family: acumin;
     src: url("./fonts/Acumin-RPro.woff");
+}
+
+@font-face{
+    font-family:DMSans;
+    src: url("./fonts/DMSans-VariableFont_opsz,wght.ttf");
 }
 
 html{
@@ -47,4 +52,13 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top:2vw;
+}
+
+.encompass{
+    opacity:1;
+}
+
+.fade{
+    transition: 0.1s opacity;
+    opacity:0;
 }

@@ -35,7 +35,7 @@
     line-height: 110%;
     font-size:3.5rem;
     color:white;
-    font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
+    font-family: var(--main-font);
     z-index:1;
 
     right: 3rem;
@@ -59,7 +59,7 @@
     line-height: 150%;
     font-size:1.15rem;
     color:white;
-    font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
+    font-family: "Helvetica Neue", acumin, "Times New Roman", sans-serif;
     z-index:1;
 }
 
@@ -71,11 +71,13 @@
     display: inline-block;
     background-color: var(--fourth-color);
     color: whitesmoke;
-    font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
+    font-family: var(--main-font);
     box-shadow: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     transition: 0.3s all;
     cursor: pointer;
+
+    font-size:1rem;
 }
 
 .button:hover {
@@ -119,8 +121,9 @@
 
 .centerHeader{
     text-align: center;
+    letter-spacing: 0.1rem;
     padding-top:5%;
-    font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
+    font-family: var(--main-font);
     font-size:2rem;
 }
 
@@ -128,10 +131,13 @@
     text-align: center;
     padding-inline:20%;
     padding-top:4%;
-    font-family: acumin, "Times New Roman", "Helvetica Neue", sans-serif;
+    font-family: var(--main-font);
     font-size:1.5rem;
     line-height:1.5;
-    font-weight:lighter;
+}
+
+.leftText{
+    text-align:left;
 }
 
 .hidden{
@@ -290,7 +296,7 @@
     width:90%;
     margin-left:5%;
     margin-right:5%;
-    margin-block:2%;
+    margin-block:5%;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center;
