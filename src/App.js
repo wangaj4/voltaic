@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Bottombar from './Bottombar';
 
 import Home from './Home';
+import About from './About';
 import Services from './Services';
 
 
@@ -17,10 +18,8 @@ function App() {
         if(data===Page){
             return;
         }
-        console.log(data);
 
         document.getElementsByClassName("encompass")[0].classList.add("fade");
-
 
         setTimeout(()=>{
             window.scrollTo({
@@ -42,10 +41,10 @@ function App() {
       <Fragment>
           <Navbar viewSwapper = {handlePageChange}/>
           {(Page==="home") && (
-            <Home/>
+            <Home checkPage ={Page}/>
           )}
           {(Page==="about") && (
-              <Home/>
+              <About/>
           )}
           {(Page==="services") && (
               <Services/>

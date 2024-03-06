@@ -1,0 +1,19 @@
+
+
+.titleBanner2{
+    width:100%;
+    height: var(--titleBannerHeight);
+    background: url("./img/temporarytitle.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerTitle{
+    font-size:5rem;
+    color:white;
+    font-family: var(--main-font);
+    letter-spacing: 0.3rem;
+}

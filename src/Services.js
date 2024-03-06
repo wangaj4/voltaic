@@ -127,31 +127,3 @@ function Services(){
 export default Services;
 
 
-window.addEventListener("scroll",homeTransitions)
-function homeTransitions() {
-    console.log(document.documentElement.scrollTop);
-    if (document.documentElement.scrollTop > 250){
-        document.getElementById("mainDescription").classList.add("appear");
-    }
-
-    if (document.documentElement.scrollTop > 1100){
-        var items = document.getElementsByClassName("item");
-        for(let i = 0;i < items.length;i++){
-            setTimeout(()=>{
-                items[i].classList.add("appear");
-            },i*200);
-
-        }
-    }
-
-    if (document.documentElement.scrollTop > 1900){
-        var team1 = document.getElementById("team1");
-        team1.classList.add("appearLeft");
-    }
-
-    if (document.documentElement.scrollTop > 2400){
-        var team2 = document.getElementById("team2");
-        team2.classList.add("appearRight");
-    }
-
-}

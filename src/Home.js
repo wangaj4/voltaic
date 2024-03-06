@@ -5,18 +5,22 @@ import React, {useState, useEffect, Fragment} from 'react';
 
 import titleImage from './img/temporarytitle.jpg'
 
-function Home() {
+function Home(props) {
     
 
     useEffect(()=>{
 
+        window.addEventListener('scroll',homeTransitions);
         setTimeout(()=>{
             document.getElementsByClassName("encompass")[0].classList.remove("fade");
             var title = document.getElementsByClassName("titleText")[0];
             title.classList.add("entry");
         },200);
 
-        
+        return () => {
+            window.removeEventListener('scroll', homeTransitions);
+        };
+
     },[]);
 
     const openInfoBox = (index) =>{
@@ -30,7 +34,8 @@ function Home() {
         document.getElementById("infoBox").classList.remove("wide");
         document.getElementById("x").classList.remove("appear");
     }
-    
+
+
     return (
         <div className={"encompass fade"}>
 
@@ -141,14 +146,22 @@ function Home() {
 
 
     );
+
+
+
+
+
+
+
+
 }
 
 export default Home;
 
 
-window.addEventListener("scroll",homeTransitions)
+
 function homeTransitions() {
-    console.log(document.documentElement.scrollTop);
+
     if (document.documentElement.scrollTop > 250){
         document.getElementById("mainDescription").classList.add("appear");
     }
@@ -174,4 +187,3 @@ function homeTransitions() {
     }
 
 }
-
