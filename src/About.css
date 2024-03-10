@@ -2,18 +2,25 @@
 
 .titleBanner2{
     width:100%;
-    height: var(--titleBannerHeight);
-    background: url("./img/temporarytitle.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    height: 30rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
 .bannerTitle{
-    font-size:5rem;
-    color:white;
-    font-family: var(--main-font);
+    margin-top:5rem;
+    font-size:3.5rem;
+    color:black;
+    font-family: Helvetica, "Times New Roman", sans-serif;
     letter-spacing: 0.3rem;
+}
+
+.aboutBanner{
+    background: white;
+    width:80%;
+    margin-inline:10%;
+    min-height:20rem;
+    text-align: center;
+    display: flex;
 }

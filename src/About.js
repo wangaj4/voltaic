@@ -23,6 +23,17 @@ function About() {
                     About Us
                 </div>
             </div>
+
+            <div className={"aboutBanner"}>
+                <div className={"sixty"}>
+                    <div className={"centerHeader"}>UC Riverside Local</div>
+                    <div className={"separateBar"}/>
+
+                </div>
+                <div className={"forty"}>
+                    <div className={"teamImage"}/>
+                </div>
+            </div>
         </div>
 
     );
