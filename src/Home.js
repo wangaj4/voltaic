@@ -9,7 +9,10 @@ function Home(props) {
     
 
     useEffect(()=>{
-
+        window.scrollTo({
+            top:0,
+            behavior: "instant"
+        });
         window.addEventListener('scroll',homeTransitions);
         setTimeout(()=>{
             document.getElementsByClassName("encompass")[0].classList.remove("fade");

@@ -1,23 +1,36 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
 import './Navbar.css';
 
 import templogo from './img/templogo.png'
 
 function Navbar(props){
 
-    const navbarHandle = (index) =>{
-        props.viewSwapper(index);
-    };
 
     return (
         <div id = "navbarBody">
-            <img src = {templogo} id="logo" onClick={() => navbarHandle("home")}/>
+            <Nav.Link as = {Link} to = "/">
+                <img src = {templogo} id="logo"/>
+            </Nav.Link>
+
             <div id = "linkContainer">
-                <span className = "navbarItem" onClick={() => navbarHandle("about")}>About Us</span>
-                <span className = "navbarItem" onClick={() => navbarHandle("services")}>Our Services</span>
-                <span className = "navbarItem" onClick={() => navbarHandle("portfolio")}>Portfolio</span>
-                <span className = "navbarItem" onClick={() => navbarHandle("media")}>Media</span>
-                <span className = "navbarFocus" onClick={() => navbarHandle("contact")}>Contact</span>
+                <Nav.Link as = {Link} to = "/about" className = "navbarItem">
+                    About Us
+                </Nav.Link>
+                <Nav.Link as = {Link} to = "/services" className = "navbarItem">
+                    Services
+                </Nav.Link>
+                <Nav.Link as = {Link} to = "/about" className = "navbarItem">
+                    Portfolio
+                </Nav.Link>
+                <Nav.Link as = {Link} to = "/about" className = "navbarItem">
+                    Media
+                </Nav.Link>
+                <Nav.Link as = {Link} to = "/about" className = "navbarFocus">
+                    Contact
+                </Nav.Link>
+
             </div>
 
         </div>

@@ -9,10 +9,18 @@ function About() {
 
 
     useEffect(()=>{
-
+        window.scrollTo({
+            top:0,
+            behavior: "instant"
+        });
+        window.addEventListener('scroll',aboutTransitions);
         setTimeout(()=>{
             document.getElementsByClassName("encompass")[0].classList.remove("fade");
         },200);
+
+        return () => {
+            window.removeEventListener('scroll', aboutTransitions);
+        };
 
 
     },[]);
