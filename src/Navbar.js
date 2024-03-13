@@ -21,13 +21,13 @@ function Navbar(props){
                 <Nav.Link as = {Link} to = "/services" className = "navbarItem">
                     Services
                 </Nav.Link>
-                <Nav.Link as = {Link} to = "/about" className = "navbarItem">
+                <Nav.Link as = {Link} to = "/portfolio" className = "navbarItem">
                     Portfolio
                 </Nav.Link>
-                <Nav.Link as = {Link} to = "/about" className = "navbarItem">
+                <Nav.Link as = {Link} to = "/media" className = "navbarItem">
                     Media
                 </Nav.Link>
-                <Nav.Link as = {Link} to = "/about" className = "navbarFocus">
+                <Nav.Link as = {Link} to = "/contact" className = "navbarFocus">
                     Contact
                 </Nav.Link>
 

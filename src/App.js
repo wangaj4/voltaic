@@ -17,54 +17,17 @@ import { Link } from 'react-router-dom';
 
 function App() {
 
-    const [Page, setPage] = useState("home");
-
-    const handlePageChange = (data) =>{
-        if(data===Page){
-            return;
-        }
-
-        document.getElementsByClassName("encompass")[0].classList.add("fade");
-
-        setTimeout(()=>{
-            window.scrollTo({
-                top:0,
-                behavior: "instant"
-            });
-            setPage(data);
-
-        },300)
-
-
-
-
-
-
-    };
-
   return (
       <Router>
-          <Navbar viewSwapper = {handlePageChange}/>
+          <Navbar/>
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/portfolio" element={<About />} />
+              <Route path="/media" element={<About />} />
+              <Route path="/contact" element={<About />} />
           </Routes>
-          {/*{(Page==="home") && (*/}
-          {/*  <Home checkPage ={Page}/>*/}
-          {/*)}*/}
-          {/*{(Page==="about") && (*/}
-          {/*    <About/>*/}
-          {/*)}*/}
-          {/*{(Page==="services") && (*/}
-          {/*    <Services/>*/}
-          {/*)}*/}
-          {/*{(Page==="portfolio") && (*/}
-          {/*    <Home/>*/}
-          {/*)}*/}
-          {/*{(Page==="media") && (*/}
-          {/*    <Home/>*/}
-          {/*)}*/}
           
           <Bottombar/>
       </Router>
