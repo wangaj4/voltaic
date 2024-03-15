@@ -96,10 +96,8 @@ function Home(props) {
             </div>
 
             <div className={"spacer2"}/>
-            <div className={"spacer"}>
-                <div className={"centerHeader"}>WHO WE ARE</div>
-            </div>
-
+            <div className={"centerHeader"}>WHO WE ARE</div>
+            <div className={"spacer"}/>
             <div className={"flexBanner"}>
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Experience</div>
@@ -165,11 +163,11 @@ export default Home;
 
 function homeTransitions() {
 
-    if (document.documentElement.scrollTop > 250){
+    if (document.documentElement.scrollTop > 200){
         document.getElementById("mainDescription").classList.add("appear");
     }
 
-    if (document.documentElement.scrollTop > 1100){
+    if (document.documentElement.scrollTop > 900){
         var items = document.getElementsByClassName("item");
         for(let i = 0;i < items.length;i++){
             setTimeout(()=>{
@@ -179,12 +177,12 @@ function homeTransitions() {
         }
     }
 
-    if (document.documentElement.scrollTop > 1900){
+    if (document.documentElement.scrollTop > 1800){
         var team1 = document.getElementById("team1");
         team1.classList.add("appearLeft");
     }
 
-    if (document.documentElement.scrollTop > 2400){
+    if (document.documentElement.scrollTop > 2200){
         var team2 = document.getElementById("team2");
         team2.classList.add("appearRight");
     }
