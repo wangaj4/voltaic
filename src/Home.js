@@ -97,7 +97,8 @@ function Home(props) {
 
             <div className={"spacer2"}/>
             <div className={"centerHeader"}>WHO WE ARE</div>
-            <div className={"spacer"}/>
+
+
             <div className={"flexBanner"}>
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Experience</div>
@@ -163,7 +164,7 @@ export default Home;
 
 function homeTransitions() {
 
-    if (document.documentElement.scrollTop > 200){
+    if (document.documentElement.scrollTop > 150){
         document.getElementById("mainDescription").classList.add("appear");
     }
 
@@ -177,12 +178,12 @@ function homeTransitions() {
         }
     }
 
-    if (document.documentElement.scrollTop > 1800){
+    if (document.documentElement.scrollTop > 1700){
         var team1 = document.getElementById("team1");
         team1.classList.add("appearLeft");
     }
 
-    if (document.documentElement.scrollTop > 2200){
+    if (document.documentElement.scrollTop > 2000){
         var team2 = document.getElementById("team2");
         team2.classList.add("appearRight");
     }

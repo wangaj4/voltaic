@@ -34,14 +34,20 @@ function About() {
 
             <div className={"aboutBanner"}>
                 <div className={"sixty"}>
-                    <div className={"centerHeader"}>UC Riverside Local</div>
+                    <div className={"centerHeader"}>UC Riverside</div>
                     <div className={"separateBar"}/>
+                    <div className={"centerText"}>
+                        Our company originates from a team working directly under the University of California Riverside, personally trained by Dr Sadrul Ula, 
+                        Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering - Center for Environmental Research and Technology.
+                    </div>
+                    <div className='spacer'/>
 
                 </div>
                 <div className={"forty"}>
                     <div className={"teamImage"}/>
                 </div>
             </div>
+            <div className='spacer2'/>
         </div>
 
     );
