@@ -3,13 +3,20 @@ import './About.css';
 
 import React, {useState, useEffect, Fragment} from 'react';
 
-import titleImage from './img/temporarytitle.jpg'
+import profile1 from './img/temppro.png';
+import profile2 from './img/temppro.png';
+import profile3 from './img/temppro.png';
 
 const events = ["Data Collection", "Your water data", "Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "Analysis","Detecting inefficiencies","Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "Presentation","Fixing the problem","Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."]
 
+const names = ["Saqif Ushyair", "Jeffrey Yan", "Andrew Wang"]
+const descriptions = ["Saqif Our company originates from a team working directly under the University of California Riverside, personally led by Dr Sadrul Ula, Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering.", 
+                "Jeffrey Our company originates from a team working directly under the University of California Riverside, personally led by Dr Sadrul Ula, Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering.", 
+                "Andrew Our company originates from a team working directly under the University of California Riverside, personally led by Dr Sadrul Ula, Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering."]
 
+const pics = [profile1,profile2,profile3];
 
 function About() {
 
@@ -62,6 +69,32 @@ function About() {
 
     };
 
+
+    const [profileIndex,setProfileIndex] = useState(0)
+
+    const changeProfile = (i) =>{
+        
+        let nav = document.getElementById("carouselNav");
+        let wrapper = document.getElementById("carouselWrapper");
+        
+        for(let x=0;x<nav.children.length;x++){
+            if(i===x){
+                nav.children[x].classList.add("highlight");
+                wrapper.classList.add("fade");
+                setTimeout(() => {
+                    setProfileIndex(i);
+                    wrapper.classList.remove("fade");
+                    
+                }, 220);
+            }else{
+                nav.children[x].classList.remove("highlight");
+                
+            }
+        }
+
+        
+    };
+
     return (
         <div className={"encompass fade"}>
             <div className={"titleBanner2"}>
@@ -75,7 +108,7 @@ function About() {
                     <div className={"centerHeader"}>UC Riverside</div>
                     <div className={"separateBar"}/>
                     <div className={"centerText"}>
-                        Our company originates from a team working directly under the University of California Riverside, personally trained by Dr Sadrul Ula, 
+                        Our company originates from a team working directly under the University of California Riverside, personally led by Dr Sadrul Ula, 
                         Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering.
                         <br/><br/>
                         Under the University's programs, we have already served various water districts across Southern California, allowing them to operate under more efficient conditions and scheduling.
@@ -132,6 +165,31 @@ function About() {
 
             <div className={"centerHeader"}>OUR LEADERSHIP</div>
             <div className={"separateBar"}/>
+            <div className='carouselContainer'>
+                <div id='carouselNav'>
+                        <div className='carouselNavSection highlight' onClick = {()=>changeProfile(0)}>{names[0]}</div>
+                        <div className='carouselNavSection' onClick = {()=>changeProfile(1)}>{names[1]}</div>
+                        <div className='carouselNavSection' onClick = {()=>changeProfile(2)}>{names[2]}</div>
+                </div>
+                <div className = "carousel">
+                    <div id = "carouselWrapper">
+                        <div className={"forty center"}>
+                                <img id={"profileImage"} src = {pics[profileIndex]}/>
+                        </div>
+                        <div className={"sixty"}>
+                            <div className={"centerHeader"}>{names[profileIndex]}</div>
+                            <div className={"separateBar"}/>
+                            <div className={"centerText"}>
+                                <p>{descriptions[profileIndex]}</p>
+                            </div>
+                            <div className='spacer'/>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
 
             <div className='spacer2'/>
         </div>
@@ -142,7 +200,7 @@ function About() {
 
 
     function aboutTransitions() {
-        if (document.documentElement.scrollTop > 500){
+        if (document.documentElement.scrollTop > 650){
             document.getElementById('timeline').classList.add('reveal2');
             setTimeout(() => {
                 document.getElementById('cultureInfo').classList.add('reveal2');

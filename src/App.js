@@ -15,9 +15,20 @@ import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
 
+    useEffect(()=>{
+        AOS.init()
+    },[]);
+
   return (
+    <Fragment>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
+        
       <Router>
           <Navbar/>
           <Routes>
@@ -31,6 +42,7 @@ function App() {
           
           <Bottombar/>
       </Router>
+      </Fragment>
 
 
 

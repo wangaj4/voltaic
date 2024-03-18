@@ -6,6 +6,10 @@ import React, {useState, useEffect, Fragment} from 'react';
 function Services(){
 
     useEffect(()=>{
+        window.scrollTo({
+            top:0,
+            behavior: "instant"
+        });
         setTimeout(()=>{
             document.getElementsByClassName("encompass")[0].classList.remove("fade");
             var title = document.getElementsByClassName("titleText")[0];
@@ -33,7 +37,7 @@ function Services(){
                     WHAT WE DO
                 </div>
                 <div className={"separateBar"}/>
-                <div className={"centerText hidden"} id = "mainDescription">
+                <div className={"centerText"} id = "mainDescription">
                     Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
@@ -54,10 +58,10 @@ function Services(){
                 <div className={"centerHeader"}>
                     SOME OF OUR WORK
                 </div>
-                <div className={"contain"}>
-                    <div className={"item hidden image1"}></div>
-                    <div className={"item hidden image2"}></div>
-                    <div className={"item hidden image3"}></div>
+                <div className={"contain"} data-aos="fade-up">
+                    <div className={"item image1"}></div>
+                    <div className={"item image2"}></div>
+                    <div className={"item image3"}></div>
 
                     <div className={"infoBox flat"} id={"infoBox"}>
                         <div id={"x"} className={"hidden"}>

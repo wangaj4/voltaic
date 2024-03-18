@@ -164,3 +164,76 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
+
+
+.carouselContainer{
+    width:100%;
+    justify-items: center;
+    min-height:15rem;
+
+}
+
+#carouselNav{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width:60%;
+    height:13rem;
+    text-align: center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1.2rem;
+    font-family: var(--main-font);
+}
+
+.carouselNavSection{
+    transition: 0.2s all;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.highlight{
+    color: var(--fourth-color);
+}
+
+.carouselNavSection:hover{
+    color: var(--fourth-color);
+}
+
+
+.carousel{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    min-height:40rem;
+    background-color: var(--primary-color);
+    margin-inline:10%;
+}
+
+#carouselWrapper{
+    width:80%;
+    display:flex;
+    position:absolute;
+    transition: 0.2s all;
+}
+
+.fade{
+    opacity:0;
+}
+
+.center{
+    justify-content: center;
+    display:flex;
+}
+
+#profileImage{
+    max-height:70%;
+    max-width:80%;
+    margin-left:10rem;
+    margin-block:5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}

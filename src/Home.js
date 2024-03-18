@@ -60,7 +60,7 @@ function Home(props) {
                     WHAT WE DO
                 </div>
                 <div className={"separateBar"}/>
-                <div className={"centerText hidden"} id = "mainDescription">
+                <div className={"centerText"} id = "mainDescription" data-aos="fade-up">
                     Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
@@ -103,7 +103,7 @@ function Home(props) {
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Experience</div>
                     <div className={"separateBar"}/>
-                    <div className={"centerText hiddenLeft"} id = "team1">
+                    <div className={"centerText"} id = "team1" data-aos = "fade-left">
                         Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
@@ -127,7 +127,7 @@ function Home(props) {
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Talent</div>
                     <div className={"separateBar"}/>
-                    <div className={"centerText hiddenRight"} id = "team2">
+                    <div className={"centerText"} id = "team2" data-aos = "fade-right">
                         Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
@@ -164,10 +164,6 @@ export default Home;
 
 function homeTransitions() {
 
-    if (document.documentElement.scrollTop > 150){
-        document.getElementById("mainDescription").classList.add("appear");
-    }
-
     if (document.documentElement.scrollTop > 900){
         var items = document.getElementsByClassName("item");
         for(let i = 0;i < items.length;i++){
@@ -178,14 +174,14 @@ function homeTransitions() {
         }
     }
 
-    if (document.documentElement.scrollTop > 1700){
-        var team1 = document.getElementById("team1");
-        team1.classList.add("appearLeft");
-    }
+    // if (document.documentElement.scrollTop > 1700){
+    //     var team1 = document.getElementById("team1");
+    //     team1.classList.add("appearLeft");
+    // }
 
-    if (document.documentElement.scrollTop > 2000){
-        var team2 = document.getElementById("team2");
-        team2.classList.add("appearRight");
-    }
+    // if (document.documentElement.scrollTop > 2000){
+    //     var team2 = document.getElementById("team2");
+    //     team2.classList.add("appearRight");
+    // }
 
 }
