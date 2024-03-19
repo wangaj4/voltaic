@@ -19,13 +19,10 @@ function Navbar(props){
                     About Us
                 </Nav.Link>
                 <Nav.Link as = {Link} to = "/services" className = "navbarItem">
-                    Services
+                    Our Services
                 </Nav.Link>
                 <Nav.Link as = {Link} to = "/portfolio" className = "navbarItem">
                     Portfolio
-                </Nav.Link>
-                <Nav.Link as = {Link} to = "/media" className = "navbarItem">
-                    Media
                 </Nav.Link>
                 <Nav.Link as = {Link} to = "/contact" className = "navbarFocus">
                     Contact

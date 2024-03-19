@@ -1,7 +1,9 @@
 import './main.css';
 import './About.css';
 
-import React, {useState, useEffect, Fragment} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
+
+import { useLocation } from 'react-router-dom';
 
 import profile1 from './img/temppro.png';
 import profile2 from './img/temppro.png';
@@ -20,12 +22,17 @@ const pics = [profile1,profile2,profile3];
 
 function About() {
 
-
+    const scrollToRef = useRef(null);
+    const location = useLocation();
     useEffect(()=>{
         window.scrollTo({
             top:0,
             behavior: "instant"
         });
+        if (scrollToRef.current && location.hash === '#team') {
+            scrollToRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+
         window.addEventListener('scroll',aboutTransitions);
         setTimeout(()=>{
             document.getElementsByClassName("encompass")[0].classList.remove("fade");
@@ -98,7 +105,7 @@ function About() {
     return (
         <div className={"encompass fade"}>
             <div className={"titleBanner2"}>
-                <div className={"bannerTitle"}>
+                <div className={"bannerTitle"} data-aos = "fade-up" data-aos-duration="800">
                     About Us
                 </div>
             </div>
@@ -108,7 +115,7 @@ function About() {
                     <div className={"centerHeader"}>UC Riverside</div>
                     <div className={"separateBar"}/>
                     <div className={"centerText"}>
-                        Our company originates from a team working directly under the University of California Riverside, personally led by Dr Sadrul Ula, 
+                        Our company originates from a team working directly for the University of California - Riverside, led by Dr Sadrul Ula, 
                         Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering.
                         <br/><br/>
                         Under the University's programs, we have already served various water districts across Southern California, allowing them to operate under more efficient conditions and scheduling.
@@ -163,7 +170,7 @@ function About() {
 
             <div className='spacer'/>
 
-            <div className={"centerHeader"}>OUR LEADERSHIP</div>
+            <div className={"centerHeader"} id = "team" ref={scrollToRef}>OUR LEADERSHIP</div>
             <div className={"separateBar"}/>
             <div className='carouselContainer'>
                 <div id='carouselNav'>

@@ -1,7 +1,10 @@
 import './main.css';
 import './Home.css';
 
-import React, {useState, useEffect, Fragment} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
+
+import { Link } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
 
 import titleImage from './img/temporarytitle.jpg'
 
@@ -16,8 +19,8 @@ function Home(props) {
         window.addEventListener('scroll',homeTransitions);
         setTimeout(()=>{
             document.getElementsByClassName("encompass")[0].classList.remove("fade");
-            var title = document.getElementsByClassName("titleText")[0];
-            title.classList.add("entry");
+            //var title = document.getElementsByClassName("titleText")[0];
+            //title.classList.add("entry");
         },200);
 
         return () => {
@@ -45,10 +48,10 @@ function Home(props) {
             <div className={"titleBanner"}>
                 <div className={"darkTint"}/>
                 <div className = {"most"}>
-                    <div className={"titleText"}>
+                    <div className={"titleText"} data-aos = "fade-right" data-aos-duration="500">
                         Reduce electrical demand and save energy
                     </div>
-                    <div className={"subText"}>
+                    <div className={"subText"} data-aos = "fade-right" data-aos-duration="1000">
                        Data driven analysis to establish cost-reducing efficiency measures in water districts
                     </div>
                 </div>
@@ -71,9 +74,12 @@ function Home(props) {
                     exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
                     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </div>
-                <div className={"button"}>
-                    Learn More
-                </div>
+                <Nav.Link as = {Link} to = "/services" className = "navbarItem">
+                    <div className={"button"}>
+                        Learn More
+                    </div>
+                </Nav.Link>
+                
             </div>
 
             <div className={"spacer"}/>
@@ -109,9 +115,12 @@ function Home(props) {
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         <br/>
-                        <div className={"button"}>
-                            Our Story
-                        </div>
+                        <Nav.Link as = {Link} to = "/about" className = "navbarItem">
+                            <div className={"button"}>
+                                Our Story
+                            </div>
+                        </Nav.Link>
+                        
                         <div className={"spacer"}></div>
                     </div>
                 </div>
@@ -133,9 +142,12 @@ function Home(props) {
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         <br/>
-                        <div className={"button"}>
-                            Our Team
-                        </div>
+                        <Nav.Link as = {Link} to = "/about#team" className = "navbarItem">
+                            <div className={"button"}>
+                                Our Team
+                            </div>
+                        </Nav.Link>
+                        
                         <div className={"spacer"}></div>
                     </div>
                 </div>
