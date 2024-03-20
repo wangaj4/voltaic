@@ -178,15 +178,14 @@ function About() {
                         <div className='carouselNavSection' onClick = {()=>changeProfile(1)}>{names[1]}</div>
                         <div className='carouselNavSection' onClick = {()=>changeProfile(2)}>{names[2]}</div>
                 </div>
-                <div className = "carousel">
+                <div className = "carousel" data-aos="zoom-out-up">
                     <div id = "carouselWrapper">
-                        <div className={"forty center"}>
+                        <div className={"fifty center"}>
                                 <img id={"profileImage"} src = {pics[profileIndex]}/>
                         </div>
-                        <div className={"sixty"}>
-                            <div className={"centerHeader"}>{names[profileIndex]}</div>
-                            <div className={"separateBar"}/>
-                            <div className={"centerText"}>
+                        <div className={"fifty"}>
+                            <div className={"leftHeader"}>{names[profileIndex]}</div>
+                            <div className={"leftText"}>
                                 <p>{descriptions[profileIndex]}</p>
                             </div>
                             <div className='spacer'/>
@@ -220,7 +219,7 @@ function About() {
                     index++;
                     
                 });
-            }, 500);
+            }, 360);
         }
 
     }

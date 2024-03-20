@@ -116,6 +116,9 @@
 
 .forty{
     flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items:center;
 }
 
 
@@ -293,7 +296,7 @@
 
 .teamImage{
     height:100%;
-    width:90%;
+    width:30rem;
     margin-left:5%;
     margin-right:5%;
     margin-block:5%;

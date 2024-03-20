@@ -42,22 +42,63 @@ function Services(){
             <div className={"separateBar"}/>
 
             <div className={"spacer"}/>
-            
-            <div className={"contentBanner"}>
-                <div className={"centerHeader"}>
-                    SOME OF OUR WORK
-                </div>
-                <div className={"contain"} data-aos="fade-up">
-                    <div className={"item image1"}></div>
-                    <div className={"item image2"}></div>
-                    <div className={"item image3"}></div>
-
-                    <div className={"infoBox flat"} id={"infoBox"}>
-                        <div id={"x"} className={"hidden"}>
-                            <div className="bar"/>
-                            <div className="bar"/>
-                        </div>
+            <div className={"flexBanner"} data-aos = "fade-right">
+                <div className={"sixty"}>
+                    <div className={"centerHeader"}>Step 1 - Data Collection</div>
+                    <div className={"separateBar"}/>
+                    <div className={"centerText"} id = "team1">
+                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur 
+                        <br/>
+                        
+                        <div className={"spacer"}></div>
                     </div>
+                </div>
+                <div className={"forty"}>
+                    <div class = "stepImage1"/>
+                </div>
+            </div>
+
+            <div className={"spacer2"}/>
+            <div className={"flexBanner"} data-aos = "fade-left">
+                <div className={"forty"}>
+                    <div className={"stepImage2"}/>
+                </div>
+                <div className={"sixty"}>
+                    <div className={"centerHeader"}>Step 2 - Data Analysis</div>
+                    <div className={"separateBar"}/>
+                    <div className={"centerText"} id = "team1">
+                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br/>
+                        
+                        <div className={"spacer"}></div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={"spacer2"}/>
+            <div className={"flexBanner"} data-aos = "fade-right">
+                <div className={"sixty"}>
+                    <div className={"centerHeader"}>Step 3 - Presentation</div>
+                    <div className={"separateBar"}/>
+                    <div className={"centerText"} id = "team1">
+                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br/>
+                        
+                        <div className={"spacer"}></div>
+                    </div>
+                </div>
+                <div className={"forty"}>
+                    <div className={"stepImage3"}/>
+
                 </div>
             </div>
 

@@ -62,3 +62,7 @@ body{
 .fade{
     opacity:0;
 }
+
+.fifty{
+    flex-basis:50%;
+}

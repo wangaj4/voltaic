@@ -148,7 +148,7 @@
 
 .reveal2{
     opacity:1 !important;
-    animation: revealWipe 1s ease forwards;
+    animation: revealWipe 0.8s ease forwards;
 }
 
 .reveal3{
@@ -212,7 +212,7 @@
 }
 
 #carouselWrapper{
-    width:80%;
+    width:100%;
     display:flex;
     position:absolute;
     transition: 0.2s all;
@@ -228,7 +228,7 @@
 }
 
 #profileImage{
-    max-height:70%;
+    max-height:65%;
     max-width:80%;
     margin-left:10rem;
     margin-block:5%;
@@ -236,4 +236,22 @@
     background-repeat: no-repeat;
     background-position: center;
     
+}
+
+.leftHeader{
+    text-align: left;
+    letter-spacing: 0.1rem;
+    padding-top:15%;
+    padding-inline:10%;
+    font-family: var(--main-font);
+    font-size:2rem;
+}
+
+.leftText{
+    text-align: left;
+    padding-inline:10%;
+    padding-top:4%;
+    font-family: var(--main-font);
+    font-size:1.5rem;
+    line-height:1.5;
 }
