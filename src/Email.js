@@ -2,19 +2,10 @@ import './main.css';
 
 import React, {useState, useEffect, Fragment} from 'react';
 
-import Email from './Email';
+import './Email.css';
 
-function Contact(){
+function Email(){
 
-    useEffect(()=>{
-        window.scrollTo({
-            top:0,
-            behavior: "instant"
-        });
-        setTimeout(()=>{
-            document.getElementsByClassName("encompass")[0].classList.remove("fade");
-        },200);
-    },[])
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -49,15 +40,21 @@ function Contact(){
       };
 
     return (
-        <div className={"encompass fade"}>
-            <div className={"titleBanner2"}>
-                <div className={"bannerTitle"} data-aos = "fade-up" data-aos-duration="800">
-                    Contact Us
-                </div>
-            </div>
-            <Email/>
-        </div>
+        <form onSubmit={handleFormSubmit}>
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
+
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
+
+            <button type="submit">Send Email</button>
+
+            {status && <p className={status.includes('success') ? 'success' : 'error'}>{status}</p>}
+        </form>
     );
 }
 
-export default Contact;
+export default Email;

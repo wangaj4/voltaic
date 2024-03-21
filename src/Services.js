@@ -42,7 +42,7 @@ function Services(){
             <div className={"separateBar"}/>
 
             <div className={"spacer"}/>
-            <div className={"flexBanner"} data-aos = "fade-right">
+            <div className={"clearBanner"} data-aos = "fade-right">
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Step 1 - Data Collection</div>
                     <div className={"separateBar"}/>
@@ -62,7 +62,7 @@ function Services(){
             </div>
 
             <div className={"spacer2"}/>
-            <div className={"flexBanner"} data-aos = "fade-left">
+            <div className={"clearBanner"} data-aos = "fade-left">
                 <div className={"forty"}>
                     <div className={"stepImage2"}/>
                 </div>
@@ -82,7 +82,7 @@ function Services(){
             </div>
 
             <div className={"spacer2"}/>
-            <div className={"flexBanner"} data-aos = "fade-right">
+            <div className={"clearBanner"} data-aos = "fade-right">
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Step 3 - Presentation</div>
                     <div className={"separateBar"}/>
