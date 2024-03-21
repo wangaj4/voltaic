@@ -56,6 +56,7 @@ function Contact(){
                 </div>
             </div>
             <Email/>
+            <div className='spacer2'/>
         </div>
     );
 }

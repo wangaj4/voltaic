@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 
 import titleImage from './img/temporarytitle.jpg'
+import Email from './Email';
 
 function Home(props) {
     
@@ -153,6 +154,8 @@ function Home(props) {
                 </div>
             </div>
 
+            <div className={"spacer2"}/>
+            <Email/>
             <div className={"spacer2"}/>
 
         </div>
