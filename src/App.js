@@ -6,6 +6,8 @@ import Bottombar from './Bottombar';
 import Home from './Home';
 import About from './About';
 import Services from './Services';
+import Contact from './Contact';
+import Portfolio from './Portfolio';
 
 
 
@@ -35,8 +37,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/portfolio" element={<About />} />
-              <Route path="/contact" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
           </Routes>
           
           <Bottombar/>
