@@ -30,11 +30,11 @@ function Services(){
                 <div className={"separateBar"}/>
                 <div className={"centerText larger"}>
                     Voltaic Analytica is a data analytics company that specializes in a specific niche, detecting inefficiencies in water and electrical districts. Many water districts often
-                    are garbage and got extremely inefficient pumping systems.
+                    suffer from this due to hidden patterns among pump regulations.
                     <br/><br/>
                     With your water data we'll find that shit and correct it easy
                 </div>
-                <div className='spacer'/>
+                <div className='spacer2'/>
             </div>
 
             <div className='spacer2'/>

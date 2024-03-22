@@ -69,6 +69,7 @@ body{
     margin-inline:10%;
     min-height:20rem;
     text-align: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -78,6 +79,7 @@ body{
     width:80%;
     padding-inline:10%;
     margin-block:4rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .seventy{
@@ -106,6 +108,14 @@ body{
     padding-top:5%;
     font-family: var(--main-font);
     font-size:2rem;
+}
+
+.centerSubheader{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding-top:5%;
+    font-family: var(--main-font);
+    font-size:1rem;
 }
 
 .centerText{

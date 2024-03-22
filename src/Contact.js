@@ -55,6 +55,8 @@ function Contact(){
                     Contact Us
                 </div>
             </div>
+            <div className={"centerSubheader"}>Questions? Business inquiries? Use the form to get in touch.</div>
+            <div className='spacer'/>
             <Email/>
             <div className='spacer2'/>
         </div>

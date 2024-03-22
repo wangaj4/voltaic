@@ -23,6 +23,7 @@
     min-height:20rem;
     text-align: center;
     display: flex;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -209,6 +210,7 @@
     min-height:40rem;
     background-color: var(--primary-color);
     margin-inline:10%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 #carouselWrapper{

@@ -155,6 +155,9 @@ function Home(props) {
             </div>
 
             <div className={"spacer2"}/>
+            <div className={"centerHeader"}>LET'S TALK</div>
+            <div className={"centerSubheader"}>Questions? Business inquiries? Use the form to get in touch.</div>
+            <div className='spacer'/>
             <Email/>
             <div className={"spacer2"}/>
 
