@@ -35,9 +35,3 @@
     background: url("./img/tempstep3.png");
 }
 
-.clearBanner{
-    display: flex;
-    width:80%;
-    padding-inline:10%;
-    margin-block:4rem;
-}

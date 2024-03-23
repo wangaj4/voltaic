@@ -179,7 +179,7 @@
     display: inline-flex;
     position: absolute;
     width:90%;
-    height:30rem;
+    min-height:39rem;
     justify-self: center;
     background-color: var(--secondary-color);
     margin-top:-3rem;
@@ -188,6 +188,41 @@
     transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
     transition-duration: 0.6s;
 
+    z-index:99;
+
+    font-family: var(--main-font);
+    color: white;
+
+    
+
+}
+
+#infoBoxContent{
+    opacity:0;
+    transition: 0.3s all;
+    display:none;
+
+    width:100%;
+    margin-block:4rem;
+}
+
+#infoBoxContent.flex{
+    display:flex;
+}
+
+#infoBoxContent.opaque{
+    opacity:1;
+}
+
+.infoImage{
+    height:80%;
+    width:80%;
+    margin-left:20%;
+    margin-block:10%;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background: url("./img/collegeofengineering.jpg");
 }
 
 .flat{

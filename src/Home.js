@@ -20,8 +20,6 @@ function Home(props) {
         window.addEventListener('scroll',homeTransitions);
         setTimeout(()=>{
             document.getElementsByClassName("encompass")[0].classList.remove("fade");
-            //var title = document.getElementsByClassName("titleText")[0];
-            //title.classList.add("entry");
         },200);
 
         return () => {
@@ -34,12 +32,20 @@ function Home(props) {
         console.log(index);
         document.getElementById("infoBox").classList.add("wide");
         document.getElementById("x").classList.add("appear");
+        setTimeout(() => {
+            document.getElementById("infoBoxContent").classList.add("flex");
+        }, 300);
+        setTimeout(() => {
+            document.getElementById("infoBoxContent").classList.add("opaque");
+        }, 500);
 
     };
 
     const closeInfoBox = () =>{
         document.getElementById("infoBox").classList.remove("wide");
         document.getElementById("x").classList.remove("appear");
+        document.getElementById("infoBoxContent").classList.remove("opaque");
+        document.getElementById("infoBoxContent").classList.remove("flex");
     }
 
 
@@ -98,8 +104,33 @@ function Home(props) {
                             <div className="bar"/>
                             <div className="bar"/>
                         </div>
+                        <div id = 'infoBoxContent'>
+                            <div className={"forty"}>
+                                <div className={"infoImage"}/>
+                            </div>
+                            <div className={"sixty"}>
+                                <div className={"centerHeader"}>LADWP</div>
+                                <div className={"separateBar"}/>
+                                <div className={"centerText"}>
+                                    Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    <br/>
+                        
+                                    <div className={"spacer"}></div>
+                                </div>
+                            </div>
+                        
+                        </div>
                     </div>
                 </div>
+
+                <Nav.Link as = {Link} to = "/portfolio" className = "navbarItem">
+                    <div className={"button"}>
+                        View Portfolio
+                    </div>
+                </Nav.Link>
             </div>
 
             <div className={"spacer2"}/>
