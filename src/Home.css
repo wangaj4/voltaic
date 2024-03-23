@@ -179,7 +179,7 @@
     display: inline-flex;
     position: absolute;
     width:90%;
-    min-height:39rem;
+    min-height:40rem;
     justify-self: center;
     background-color: var(--secondary-color);
     margin-top:-3rem;
@@ -215,14 +215,18 @@
 }
 
 .infoImage{
-    height:80%;
-    width:80%;
-    margin-left:20%;
-    margin-block:10%;
+    height:25rem;
+    width:90%;
+    margin-right:5%;
+    margin-top:auto;
+    margin-bottom:auto;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center;
-    background: url("./img/collegeofengineering.jpg");
+
+    margin-left:20%;
+    margin-block:10%;
+    background: url("./img/water2.jpg");
 }
 
 .flat{

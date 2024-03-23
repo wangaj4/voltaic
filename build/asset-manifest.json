@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c302d68.css",
-    "main.js": "/static/js/main.39fe00c3.js",
+    "main.css": "/static/css/main.a68cff42.css",
+    "main.js": "/static/js/main.eee32e4f.js",
     "static/media/water2.jpg": "/static/media/water2.37ca40904a9d04835e37.jpg",
     "static/media/ucr.jpeg": "/static/media/ucr.0bc1d08f3a0c35f2951d.jpeg",
     "static/media/tempstep3.png": "/static/media/tempstep3.76251b339d01566a04b0.png",
@@ -15,11 +15,11 @@
     "static/media/water1.jpg": "/static/media/water1.3b5f4833bb7e45dc28bc.jpg",
     "static/media/Acumin-RPro.woff": "/static/media/Acumin-RPro.619962d87c184a44be27.woff",
     "index.html": "/index.html",
-    "main.7c302d68.css.map": "/static/css/main.7c302d68.css.map",
-    "main.39fe00c3.js.map": "/static/js/main.39fe00c3.js.map"
+    "main.a68cff42.css.map": "/static/css/main.a68cff42.css.map",
+    "main.eee32e4f.js.map": "/static/js/main.eee32e4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c302d68.css",
-    "static/js/main.39fe00c3.js"
+    "static/css/main.a68cff42.css",
+    "static/js/main.eee32e4f.js"
   ]
 }

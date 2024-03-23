@@ -33,10 +33,20 @@ function Home(props) {
         document.getElementById("infoBox").classList.add("wide");
         document.getElementById("x").classList.add("appear");
         setTimeout(() => {
-            document.getElementById("infoBoxContent").classList.add("flex");
+            try{
+                document.getElementById("infoBoxContent").classList.add("flex");
+            }catch(x){
+
+            }
+            
         }, 300);
         setTimeout(() => {
-            document.getElementById("infoBoxContent").classList.add("opaque");
+            try{
+                document.getElementById("infoBoxContent").classList.add("opaque");
+            }catch(x){
+
+            }
+
         }, 500);
 
     };
@@ -94,6 +104,7 @@ function Home(props) {
                 <div className={"centerHeader"}>
                     SOME OF OUR WORK
                 </div>
+                <div className={"centerSubheader"}>Click on the images to view</div>
                 <div className={"contain"}>
                     <div className={"item hidden image1"} onClick={()=>openInfoBox(0)}></div>
                     <div className={"item hidden image2"} onClick={()=>openInfoBox(1)}></div>
