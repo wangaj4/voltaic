@@ -207,19 +207,27 @@ function About() {
 
     function aboutTransitions() {
         if (document.documentElement.scrollTop > 650){
+
             document.getElementById('timeline').classList.add('reveal2');
             setTimeout(() => {
-                document.getElementById('cultureInfo').classList.add('reveal2');
-                const timelineContents = document.querySelectorAll('.timeline-content');
-                let index = 0;
-                timelineContents.forEach(element =>{
-                    setTimeout(() =>{
-                        element.classList.add('reveal');
-                    }, 200 * index);
-                    index++;
-                    
-                });
+                try{
+                    document.getElementById('cultureInfo').classList.add('reveal2');
+                    const timelineContents = document.querySelectorAll('.timeline-content');
+                    let index = 0;
+                    timelineContents.forEach(element =>{
+                        setTimeout(() =>{
+                            element.classList.add('reveal');
+                        }, 200 * index);
+                        index++;
+                        
+                    });
+                }catch(x){
+
+                }
+                
             }, 360);
+            
+            
         }
 
     }
