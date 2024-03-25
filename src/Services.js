@@ -46,7 +46,7 @@ function Services(){
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Step 1 - Data Collection</div>
                     <div className={"separateBar"}/>
-                    <div className={"centerText"} id = "team1">
+                    <div className={"leftText"} id = "team1">
                         Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
@@ -69,7 +69,7 @@ function Services(){
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Step 2 - Data Analysis</div>
                     <div className={"separateBar"}/>
-                    <div className={"centerText"} id = "team1">
+                    <div className={"leftText"} id = "team1">
                         Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
@@ -86,7 +86,7 @@ function Services(){
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Step 3 - Presentation</div>
                     <div className={"separateBar"}/>
-                    <div className={"centerText"} id = "team1">
+                    <div className={"leftText"} id = "team1">
                         Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in

@@ -7,10 +7,13 @@
     height:90%;
     width:100%;
     margin-block:auto;
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center;
     background: url("./img/tempstep1.png");
+
+    box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.4);
+    border-radius:5px;
 }
 
 .stepImage2{
@@ -18,10 +21,13 @@
     height:70%;
     width:100%;
     margin-block:auto;
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center;
     background: url("./img/tempstep2.png");
+
+    box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.4);
+    border-radius:5px;
 }
 
 .stepImage3{
@@ -29,9 +35,12 @@
     height:70%;
     width:100%;
     margin-block:auto;
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center;
     background: url("./img/tempstep3.png");
+
+    box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.4);
+    border-radius:5px;
 }
 

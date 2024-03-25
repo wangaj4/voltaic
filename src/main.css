@@ -134,6 +134,17 @@ body{
     line-height:1.5;
 }
 
+.leftText{
+    text-align: left;
+    padding-inline:20%;
+    padding-top:4%;
+    font-family: var(--main-font);
+    font-size:1.5rem;
+    line-height:1.5;
+}
+
+
+
 .fifty{
     flex-basis:50%;
 }

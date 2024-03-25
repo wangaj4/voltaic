@@ -85,10 +85,6 @@
 }
 
 
-.leftText{
-    text-align:left;
-}
-
 .hidden{
     opacity:0;
     top:3rem;
@@ -155,6 +151,8 @@
     display: inline-flex;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.6);
+
 
 }
 
@@ -218,15 +216,17 @@
     height:25rem;
     width:90%;
     margin-right:5%;
-    margin-top:auto;
-    margin-bottom:auto;
-    background-size: contain !important;
+    margin-inline:auto;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center;
+    border-radius:5px;
 
     margin-left:20%;
     margin-block:10%;
     background: url("./img/water2.jpg");
+
+    box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.7);
 }
 
 .flat{
@@ -280,15 +280,18 @@
 
 
 .teamImage{
-    height:100%;
-    width:30rem;
+    display:flex;
+    height:539px;
+    width:400px;
     margin-left:5%;
     margin-right:5%;
-    margin-block:5%;
-    background-size: contain !important;
+    margin-block:3rem;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center;
     background: url("./img/ucr.jpeg");
+    box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.4);
+    border-radius:5px;
 }
 
 

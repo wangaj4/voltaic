@@ -33,10 +33,13 @@
     margin-right:5%;
     margin-top:auto;
     margin-bottom:auto;
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center;
     background: url("./img/collegeofengineering.jpg");
+
+    box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.4);
+    border-radius:5px;
 }
 
 
