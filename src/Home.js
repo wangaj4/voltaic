@@ -11,6 +11,7 @@ import Email from './Email';
 
 function Home(props) {
     
+    const [backgroundPositionY, setBackgroundPositionY] = useState(0);
 
     useEffect(()=>{
         window.scrollTo({
@@ -27,6 +28,23 @@ function Home(props) {
         };
 
     },[]);
+
+    
+
+function homeTransitions() {
+    setBackgroundPositionY(-document.documentElement.scrollTop/4);
+    if (document.documentElement.scrollTop > 900){
+        var items = document.getElementsByClassName("item");
+        for(let i = 0;i < items.length;i++){
+            setTimeout(()=>{
+                items[i].classList.add("appear");
+            },i*200);
+
+        }
+    }
+
+
+}
 
     const openInfoBox = (index) =>{
         console.log(index);
@@ -62,7 +80,7 @@ function Home(props) {
     return (
         <div className={"encompass fade"}>
 
-            <div className={"titleBanner"}>
+            <div className={"titleBanner"} id = "titleBanner" style={{ backgroundPositionY: `${backgroundPositionY}px` }}>
                 <div className={"darkTint"}/>
                 <div className = {"most"}>
                     <div className={"titleText"} data-aos = "fade-right" data-aos-duration="500">
@@ -220,19 +238,3 @@ function Home(props) {
 
 export default Home;
 
-
-
-function homeTransitions() {
-
-    if (document.documentElement.scrollTop > 900){
-        var items = document.getElementsByClassName("item");
-        for(let i = 0;i < items.length;i++){
-            setTimeout(()=>{
-                items[i].classList.add("appear");
-            },i*200);
-
-        }
-    }
-
-
-}

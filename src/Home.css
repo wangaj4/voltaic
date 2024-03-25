@@ -10,6 +10,7 @@
     background-attachment: fixed;
     display: inline-flex;
     align-items: center;
+    background-position-y: 0;
 
 }
 
@@ -24,14 +25,14 @@
 }
 
 .most{
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
 .titleText{
     position: relative;
     margin-top:10%;
     padding-block: 5%;
-    padding-left:12%;
+    padding-left:13%;
     line-height: 110%;
     font-size:3.5rem;
     color:white;
@@ -55,7 +56,7 @@
 
 .subText{
     position: relative;
-    padding-left:12%;
+    padding-left:10%;
     line-height: 150%;
     font-size:1.15rem;
     color:white;
@@ -177,7 +178,7 @@
     display: inline-flex;
     position: absolute;
     width:90%;
-    min-height:40rem;
+    min-height:45rem;
     justify-self: center;
     background-color: var(--secondary-color);
     margin-top:-3rem;
