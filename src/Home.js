@@ -6,12 +6,28 @@ import React, {useState, useEffect, useRef} from 'react';
 import { Link } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 
-import titleImage from './img/temporarytitle.jpg'
+
+import clientImage1 from "./img/water1.jpg";
+import clientImage2 from "./img/water2.jpg";
+import clientImage3 from "./img/water3.jpeg";
+
+
 import Email from './Email';
+
+
+
+let clients = ["Western Municipal", "LADWP", "Metropolitan Water"]
+
+let clientDescriptions = ["Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                            "Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                            "Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."]
+
+let clientImages = [clientImage1,clientImage2,clientImage3]
 
 function Home(props) {
     
     const [backgroundPositionY, setBackgroundPositionY] = useState(0);
+    const [infoBoxIndex, setIndex] = useState(0);
 
     useEffect(()=>{
         window.scrollTo({
@@ -50,6 +66,8 @@ function homeTransitions() {
         console.log(index);
         document.getElementById("infoBox").classList.add("wide");
         document.getElementById("x").classList.add("appear");
+
+        setIndex(index);
         setTimeout(() => {
             try{
                 document.getElementById("infoBoxContent").classList.add("flex");
@@ -122,7 +140,7 @@ function homeTransitions() {
                 <div className={"centerHeader"}>
                     SOME OF OUR WORK
                 </div>
-                <div className={"centerSubheader"}>Click on the images to view</div>
+                <div className={"centerSubheader"}>Click on the images to view more information</div>
                 <div className={"contain"}>
                     <div className={"item hidden image1"} onClick={()=>openInfoBox(0)}></div>
                     <div className={"item hidden image2"} onClick={()=>openInfoBox(1)}></div>
@@ -135,16 +153,13 @@ function homeTransitions() {
                         </div>
                         <div id = 'infoBoxContent'>
                             <div className={"forty"}>
-                                <div className={"infoImage"}/>
+                                <img className={"infoImage"} src = {clientImages[infoBoxIndex]}/>
                             </div>
                             <div className={"sixty"}>
-                                <div className={"centerHeader"}>LADWP</div>
-                                <div className={"separateBar"}/>
-                                <div className={"centerText"}>
-                                    Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                <div className={"centerHeader"}>{clients[infoBoxIndex]}</div>
+                                <div className={"separateBarWhite"}/>
+                                <div className={"leftText"}>
+                                    {clientDescriptions[infoBoxIndex]}
                                     <br/>
                         
                                     <div className={"spacer"}></div>

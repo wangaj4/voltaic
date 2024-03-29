@@ -115,7 +115,7 @@ function About() {
                     <div className={"centerHeader"}>UC Riverside</div>
                     <div className={"separateBar"}/>
                     <div className={"centerText"}>
-                        Our company originates from a team working directly for the University of California - Riverside, led by Dr Sadrul Ula, 
+                        Our company originates from a research team working directly for the University of California - Riverside, led by Dr Sadrul Ula, 
                         Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering.
                         <br/><br/>
                         Under the University's programs, we have already served various water districts across Southern California, allowing them to operate under more efficient conditions and scheduling.
@@ -170,7 +170,7 @@ function About() {
 
             <div className='spacer'/>
 
-            <div className={"centerHeader"} id = "team" ref={scrollToRef}>OUR LEADERSHIP</div>
+            <div className={"centerHeader"} id = "team" ref={scrollToRef}>OUR FOUNDERS</div>
             <div className={"separateBar"}/>
             <div className='carouselContainer'>
                 <div id='carouselNav'>

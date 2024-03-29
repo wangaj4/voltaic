@@ -32,7 +32,7 @@ function Services(){
                     Voltaic Analytica is a data analytics company that specializes in a specific niche, detecting inefficiencies in water and electrical districts. Many water districts often
                     suffer from this due to hidden patterns among pump regulations.
                     <br/><br/>
-                    With your water data we'll find that shit and correct it easy
+                    With your water data we'll find these irregularities and report on the proper steps to alleviate them.
                 </div>
                 <div className='spacer2'/>
             </div>

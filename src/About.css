@@ -29,8 +29,8 @@
 
 .aboutImage{
     height:28rem;
-    width:90%;
-    margin-right:5%;
+    width:80%;
+    margin-right:20%;
     margin-top:auto;
     margin-bottom:auto;
     background-size: cover !important;
@@ -38,7 +38,7 @@
     background-position: center;
     background: url("./img/collegeofengineering.jpg");
 
-    box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.5);
     border-radius:5px;
 }
 

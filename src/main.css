@@ -54,6 +54,15 @@ body{
     margin-top:2vw;
 }
 
+.separateBarWhite{
+    width:30px;
+    height:4px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2vw;
+}
+
 .encompass{
     opacity:1;
     transition: 0.2s opacity;
@@ -147,4 +156,5 @@ body{
 
 .fifty{
     flex-basis:50%;
+    
 }
