@@ -20,6 +20,7 @@
     font-family: var(--main-font);
     font-weight: 400;
     font-size:1.3rem;
+    
 }
 
 .shrink{
@@ -74,4 +75,64 @@
     background-color: var(--fourth-color);
 }
 
+
+#collapsed{
+    display: none;
+    height:4rem;
+    width:4rem;
+}
+
+.navbarToggle {
+    cursor: pointer;
+    height:100%;
+    width:100%;
+    align-content: center;
+
+}
+
+.hamburgerBar {
+    display: block;
+    width: 40px;
+    height: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    margin: 6px auto;
+    border-radius:2rem;
+    margin-right:2rem;
+}
+
+.navbarToggle:hover .hamburgerBar{
+    background-color: var(--fourth-color);
+}
+
+.navbarToggle.active .hamburgerBar:nth-child(1){
+    transform:translateY(9px) rotate(45deg);
+}
+
+.navbarToggle.active .hamburgerBar:nth-child(2){
+    opacity: 0;
+}
+
+.navbarToggle.active .hamburgerBar:nth-child(3){
+    transform:translateY(-9px) rotate(-45deg);
+}
+
+
+@media(max-width:1000px){
+    #linkContainer{
+        display: none;
+    }
+
+    #collapsed{
+        display: block;
+    }
+
+    :root{
+        --navbar-height:5rem;
+    }
+
+
+
+}
 

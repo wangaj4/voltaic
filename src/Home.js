@@ -1,7 +1,7 @@
 import './main.css';
 import './Home.css';
 
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import { Link } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
@@ -47,20 +47,20 @@ function Home(props) {
 
     
 
-function homeTransitions() {
-    setBackgroundPositionY(-document.documentElement.scrollTop/4);
-    if (document.documentElement.scrollTop > 900){
-        var items = document.getElementsByClassName("item");
-        for(let i = 0;i < items.length;i++){
-            setTimeout(()=>{
-                items[i].classList.add("appear");
-            },i*200);
+    function homeTransitions() {
+        setBackgroundPositionY(-document.documentElement.scrollTop/4);
+        if (document.documentElement.scrollTop > 900){
+            var items = document.getElementsByClassName("item");
+            for(let i = 0;i < items.length;i++){
+                setTimeout(()=>{
+                    items[i].classList.add("appear");
+                },i*200);
 
+            }
         }
+
+
     }
-
-
-}
 
     const openInfoBox = (index) =>{
         console.log(index);
@@ -142,9 +142,21 @@ function homeTransitions() {
                 </div>
                 <div className={"centerSubheader"}>Click on the images to view more information</div>
                 <div className={"contain"}>
-                    <div className={"item hidden image1"} onClick={()=>openInfoBox(0)}></div>
-                    <div className={"item hidden image2"} onClick={()=>openInfoBox(1)}></div>
-                    <div className={"item hidden image3"} onClick={()=>openInfoBox(2)}></div>
+                    <div className={"item hidden image1"} onClick={()=>openInfoBox(0)}>
+                        <div className='coverText'>
+                        {clients[0]}
+                        </div>
+                    </div>
+                    <div className={"item hidden image2"} onClick={()=>openInfoBox(1)}>
+                        <div className='coverText'>
+                        {clients[1]}
+                        </div>
+                    </div>
+                    <div className={"item hidden image3"} onClick={()=>openInfoBox(2)}>
+                        <div className='coverText'>
+                        {clients[2]}
+                        </div>
+                    </div>
 
                     <div className={"infoBox flat"} id={"infoBox"}>
                         <div id={"x"} className={"hidden"} onClick={()=>closeInfoBox()}>
@@ -153,7 +165,7 @@ function homeTransitions() {
                         </div>
                         <div id = 'infoBoxContent'>
                             <div className={"forty"}>
-                                <img className={"infoImage"} src = {clientImages[infoBoxIndex]}/>
+                                <img className={"infoImage"} src = {clientImages[infoBoxIndex]} alt = "Example portfolio from previous client"/>
                             </div>
                             <div className={"sixty"}>
                                 <div className={"centerHeader"}>{clients[infoBoxIndex]}</div>

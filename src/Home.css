@@ -1,5 +1,5 @@
 :root{
-    --titleBannerHeight: 70vh;
+    --titleBannerHeight: 80vh;
 }
 
 .titleBanner{
@@ -154,13 +154,34 @@
     border-radius: 5px;
     box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.6);
 
-
 }
+
 
 .item:hover{
     top:-1rem;
 }
 
+
+.coverText{
+    font-family: var(--main-font);
+    color:white;
+    text-align: center;
+    align-content: center;
+    background:rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+    font-weight: bolder;
+    font-size:1.8rem;
+    width: 100%;
+    padding-bottom:2rem;
+
+    opacity:0;
+    transition: 0.3s opacity;
+}
+
+.coverText:hover{
+    opacity: 1;
+}
 .image1{
     background: url("./img/water1.jpg");
 }

@@ -181,7 +181,7 @@ function About() {
                 <div className = "carousel" data-aos="zoom-out-up">
                     <div id = "carouselWrapper">
                         <div className={"fifty center"}>
-                                <img id={"profileImage"} src = {pics[profileIndex]}/>
+                                <img id={"profileImage"} src = {pics[profileIndex]} alt = "Profile of one of the founders"/>
                         </div>
                         <div className={"fifty"}>
                             <div className={"leftHeader"}>{names[profileIndex]}</div>

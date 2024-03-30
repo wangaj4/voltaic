@@ -7,6 +7,10 @@ import templogo from './img/templogo.png'
 
 function Navbar(props){
 
+    const handleNavbarToggle = () =>{
+        
+    }
+
 
     return (
         <div id = "navbarBody">
@@ -28,6 +32,14 @@ function Navbar(props){
                     Contact
                 </Nav.Link>
 
+            </div>
+
+            <div id = "collapsed">
+                <div className='navbarToggle' onClick = {()=>handleNavbarToggle()}>
+                    <div className='hamburgerBar'/>
+                    <div className='hamburgerBar'/>
+                    <div className='hamburgerBar'/>
+                </div>
             </div>
 
         </div>
