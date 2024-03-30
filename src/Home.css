@@ -201,7 +201,7 @@
     display: flex;
     position: absolute;
     width:90%;
-    min-height:45rem;
+    min-height:50rem;
     justify-self: center;
     background-color: var(--secondary-color);
     margin-top:-3rem;
@@ -318,7 +318,7 @@
 
 
 
-@media(max-width:1080px){
+@media(max-width:1024px){
     .most{
         flex-basis:100%;
     }

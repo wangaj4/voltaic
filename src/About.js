@@ -9,6 +9,8 @@ import profile1 from './img/temppro.png';
 import profile2 from './img/temppro.png';
 import profile3 from './img/temppro.png';
 
+import aboutImage from "./img/collegeofengineering.jpg";
+
 const events = ["Data Collection", "Your water data", "Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "Analysis","Detecting inefficiencies","Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "Presentation","Fixing the problem","Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."]
@@ -124,9 +126,11 @@ function About() {
                     <div className='spacer'/>
                 </div>
                 <div className={"forty"}>
-                    <div className={"aboutImage"}/>
+                    <img src = {aboutImage} className={"aboutImage"}/>
                 </div>
             </div>
+
+            <div className='spacer'/>
 
             <div className={"centerHeader"}>HOW WE WORK</div>
             <div className={"separateBar"}/>

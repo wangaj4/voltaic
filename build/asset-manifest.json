@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.a68cff42.css",
-    "main.js": "/static/js/main.eee32e4f.js",
+    "main.css": "/static/css/main.d25826e0.css",
+    "main.js": "/static/js/main.d6ffba90.js",
+    "static/media/temporarytitle.jpg": "/static/media/temporarytitle.2e9960e948fd435c3027.jpg",
     "static/media/water2.jpg": "/static/media/water2.37ca40904a9d04835e37.jpg",
     "static/media/ucr.jpeg": "/static/media/ucr.0bc1d08f3a0c35f2951d.jpeg",
     "static/media/tempstep3.png": "/static/media/tempstep3.76251b339d01566a04b0.png",
     "static/media/temppro.png": "/static/media/temppro.b99e9592e16dd113144b.png",
-    "static/media/temporarytitle.jpg": "/static/media/temporarytitle.66c60dbdb0f75d0e657f.jpg",
     "static/media/DMSans-VariableFont_opsz,wght.ttf": "/static/media/DMSans-VariableFont_opsz,wght.90130db6a4fc53f17a88.ttf",
     "static/media/collegeofengineering.jpg": "/static/media/collegeofengineering.1d7e523c53400164f883.jpg",
     "static/media/tempstep2.png": "/static/media/tempstep2.57891570cdb03cd7722b.png",
@@ -15,11 +15,11 @@
     "static/media/water1.jpg": "/static/media/water1.3b5f4833bb7e45dc28bc.jpg",
     "static/media/Acumin-RPro.woff": "/static/media/Acumin-RPro.619962d87c184a44be27.woff",
     "index.html": "/index.html",
-    "main.a68cff42.css.map": "/static/css/main.a68cff42.css.map",
-    "main.eee32e4f.js.map": "/static/js/main.eee32e4f.js.map"
+    "main.d25826e0.css.map": "/static/css/main.d25826e0.css.map",
+    "main.d6ffba90.js.map": "/static/js/main.d6ffba90.js.map"
   },
   "entrypoints": [
-    "static/css/main.a68cff42.css",
-    "static/js/main.eee32e4f.js"
+    "static/css/main.d25826e0.css",
+    "static/js/main.d6ffba90.js"
   ]
 }
