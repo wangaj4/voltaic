@@ -193,7 +193,7 @@ function Home(props) {
             <div className={"centerHeader"}>WHO WE ARE</div>
 
 
-            <div className={"flexBanner"}>
+            <div className={"flexBanner reverse"}>
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Experience</div>
                     <div className={"separateBar"}/>

@@ -8,27 +8,31 @@ import templogo from './img/templogo.png'
 function Navbar(props){
 
     const handleNavbarToggle = () =>{
-        
+        document.getElementById("linkContainer").classList.toggle("active");
+    }
+
+    const handleNavbarOff = () =>{
+        document.getElementById("linkContainer").classList.remove("active");
     }
 
 
     return (
         <div id = "navbarBody">
             <Nav.Link as = {Link} to = "/">
-                <img src = {templogo} id="logo"/>
+                <img src = {templogo} id="logo" onClick = {()=>handleNavbarOff()}/>
             </Nav.Link>
 
             <div id = "linkContainer">
-                <Nav.Link as = {Link} to = "/about" className = "navbarItem">
+                <Nav.Link as = {Link} to = "/about" className = "navbarItem" onClick = {()=>handleNavbarOff()}>
                     About Us
                 </Nav.Link>
-                <Nav.Link as = {Link} to = "/services" className = "navbarItem">
+                <Nav.Link as = {Link} to = "/services" className = "navbarItem" onClick = {()=>handleNavbarOff()}>
                     Our Services
                 </Nav.Link>
-                <Nav.Link as = {Link} to = "/portfolio" className = "navbarItem">
+                <Nav.Link as = {Link} to = "/portfolio" className = "navbarItem" onClick = {()=>handleNavbarOff()}>
                     Portfolio
                 </Nav.Link>
-                <Nav.Link as = {Link} to = "/contact" className = "navbarFocus">
+                <Nav.Link as = {Link} to = "/contact" className = "navbarFocus" onClick = {()=>handleNavbarToggle()}>
                     Contact
                 </Nav.Link>
 

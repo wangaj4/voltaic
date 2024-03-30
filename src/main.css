@@ -11,6 +11,8 @@
     --main-font: DMSans, "Helvetica Neue", acumin, "Times New Roman", sans-serif;;
 
     --navbar-height:4rem;
+
+    overflow-x:hidden;
 }
 
 @font-face {
@@ -91,6 +93,7 @@ body{
     padding-inline:10%;
     margin-block:4rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .clearBanner{
@@ -159,4 +162,50 @@ body{
 .fifty{
     flex-basis:50%;
     
+}
+
+@media(max-width:1080px){
+    .fifty{
+        flex-basis:100%;
+    }
+
+    .sixty{
+        flex-basis:100%;
+    }
+
+    .forty{
+        flex-basis:100%;
+    }
+
+    .seventy{
+        flex-basis:100%;
+    }
+
+    .thirty{
+        flex-basis:100%;
+    }
+
+    .flexBanner{
+        width:100%;
+        margin-inline:0;
+        padding-inline:0;
+        flex-wrap:wrap;
+    }
+
+    .flexBanner.reverse{
+        flex-wrap:wrap-reverse
+    }
+}
+
+@media(max-width:700px){
+    
+    .contentBanner{
+        width:100%;
+        margin-inline:0;
+    }
+
+
+    .centerText{
+        padding-inline:10%;
+    }
 }

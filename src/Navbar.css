@@ -121,7 +121,23 @@
 
 @media(max-width:1000px){
     #linkContainer{
-        display: none;
+        position: absolute;
+        width:100%;
+        height:200%;
+        right:100%;
+        top:100%;
+        display: grid;
+        background-color: var(--primary-color);
+        padding-bottom:12%;
+        padding-top:12%;
+
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.1, 0, 0, 1);
+        transition-duration: 0.4s;
+    }
+
+    #linkContainer.active{
+        right:0;
     }
 
     #collapsed{
