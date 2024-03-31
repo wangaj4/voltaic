@@ -189,7 +189,7 @@ function About() {
                         </div>
                         <div className={"fifty"}>
                             <div className={"leftHeader"}>{names[profileIndex]}</div>
-                            <div className={"leftText"}>
+                            <div className={"profileText"}>
                                 <p>{descriptions[profileIndex]}</p>
                             </div>
                             <div className='spacer'/>

@@ -197,20 +197,22 @@ function Home(props) {
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Experience</div>
                     <div className={"separateBar"}/>
-                    <div className={"centerText"} id = "team1" data-aos = "fade-left" data-aos-duration="600">
+                    <div className={"leftText"} id = "team1" data-aos = "fade-left" data-aos-duration="600">
                         Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         <br/>
+                        
+                    </div>
+                    <div className={"centerText"}>
                         <Nav.Link as = {Link} to = "/about" className = "navbarItem">
                             <div className={"button"}>
                                 Our Story
                             </div>
                         </Nav.Link>
-                        
-                        <div className={"spacer"}></div>
                     </div>
+                    
                 </div>
                 <div className={"forty"}>
                     <div className={"teamImage"}/>
@@ -224,20 +226,23 @@ function Home(props) {
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Talent</div>
                     <div className={"separateBar"}/>
-                    <div className={"centerText"} id = "team2" data-aos = "fade-right" data-aos-duration="600">
+                    <div className={"leftText"} id = "team2" data-aos = "fade-right" data-aos-duration="600">
                         Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         <br/>
+                        
+
+                    </div>
+                    <div className='centerText'>
                         <Nav.Link as = {Link} to = "/about#team" className = "navbarItem">
                             <div className={"button"}>
                                 Our Team
                             </div>
                         </Nav.Link>
-                        
-                        <div className={"spacer"}></div>
                     </div>
+                    
                 </div>
             </div>
 
