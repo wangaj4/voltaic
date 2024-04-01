@@ -25,7 +25,7 @@ function Portfolio(){
 
             <div className={"contentBanner"}>
             <div className='spacer'/>
-                <div className={"centerText larger"}>
+                <div className={"centerText"}>
                     Our team at Voltaic Analytica is dedicated to providing reliable analysis guaranteed to cut down unnecessary costs.
                     <br/><br/>
                     Below are examples of past water districts we've served and saved money for, ranging from 15% to 47% reductions.
