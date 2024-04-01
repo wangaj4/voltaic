@@ -28,7 +28,7 @@ function Services(){
                     THE BIG PICTURE
                 </div>
                 <div className={"separateBar"}/>
-                <div className={"centerText larger"}>
+                <div className={"centerText"}>
                     Voltaic Analytica is a data analytics company that specializes in a specific niche, detecting inefficiencies in water and electrical districts. Many water districts often
                     suffer from this due to hidden patterns among pump regulations.
                     <br/><br/>
@@ -62,7 +62,7 @@ function Services(){
             </div>
 
             <div className={"spacer2"}/>
-            <div className={"clearBanner"} data-aos = "fade-left">
+            <div className={"clearBanner reverse"} data-aos = "fade-left">
                 <div className={"forty"}>
                     <div className={"stepImage2"}/>
                 </div>

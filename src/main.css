@@ -150,7 +150,7 @@ body{
 
 .leftText{
     text-align: left;
-    padding-inline:20%;
+    padding-inline:15%;
     padding-top:4%;
     font-family: var(--main-font);
     font-size:1.3rem;
@@ -190,6 +190,14 @@ body{
         margin-inline:0;
         padding-inline:0;
         flex-wrap:wrap;
+    }
+
+    .clearBanner{
+        flex-wrap:wrap;
+    }
+
+    .clearBanner.reverse{
+        flex-wrap:wrap-reverse;
     }
 
     .flexBanner.reverse{
