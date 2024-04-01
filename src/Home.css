@@ -201,7 +201,7 @@
     display: flex;
     position: absolute;
     width:90%;
-    min-height:50rem;
+    min-height:40rem;
     justify-self: center;
     background-color: var(--secondary-color);
     margin-top:-3rem;
@@ -239,6 +239,7 @@
 
 .infoImage{
     height:auto;
+    max-height:60%;
     object-fit: cover;
     width:80%;
     margin-right:5%;
