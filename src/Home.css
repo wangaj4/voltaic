@@ -169,7 +169,7 @@
     color:white;
     text-align: center;
     align-content: center;
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 
     font-weight: bolder;
@@ -177,13 +177,10 @@
     width: 100%;
     padding-bottom:2rem;
 
-    opacity:0;
+    opacity:1;
     transition: 0.3s opacity;
 }
 
-.coverText:hover{
-    opacity: 1;
-}
 .image1{
     background: url("./img/water1.jpg");
 }

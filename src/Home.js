@@ -16,11 +16,11 @@ import Email from './Email';
 
 
 
-let clients = ["Western Municipal", "LADWP", "Metropolitan Water"]
+let clients = ["Western Municipal", "Glendale Water and Power", "Cucamonga Valley Water"]
 
-let clientDescriptions = ["Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                            "Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                            "Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."]
+let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Oleander, Bergamot, and Holcomb are some locations/sites that began saving 19 to 32% on their pump costs after our recommendations were implemented by the district. WMWD is one of our most recent partners.",
+                            "Glendale Water and Power is a water utility company we've served in the past, saving them up to 40% in their individual water districts. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                            "Cucamonga Valley Water District is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."]
 
 let clientImages = [clientImage1,clientImage2,clientImage3]
 
@@ -117,15 +117,12 @@ function Home(props) {
                 </div>
                 <div className={"separateBar"}/>
                 <div className={"centerText"} id = "mainDescription" data-aos="fade-up" data-aos-duration="800">
-                    Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Voltaic Analytica is a data analytics company dedicated to partnering with and serving the water districts of America. 
+                    After collecting various data files including monthly bills and interval data of water district pumps, we can utilize data-driven analysis to 
+                    calculate potential savings and recommendations for water departments we work with.
                     <br/><br/>
-                    Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    We will remain in contact for the entirety of the process timeline, clarifying and updating as we develop actionable insights
+                    for your district's savings. Multiple presentations will periodically be given to ensure peak efficiency and cost reductions.
                 </div>
                 <Nav.Link as = {Link} to = "/services" className = "navbarItem">
                     <div className={"button"}>
@@ -198,10 +195,9 @@ function Home(props) {
                     <div className={"centerHeader"}>Experience</div>
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team1" data-aos = "fade-left" data-aos-duration="600">
-                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Under our previous experience from years operating as a UC Riverside research group, we have honed our analytics methods 
+                        to ensure substantial savings in individual water districts. Our team has already worked with and served numerous water 
+                        departments in the Southern California area. 
                         <br/>
                         
                     </div>
@@ -227,10 +223,9 @@ function Home(props) {
                     <div className={"centerHeader"}>Talent</div>
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team2" data-aos = "fade-right" data-aos-duration="600">
-                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Aside from our UC Riverside research and work experience, our team includes a diverse array of computer science, economics, and
+                        statistics specialists from across the country. Our data analytics and programming skills are not limited
+                        to our Riverside water analytics, ensuring we stay flexible and open to new approaches.
                         <br/>
                         
 

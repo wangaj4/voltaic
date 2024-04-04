@@ -47,10 +47,8 @@ function Services(){
                     <div className={"centerHeader"}>Step 1 - Data Collection</div>
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team1">
-                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur 
+                        Initially, our team will reach out to request the needed bills, data, and documents for our analysis. Throughout the process timeline,
+                        we will maintain clear communication to ensure we have what we need to properly serve the district and reduce costs.
                         <br/>
                         
                         <div className={"spacer"}></div>
@@ -70,10 +68,27 @@ function Services(){
                     <div className={"centerHeader"}>Step 2 - Data Analysis</div>
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team1">
-                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Here, we begin our work and utilize our methods to find out the most efficient ways for the district to reduce operating costs.
+                        Our data-driven analysis is tried and true for a wide variety of districts, so you won't have to worry about the 
+                        validity of our procedures.
+                        <br/>
+                        
+                        <div className={"spacer"}></div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={"spacer2"}/>
+            <div className={"clearBanner reverse"} data-aos = "fade-left">
+                <div className={"forty"}>
+                    <div className={"stepImage2"}/>
+                </div>
+                <div className={"sixty"}>
+                    <div className={"centerHeader"}>Step 2.5 - Data Cleaning and Clarification</div>
+                    <div className={"separateBar"}/>
+                    <div className={"leftText"} id = "team1">
+                        Throughout the process, we will occasionally schedule meetings in order to clarify any unclear data, or to collect any additional
+                        necessary information. By communicating through the duration of our work, we ensure our analysis is precise and accurate.
                         <br/>
                         
                         <div className={"spacer"}></div>
@@ -87,10 +102,29 @@ function Services(){
                     <div className={"centerHeader"}>Step 3 - Presentation</div>
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team1">
-                        Voltaic Analytica is sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        When our analysis is completed, the main recommendations will be given via presentation through a scheduled meeting. A complete 
+                        comprehensive list of our actionable insights and instructions will be provided as well. Proper communication with the
+                        district is our top priority in this stage.
+                        <br/>
+                        
+                        <div className={"spacer"}></div>
+                    </div>
+                </div>
+                <div className={"forty"}>
+                    <div className={"stepImage3"}/>
+
+                </div>
+            </div>
+
+            <div className={"spacer2"}/>
+            <div className={"clearBanner"} data-aos = "fade-right">
+                <div className={"sixty"}>
+                    <div className={"centerHeader"}>Step 4 - Repeat/Maintenance</div>
+                    <div className={"separateBar"}/>
+                    <div className={"leftText"} id = "team1">
+                        After our initial recommendations presentation and documents are received by the district, our team will continue to keep in contact,
+                        ensuring the proper steps are taken with periodic checkups. Subsequent data from the district will be analyzed, comparing with 
+                        our savings projections to make sure the district is following the correct actionable steps.
                         <br/>
                         
                         <div className={"spacer"}></div>
