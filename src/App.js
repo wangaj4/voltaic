@@ -8,6 +8,7 @@ import About from './About';
 import Services from './Services';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
+import Nomatch from './Nomatch';
 
 
 
@@ -34,11 +35,17 @@ function App() {
       <Router>
           <Navbar/>
           <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/contact" element={<Contact />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/portfolio" element={<Portfolio />}>
+                    {/*
+                    <Route path="test" element={<Home />} />
+                    <Route path="test1" element={<About />} />
+                    */}
+                </Route>
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<Nomatch />} />
           </Routes>
           
           <Bottombar/>

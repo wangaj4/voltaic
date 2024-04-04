@@ -27,11 +27,12 @@ function About() {
     const scrollToRef = useRef(null);
     const location = useLocation();
     useEffect(()=>{
+        console.log(scrollToRef);
         window.scrollTo({
             top:0,
             behavior: "instant"
         });
-        if (scrollToRef.current && location.hash === '#team') {
+        if (location.hash === '#team') {
             scrollToRef.current.scrollIntoView({ behavior: 'smooth' });
         }
 

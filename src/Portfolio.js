@@ -1,6 +1,11 @@
 import './main.css';
+import './Portfolio.css';
 
 import React, {useState, useEffect, Fragment} from 'react';
+import { Outlet} from 'react-router-dom';
+
+import Home from './Home';
+
 
 function Portfolio(){
 
@@ -35,6 +40,7 @@ function Portfolio(){
 
             <div className='spacer2'/>
 
+            <Outlet/>
         </div>
     );
 }
