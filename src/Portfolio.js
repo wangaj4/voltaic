@@ -4,9 +4,6 @@ import './Portfolio.css';
 import React, {useState, useEffect, Fragment} from 'react';
 import { Outlet} from 'react-router-dom';
 
-import Home from './Home';
-
-
 function Portfolio(){
 
     useEffect(()=>{
@@ -38,9 +35,10 @@ function Portfolio(){
                 <div className='spacer2'/>
             </div>
 
+            
+            <Outlet/>
             <div className='spacer2'/>
 
-            <Outlet/>
         </div>
     );
 }

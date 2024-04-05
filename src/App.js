@@ -10,7 +10,8 @@ import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Nomatch from './Nomatch';
 
-
+import Portfolioentry from './Portfolioentry';
+import Portfolioselect from './Portfolioselect';
 
 import React, {useState, useEffect, Fragment} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -39,10 +40,14 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/portfolio" element={<Portfolio />}>
-                    {/*
-                    <Route path="test" element={<Home />} />
-                    <Route path="test1" element={<About />} />
-                    */}
+                    
+                    <Route path="" element={<Portfolioselect/>} />
+                    <Route path="western" element={<Portfolioentry index = {0}/>} />
+                    <Route path="glendale" element={<Portfolioentry index = {1}/>} />
+                    <Route path="cucamonga" element={<Portfolioentry index = {2}/>} />
+                    <Route path="site4" element={<Portfolioentry index = {3}/>} />
+                    <Route path="site5" element={<Portfolioentry index = {4}/>} />
+                    
                 </Route>
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<Nomatch />} />
