@@ -18,7 +18,7 @@ import Email from './Email';
 
 let clients = ["Western Municipal", "Glendale Water and Power", "Cucamonga Valley Water"]
 
-let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Oleander, Bergamot, and Holcomb are some locations/sites that began saving 19 to 32% on their pump costs after our recommendations were implemented by the district. WMWD is one of our most recent partners.",
+let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Holcomb is one such site, which began saving an average of 46% over 12 months on their pump costs after our recommendations were implemented by the district. WMWD is one of our most recent partners.",
                             "Glendale Water and Power is a water utility company we've served in the past, saving them up to 40% in their individual water districts. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
                             "Cucamonga Valley Water District is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."]
 

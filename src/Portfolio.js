@@ -30,12 +30,12 @@ function Portfolio(){
                 <div className={"centerText"}>
                     Our team at Voltaic Analytica is dedicated to providing reliable analysis guaranteed to cut down unnecessary costs.
                     <br/><br/>
-                    Below are examples of past water districts we've served and saved money for, ranging from 15% to 47% cost reductions.
+                    Below are examples of past water districts we've served and saved money for, ranging from 15% to 46% cost reductions.
                 </div>
                 <div className='spacer2'/>
             </div>
 
-            
+
             <Outlet/>
             <div className='spacer2'/>
 

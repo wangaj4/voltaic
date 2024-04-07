@@ -29,10 +29,19 @@ function Services(){
                 </div>
                 <div className={"separateBar"}/>
                 <div className={"centerText"}>
-                    Voltaic Analytica is a data analytics company that specializes in a specific niche, detecting inefficiencies in water and electrical districts. Many water districts often
-                    suffer from this due to hidden patterns among pump regulations.
+                Based on
+                actual energy use data, methods were
+                developed to reduce peak electrical demand
+                while satisfying water demand and needs.
+                
                     <br/><br/>
-                    With your water data we'll find these irregularities and report on the proper steps to alleviate them.
+                By paying attention to
+                Time of Use electric rates, low-cost
+                electricity can be used for the majority of
+                pumping operations. This lowers peak
+                demand during the most stressful operation
+                of the California grid while saving pumping
+                energy cost.
                 </div>
                 <div className='spacer2'/>
             </div>
