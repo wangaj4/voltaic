@@ -11,7 +11,6 @@ let titles = ["Western Municipal","Glendale Water and Power","Cucamonga Valley W
 function Portfolioentry(props){
 
     useEffect(()=>{
-        console.log(props.index);
     },[]);
     
     return (

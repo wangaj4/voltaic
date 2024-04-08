@@ -3,7 +3,7 @@ import './Portfolio.css';
 
 import React, {useState, useEffect, Fragment} from 'react';
 import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon, divIcon, point } from "leaflet";
@@ -11,38 +11,38 @@ import "leaflet/dist/leaflet.css"
 
 
 const customIcon = new Icon({
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/447/447031.png",
+    iconUrl: require("./img/marker.png"),
     iconSize: [38, 38] // size of the icon
   });
 
 
 function Portfolioselect(){
 
-    const position = [33.9806, -117.3755]
+    const center = [33.91112419972206, -117.7]
+    const western = [33.91112419972206, -117.28997502905078]
+    const glendale = [34.14684921579826, -118.24846744665422]
+    const cucamonga = [34.112227361556265, -117.57846108898497]
 
-    
+    const navigate = useNavigate();
+    const handleOnClick = (index) => {
+        console.log(index);
+        switch (index){
+            case 0: navigate('western');break;
+            case 1: navigate('glendale');break;
+            case 2: navigate('cucamonga');break;
+            case 3: navigate('western');break;
+
+            
+
+        }
+        
+    };
+
     return (
         <Fragment>
-            <div className='spacer'/>
-            <div className={"centerText"}>
-                <Nav.Link as = {Link} to = "western" className = "navbarItem">
-                    Western Municipal
-                </Nav.Link>
-                <Nav.Link as = {Link} to = "glendale" className = "navbarItem">
-                    Glendale Water and Power
-                </Nav.Link>
-                <Nav.Link as = {Link} to = "cucamonga" className = "navbarItem">
-                    Cucamonga Valley Water
-                </Nav.Link>
-                <Nav.Link as = {Link} to = "site4" className = "navbarItem">
-                    site4
-                </Nav.Link>
-                <Nav.Link as = {Link} to = "site5" className = "navbarItem">
-                    site5
-                </Nav.Link>
-            </div>
-            <div className='clearBanner'>
-                <MapContainer className="markercluster-map" center={position} zoom={9}
+            <div className='spacer2'/>
+            
+                <MapContainer className="markercluster-map" center={center} zoom={9}
                 zoomControl={false}
                 scrollWheelZoom={false}
                 doubleClickZoom={false}
@@ -50,17 +50,55 @@ function Portfolioselect(){
                 boxZoom={false}
                 dragging={false}>
                     <TileLayer
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png"
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     />
-                    <Marker position={position}  icon={customIcon}>
+                    <Marker position={western}  icon={customIcon} eventHandlers={{mouseover: (event) => event.target.openPopup(), click: ()=>{handleOnClick(0)}}}>
                         <Popup>
-                            Yo it's Riverside
+                            <Nav.Link as = {Link} to = "western">
+                                Western Municipal Water District
+                            </Nav.Link>
+                        </Popup>
+                    </Marker>
+               
+                    
+                    <Marker position={glendale}  icon={customIcon} eventHandlers={{mouseover: (event) => event.target.openPopup(), click: ()=>{handleOnClick(1)}}}>
+                        <Popup>
+                            <Nav.Link as = {Link} to = "glendale">
+                                Glendale Water and Power
+                            </Nav.Link>
+                        </Popup>
+                    </Marker>
+                    <Marker position={cucamonga}  icon={customIcon} eventHandlers={{mouseover: (event) => event.target.openPopup(), click: ()=>{handleOnClick(2)}}}>
+                        <Popup>
+                            <Nav.Link as = {Link} to = "cucamonga">
+                                Cucamonga Valley Water
+                            </Nav.Link>
                         </Popup>
                     </Marker>
                 </MapContainer>
+            <div className='spacer'/>
+            <div className={"centerText"}>
+                Easy Navigation:
             </div>
-            
+            <div className='spacer'/>
+            <div className={"easyDisplay"}>
+                <Nav.Link as = {Link} to = "western" className = "easyDisplayItem">
+                    Western Municipal Water District
+                </Nav.Link>
+                <Nav.Link as = {Link} to = "glendale" className = "easyDisplayItem">
+                    Glendale Water and Power
+                </Nav.Link>
+                <Nav.Link as = {Link} to = "cucamonga" className = "easyDisplayItem">
+                    Cucamonga Valley Water
+                </Nav.Link>
+                <Nav.Link as = {Link} to = "site4" className = "easyDisplayItem">
+                    Irvine Ranch Water District
+                </Nav.Link>
+                <Nav.Link as = {Link} to = "site5" className = "easyDisplayItem">
+                    Metropolitan Water District
+                </Nav.Link>
+            </div>
         </Fragment>
         
 
