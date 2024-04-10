@@ -7,11 +7,13 @@ import Home from './Home';
 import About from './About';
 import Services from './Services';
 import Contact from './Contact';
-import Portfolio from './Portfolio';
 import Nomatch from './Nomatch';
 
-import Portfolioentry from './Portfolioentry';
-import Portfolioselect from './Portfolioselect';
+import Portfolio from './Portfolio/Portfolio';
+
+
+import Portfolioentry from './Portfolio/Portfolioentry';
+import Portfolioselect from './Portfolio/Portfolioselect';
 
 import React, {useState, useEffect, Fragment} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

@@ -1,4 +1,3 @@
-import './main.css';
 import './Portfolio.css';
 
 import React, {useState, useEffect, Fragment} from 'react';
@@ -11,7 +10,7 @@ import "leaflet/dist/leaflet.css"
 
 
 const customIcon = new Icon({
-    iconUrl: require("./img/marker.png"),
+    iconUrl: require("./../img/marker.png"),
     iconSize: [38, 38] // size of the icon
   });
 
@@ -41,7 +40,10 @@ function Portfolioselect(){
     return (
         <Fragment>
             <div className='spacer2'/>
-            
+                <div className={"centerSubheader"}>
+                    Hover over and click on the locations below, or use easy navigation below the map:
+                </div>
+                <div className='spacer'/>
                 <MapContainer className="markercluster-map" center={center} zoom={9}
                 zoomControl={false}
                 scrollWheelZoom={false}
@@ -77,8 +79,7 @@ function Portfolioselect(){
                         </Popup>
                     </Marker>
                 </MapContainer>
-            <div className='spacer'/>
-            <div className={"centerText"}>
+            <div className={"centerSubheader"}>
                 Easy Navigation:
             </div>
             <div className='spacer'/>

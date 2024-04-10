@@ -170,9 +170,12 @@ function Home(props) {
                                 <div className={"leftText"}>
                                     {clientDescriptions[infoBoxIndex]}
                                     <br/>
-                        
-                                    <div className={"spacer"}></div>
                                 </div>
+                                <Nav.Link as = {Link} to = "/portfolio/western" className = "navbarItem">
+                                        <div className={"button"}>
+                                            Learn More
+                                        </div>
+                                </Nav.Link>
                             </div>
                         
                         </div>

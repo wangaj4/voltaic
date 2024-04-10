@@ -32,3 +32,39 @@
     font-weight:bolder;
     
   }
+
+
+
+  .districtLogo{
+    width:40%;
+    margin-left:30%;
+  }
+
+  .widePic{
+    width:70%;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-top:1rem;
+    margin-left:15%;
+  }
+
+  .noBottom{
+    margin-bottom:0;
+  }
+
+  .columnHeader{
+    letter-spacing: 0.1rem;
+    padding-top:5%;
+    padding-inline:8%;
+    font-family: var(--main-font);
+    font-size:2rem;
+    font-weight: bolder;
+  }
+
+  .columnText{
+    padding-inline:8%;
+    padding-top:4%;
+    font-family: var(--main-font);
+    font-size:1.5rem;
+    line-height:1.5;
+  }
