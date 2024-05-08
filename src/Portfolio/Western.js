@@ -13,7 +13,7 @@ function Western(){
             <div className={"clearBanner noBottom"}>
                 <div className={"fifty"}>
                     <img src = {westernlogo} className = 'districtLogo'/>
-                    <div className={"columnHeader"}>Overview Test</div>
+                    <div className={"columnHeader"}>Overview</div>
                     <div className={"columnText"}>
                     Western Municipal Water District's mission
                     is to provide water supply, wastewater

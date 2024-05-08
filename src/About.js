@@ -51,6 +51,9 @@ function About() {
 
     const [showNewInfo, setShowNewInfo] = useState(true);
     const [currentEvent, setCurrentEvent] = useState(0);
+    const [timelineText,setTimelineText] = useState(events[0]);
+    const [timelineInfo,setTimelineInfo] = useState(events[2]);
+
     const changeTimeline = (i) =>{
         const timeline = document.querySelector('.timeline');
         for(let childIndex = 0;childIndex < timeline.childNodes.length;childIndex++){
@@ -67,10 +70,11 @@ function About() {
         setShowNewInfo(false);
         
         
+        
         setTimeout(() => {
-            document.getElementById('currentInfo').textContent = newContent;
+            setTimelineInfo(newContent);
 
-            document.querySelector('.event').textContent = events[3 * i];
+            setTimelineText(events[3 * i]);
 
             setCurrentEvent(i);
 
@@ -165,10 +169,10 @@ function About() {
                 </div>
                 <div className = "cultureInfo" id = "cultureInfo">
                     <div className="event">
-                        {events[0]}
+                        {timelineText}
                     </div>
                     <div id = "currentInfo" className={`new-info ${showNewInfo ? 'reveal3' : ''}`}>
-                        {events[2]}
+                        {timelineInfo}
                     </div>
                 </div>
             </div>

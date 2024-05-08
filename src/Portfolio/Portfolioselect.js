@@ -23,7 +23,7 @@ function Portfolioselect(){
     const cucamonga = [34.112227361556265, -117.57846108898497]
 
     const navigate = useNavigate();
-    const handleOnClick = (index) => {
+    const handleClickLocation = (index) => {
         console.log(index);
         switch (index){
             case 0: navigate('western');break;
@@ -55,7 +55,7 @@ function Portfolioselect(){
                         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png"
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     />
-                    <Marker position={western}  icon={customIcon} eventHandlers={{mouseover: (event) => event.target.openPopup(), click: ()=>{handleOnClick(0)}}}>
+                    <Marker position={western}  icon={customIcon} eventHandlers={{mouseover: (event) => event.target.openPopup(), click: ()=>{handleClickLocation(0)}}}>
                         <Popup>
                             <Nav.Link as = {Link} to = "western">
                                 Western Municipal Water District
@@ -64,14 +64,14 @@ function Portfolioselect(){
                     </Marker>
                
                     
-                    <Marker position={glendale}  icon={customIcon} eventHandlers={{mouseover: (event) => event.target.openPopup(), click: ()=>{handleOnClick(1)}}}>
+                    <Marker position={glendale}  icon={customIcon} eventHandlers={{mouseover: (event) => event.target.openPopup(), click: ()=>{handleClickLocation(1)}}}>
                         <Popup>
                             <Nav.Link as = {Link} to = "glendale">
                                 Glendale Water and Power
                             </Nav.Link>
                         </Popup>
                     </Marker>
-                    <Marker position={cucamonga}  icon={customIcon} eventHandlers={{mouseover: (event) => event.target.openPopup(), click: ()=>{handleOnClick(2)}}}>
+                    <Marker position={cucamonga}  icon={customIcon} eventHandlers={{mouseover: (event) => event.target.openPopup(), click: ()=>{handleClickLocation(2)}}}>
                         <Popup>
                             <Nav.Link as = {Link} to = "cucamonga">
                                 Cucamonga Valley Water
