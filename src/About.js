@@ -12,7 +12,7 @@ import profile3 from './img/temppro.png';
 import aboutImage from "./img/collegeofengineering.jpg";
 
 const events = ["Data Collection", "Your water data", "Our team will reach out to request all the necessary bills, data, and other documents for our analysis. Throughout the process timeline, we will maintain clear communication to ensure we have what we need to properly serve the district and reduce costs.",
-    "Analysis","Detecting inefficiencies","Here, we begin our work and utilize our methods to find out the most efficient ways for the district to reduce operating costs. Our data-driven analysis is tried and true for numerous districts(check our portfolio!), so you won't have to worry about the validity of our procedures.",
+    "Analysis","Detecting inefficiencies","Here, we begin our work and utilize our methods to find out the most efficient ways for the district to reduce operating costs. Our data-driven analysis has previously cut down costs for numerous districts(check our portfolio!), so you won't have to worry about the validity of our procedures.",
     "Presentation","Fixing the problem","When our analysis is completed, the main recommendations will be given via presentation through a scheduled meeting. A complete comprehensive list of our actionable insights and instructions will be provided as well. Proper communication with the district is our top priority throughout this stage."]
 
 const names = ["Saqif Ushyair", "Jeffrey Yan", "Andrew Wang"]

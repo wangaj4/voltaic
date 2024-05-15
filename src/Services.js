@@ -78,7 +78,7 @@ function Services(){
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team1">
                         Here, we begin our work and utilize our methods to find out the most efficient ways for the district to reduce operating costs.
-                        Our data-driven analysis is tried and true for a wide variety of districts, so you won't have to worry about the 
+                        The data-driven analysis methods we utilize have proven their reliability by cutting down electricity costs for every previous water district we have worked with, so you won't have to worry about the 
                         validity of our procedures.
                         <br/>
                         

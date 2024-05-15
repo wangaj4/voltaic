@@ -93,12 +93,6 @@ function Portfolioselect(){
                 <Nav.Link as = {Link} to = "cucamonga" className = "easyDisplayItem">
                     Cucamonga Valley Water
                 </Nav.Link>
-                <Nav.Link as = {Link} to = "site4" className = "easyDisplayItem">
-                    Irvine Ranch Water District
-                </Nav.Link>
-                <Nav.Link as = {Link} to = "site5" className = "easyDisplayItem">
-                    Metropolitan Water District
-                </Nav.Link>
             </div>
         </Fragment>
         

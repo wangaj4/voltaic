@@ -14,32 +14,34 @@ function Email(){
         const name = event.target.name.value;
         const email = event.target.email.value;
         const message = event.target.message.value;
-
-        const destination = "";
         
-        try {
-            const response = await fetch("YOUR_API_ENDPOINT", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                name: name,
-                email: email,
-                message: message,
-              }),
-            });
+        console.log(name);
+        console.log(email);
+        console.log(message);
+        
+        // try {
+        //     const response = await fetch("YOUR_API_ENDPOINT", {
+        //       method: "POST",
+        //       headers: {
+        //         "Content-Type": "application/json",
+        //       },
+        //       body: JSON.stringify({
+        //         name: name,
+        //         email: email,
+        //         message: message,
+        //       }),
+        //     });
       
-            if (response.ok) {
-              // Handle success
-              console.log("Email sent successfully");
-            } else {
-              // Handle error
-              console.error("Failed to send email");
-            }
-          } catch (error) {
-            console.error("Error sending email:", error);
-          }
+        //     if (response.ok) {
+        //       // Handle success
+        //       console.log("Email sent successfully");
+        //     } else {
+        //       // Handle error
+        //       console.error("Failed to send email");
+        //     }
+        //   } catch (error) {
+        //     console.error("Error sending email:", error);
+        //   }
 
       };
 

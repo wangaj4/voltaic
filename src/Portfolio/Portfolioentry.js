@@ -6,9 +6,10 @@ import { Link } from 'react-router-dom';
 import './Portfolio.css';
 
 import Western from './Western.js'
-let titles = ["Western Municipal","Glendale Water and Power","Cucamonga Valley Water","Loopy","Loopy2"]
 
-let portfolios = [Western,Western,Western,Western,Western]
+let titles = ["Western Municipal","Glendale Water and Power","Cucamonga Valley Water"]
+
+let portfolios = [Western,Western,Western]
 
 function Portfolioentry(props){
 

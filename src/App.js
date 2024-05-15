@@ -47,8 +47,6 @@ function App() {
                     <Route path="western" element={<Portfolioentry index = {0}/>} />
                     <Route path="glendale" element={<Portfolioentry index = {1}/>} />
                     <Route path="cucamonga" element={<Portfolioentry index = {2}/>} />
-                    <Route path="site4" element={<Portfolioentry index = {3}/>} />
-                    <Route path="site5" element={<Portfolioentry index = {4}/>} />
                     
                 </Route>
                 <Route path="/contact" element={<Contact />} />

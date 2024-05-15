@@ -118,8 +118,8 @@ function Home(props) {
                 <div className={"separateBar"}/>
                 <div className={"centerText"} id = "mainDescription" data-aos="fade-up" data-aos-duration="800">
                     Voltaic Analytica is a data analytics company dedicated to partnering with and serving the water districts of America. 
-                    After collecting various data files including monthly bills and interval data of water district pumps, we can utilize data-driven analysis to 
-                    calculate potential savings and recommendations for water departments we work with.
+                    After collecting the necessary information such as monthly bills and interval data of water district pumps, we utilize data-driven analysis to 
+                    calculate potential savings and recommendations for the water departments we work with.
                     <br/><br/>
                     We will remain in contact for the entirety of the process timeline, clarifying and updating as we develop actionable insights
                     for your district's savings. Multiple presentations will periodically be given to ensure peak efficiency and cost reductions.
@@ -199,8 +199,8 @@ function Home(props) {
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team1" data-aos = "fade-left" data-aos-duration="600">
                         Under our previous experience from years operating as a UC Riverside research group, we have honed our analytics methods 
-                        to ensure substantial savings in individual water districts. Our team has already worked with and served numerous water 
-                        departments in the Southern California area. 
+                        to ensure substantial savings in individual water districts. Our team has previously worked with and served numerous water 
+                        districts in the Southern California area. 
                         <br/>
                         
                     </div>
@@ -228,7 +228,7 @@ function Home(props) {
                     <div className={"leftText"} id = "team2" data-aos = "fade-right" data-aos-duration="600">
                         Aside from our UC Riverside research and work experience, our team includes a diverse array of computer science, economics, and
                         statistics specialists from across the country. Our data analytics and programming skills are not limited
-                        to our Riverside water analytics, ensuring we stay flexible and open to new approaches.
+                        to our Riverside data analytics methods, ensuring we stay flexible and open to new approaches.
                         <br/>
                         
 

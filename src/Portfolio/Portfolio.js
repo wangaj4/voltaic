@@ -26,7 +26,7 @@ function Portfolio(){
             <div className={"contentBanner"}>
             <div className='spacer'/>
                 <div className={"centerText"}>
-                    Our team at Voltaic Analytica is dedicated to providing reliable analysis guaranteed to cut down unnecessary costs.
+                    Our team at Voltaic Analytica is dedicated to providing reliable analysis guaranteed to detect and alleviate unnecessary electrical costs.
                     <br/><br/>
                     Below is a map with examples of past water districts we've served and saved money for, ranging from 15% to 46% cost reductions.
                 </div>
