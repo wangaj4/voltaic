@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Bottombar.css';
 
+import { Link } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
+
 import templogo from './img/templogo.png';
 
 function Bottombar(props){
@@ -16,13 +19,26 @@ function Bottombar(props){
                     (000)000-0000
                     <br/><br/>
                     1234 Riverside Ave, Riverside, CA
+                    <div className='spacer'/>
                 </div>
+                
                 <div className={"bottomCol"}>
-                    Instagram
+                    <Nav.Link as = {Link} to = "/" className = "bottomLink">
+                        Home
+                    </Nav.Link>
                     <br/><br/>
-                    Facebook
+                    <Nav.Link as = {Link} to = "/about" className = "bottomLink">
+                        About Us
+                    </Nav.Link>
                     <br/><br/>
-                    Twitter
+                    <Nav.Link as = {Link} to = "/services" className = "bottomLink">
+                        Our Services
+                    </Nav.Link>
+                    <br/><br/>
+                    <Nav.Link as = {Link} to = "/contact" className = "bottomLink">
+                        Contact
+                    </Nav.Link>
+                    <div className='spacer'/>
                 </div>
             </div>
         </div>
