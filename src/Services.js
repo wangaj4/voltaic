@@ -78,8 +78,8 @@ function Services(){
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team1">
                         Here, we begin our work and utilize our methods to find out the most efficient ways for the district to reduce operating costs.
-                        The data-driven analysis methods we utilize have proven their reliability by cutting down electricity costs for every previous water district we have worked with, so you won't have to worry about the 
-                        validity of our procedures.
+                        The data-driven analysis methods we utilize have proven their reliability by cutting down electricity costs for every previous water district our team has worked with, so you won't have to worry about the 
+                        effectiveness of our procedures.
                         <br/>
                         
                         <div className={"spacer"}></div>
@@ -90,7 +90,7 @@ function Services(){
             <div className={"spacer2"}/>
             <div className={"clearBanner reverse"} data-aos = "fade-left">
                 <div className={"forty"}>
-                    <div className={"stepImage2"}/>
+                    <div className={"stepImage25"}/>
                 </div>
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Step 2.5 - Data Cleaning and Clarification</div>
@@ -140,7 +140,7 @@ function Services(){
                     </div>
                 </div>
                 <div className={"forty"}>
-                    <div className={"stepImage3"}/>
+                    <div className={"stepImage4"}/>
 
                 </div>
             </div>

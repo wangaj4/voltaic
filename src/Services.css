@@ -32,6 +32,21 @@
     border-radius:5px;
 }
 
+.stepImage25{
+    display:block;
+    height:70%;
+    min-height:20rem;
+    width:100%;
+    margin-block:auto;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background: url("./img/tanklevels.png");
+
+    box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.4);
+    border-radius:5px;
+}
+
 .stepImage3{
     display:block;
     height:70%;
@@ -41,7 +56,22 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: top center !important;
-    background: url("./img/tempstep3.png");
+    background: url("./img/recommendation.png");
+
+    box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.4);
+    border-radius:5px;
+}
+
+.stepImage4{
+    display:block;
+    height:70%;
+    min-height:20rem;
+    width:100%;
+    margin-block:auto;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    background: url("./img/presentation.png");
 
     box-shadow: 0 3px 0.6rem rgba(0, 0, 0, 0.4);
     border-radius:5px;
