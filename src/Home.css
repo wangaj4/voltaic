@@ -314,6 +314,20 @@
     border-radius:5px;
 }
 
+.teamImage2{
+    display:flex;
+    height:539px;
+    width:400px;
+    margin-left:5%;
+    margin-right:5%;
+    margin-block:3rem;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background: url("./img/henrysamueli.jpg");
+    box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.5);
+    border-radius:5px;
+}
 
 
 @media(max-width:1024px){

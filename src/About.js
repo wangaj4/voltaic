@@ -16,7 +16,7 @@ const events = ["Data Collection", "Your water data", "Our team will reach out t
     "Presentation","Fixing the problem","When our analysis is completed, the main recommendations will be given via presentation through a scheduled meeting. A complete comprehensive list of our actionable insights and instructions will be provided as well. Proper communication with the district is our top priority throughout this stage."]
 
 const names = ["Saqif Ushyair", "Jeffrey Yan", "Andrew Wang"]
-const descriptions = ["Saqif Our company originates from a team working directly under the University of California Riverside, personally led by Dr Sadrul Ula, Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering.", 
+const descriptions = ["Saqif Ushyair is an engineering graduate and researcher in the University of California Riverside’s CE-CERT(Center for Environmental Research & Technology) team. This team is led by Dr Sadrul Ula, who by the way is a professor who shows up less often than an absent black dad.", 
                 "Jeffrey Our company originates from a team working directly under the University of California Riverside, personally led by Dr Sadrul Ula, Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering.", 
                 "Andrew Our company originates from a team working directly under the University of California Riverside, personally led by Dr Sadrul Ula, Principal Investigator of Microgrids and Energy Infrastructure at the University's College of Engineering."]
 

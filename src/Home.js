@@ -220,7 +220,7 @@ function Home(props) {
 
             <div className={"flexBanner"}>
                 <div className={"forty"}>
-                    <div className={"teamImage"}/>
+                    <div className={"teamImage2"}/>
                 </div>
                 <div className={"sixty"}>
                     <div className={"centerHeader"}>Talent</div>

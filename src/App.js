@@ -29,6 +29,18 @@ function App() {
         AOS.init()
     },[]);
 
+
+    /*
+        <Route path="/portfolio" element={<Portfolio />}>
+                        
+            <Route path="" element={<Portfolioselect/>} />
+            <Route path="western" element={<Portfolioentry index = {0}/>} />
+            <Route path="glendale" element={<Portfolioentry index = {1}/>} />
+            <Route path="cucamonga" element={<Portfolioentry index = {2}/>} />
+            
+        </Route>
+    */
+
   return (
     <Fragment>
 
@@ -41,14 +53,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
-                <Route path="/portfolio" element={<Portfolio />}>
-                    
-                    <Route path="" element={<Portfolioselect/>} />
-                    <Route path="western" element={<Portfolioentry index = {0}/>} />
-                    <Route path="glendale" element={<Portfolioentry index = {1}/>} />
-                    <Route path="cucamonga" element={<Portfolioentry index = {2}/>} />
-                    
-                </Route>
+                
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<Nomatch />} />
           </Routes>

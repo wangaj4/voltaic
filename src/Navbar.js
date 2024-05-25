@@ -16,6 +16,12 @@ function Navbar(props){
     }
 
 
+    /*
+    <Nav.Link as = {Link} to = "/portfolio" className = "navbarItem" onClick = {()=>handleNavbarOff()}>
+        Portfolio
+    </Nav.Link>
+    */
+
     return (
         <div id = "navbarBody">
             <Nav.Link as = {Link} to = "/">
@@ -29,9 +35,7 @@ function Navbar(props){
                 <Nav.Link as = {Link} to = "/services" className = "navbarItem" onClick = {()=>handleNavbarOff()}>
                     Our Services
                 </Nav.Link>
-                <Nav.Link as = {Link} to = "/portfolio" className = "navbarItem" onClick = {()=>handleNavbarOff()}>
-                    Portfolio
-                </Nav.Link>
+                
                 <Nav.Link as = {Link} to = "/contact" className = "navbarFocus" onClick = {()=>handleNavbarToggle()}>
                     Contact
                 </Nav.Link>
