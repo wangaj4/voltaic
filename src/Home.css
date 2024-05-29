@@ -182,7 +182,8 @@
 }
 
 .image1{
-    background: url("./img/water1.jpg");
+    background: url("./img/western2.jpg");
+    background-position: center;
 }
 
 .image2{
@@ -198,7 +199,7 @@
     display: flex;
     position: absolute;
     width:90%;
-    min-height:40rem;
+    min-height:35rem;
     justify-self: center;
     background-color: var(--secondary-color);
     margin-top:-3rem;
@@ -236,7 +237,7 @@
 
 .infoImage{
     height:auto;
-    max-height:60%;
+    max-height:20rem;
     object-fit: cover;
     width:80%;
     margin-right:5%;

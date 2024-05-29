@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 
 
-import clientImage1 from "./img/water1.jpg";
+import clientImage1 from "./img/western2.jpg";
 import clientImage2 from "./img/water2.jpg";
 import clientImage3 from "./img/water3.jpeg";
 
@@ -16,11 +16,11 @@ import Email from './Email';
 
 
 
-let clients = ["Western Municipal", "Glendale Water and Power", "Cucamonga Valley Water"]
+let clients = ["1 - District Contact", "2 - Analytical Processes", "3 - Results"]
 
-let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Holcomb is one such site, which began saving an average of 46% over 12 months on their pump costs after our recommendations were implemented by the district. WMWD is one of our most recent partners.",
+let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Holcomb is one such site, where we gathered its 15-minute interval pump activity data, as well as the district's detailed electric billing, among other requested information.",
                             "Glendale Water and Power is a water utility company we've served in the past, saving them up to 40% in their individual water districts. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                            "Cucamonga Valley Water District is sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."]
+                            "Holcomb began saving an average of 46% over 12 months on their pump costs after our recommendations were implemented by the district, compared to the previous year. "]
 
 let clientImages = [clientImage1,clientImage2,clientImage3]
 
@@ -94,45 +94,9 @@ function Home(props) {
         document.getElementById("infoBoxContent").classList.remove("flex");
     }
 
+    {/*
 
-    return (
-        <div className={"encompass fade"}>
-
-            <div className={"titleBanner"} id = "titleBanner" style={{ backgroundPositionY: `${backgroundPositionY}px` }}>
-                <div className={"darkTint"}/>
-                <div className = {"most"}>
-                    <div className={"titleText"} data-aos = "fade-right" data-aos-duration="500">
-                        Reduce electrical demand and save energy
-                    </div>
-                    <div className={"subText"} data-aos = "fade-right" data-aos-duration="1000">
-                       Data driven analysis to establish cost-reducing efficiency measures in water districts
-                    </div>
-                </div>
-                
-            </div>
-
-            <div className={"contentBanner"}>
-                <div className={"centerHeader"}>
-                    WHAT WE DO
-                </div>
-                <div className={"separateBar"}/>
-                <div className={"centerText"} id = "mainDescription" data-aos="fade-up" data-aos-duration="800">
-                    Voltaic Analytica is a data analytics company dedicated to partnering with and serving the water districts of America. 
-                    After collecting the necessary information such as monthly bills and interval data of water district pumps, we utilize data-driven analysis to 
-                    calculate potential savings and recommendations for the water departments we work with.
-                    <br/><br/>
-                    We will remain in contact for the entirety of the process timeline, clarifying and updating as we develop actionable insights
-                    for your district's savings. Multiple presentations will periodically be given to ensure peak efficiency and cost reductions.
-                </div>
-                <Nav.Link as = {Link} to = "/services" className = "navbarItem">
-                    <div className={"button"}>
-                        Learn More
-                    </div>
-                </Nav.Link>
-                
-            </div>
-
-            <div className={"spacer"}/>
+<div className={"spacer"}/>
             <div className={"contentBanner"}>
                 <div className={"centerHeader"}>
                     SOME OF OUR WORK
@@ -181,12 +145,90 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
+*/}
 
-                <Nav.Link as = {Link} to = "/portfolio" className = "navbarItem">
+
+    return (
+        <div className={"encompass fade"}>
+
+            <div className={"titleBanner"} id = "titleBanner" style={{ backgroundPositionY: `${backgroundPositionY}px` }}>
+                <div className={"darkTint"}/>
+                <div className = {"most"}>
+                    <div className={"titleText"} data-aos = "fade-right" data-aos-duration="500">
+                        Reduce electrical demand and save energy
+                    </div>
+                    <div className={"subText"} data-aos = "fade-right" data-aos-duration="1000">
+                       Data driven analysis to establish cost-reducing efficiency measures in water districts
+                    </div>
+                </div>
+                
+            </div>
+
+            <div className={"contentBanner"}>
+                <div className={"centerHeader"}>
+                    WHAT WE DO
+                </div>
+                <div className={"separateBar"}/>
+                <div className={"centerText"} id = "mainDescription" data-aos="fade-up" data-aos-duration="800">
+                    Voltaic Analytica is a data analytics company dedicated to partnering with and serving the water districts of America. 
+                    After collecting the necessary information such as monthly bills and interval data of water district pumps, we utilize data-driven analysis to 
+                    calculate potential savings and recommendations for the water departments we work with.
+                    <br/><br/>
+                    We will remain in contact for the entirety of the process timeline, clarifying and updating as we develop actionable insights
+                    for your district's savings. Multiple presentations will periodically be given to ensure peak efficiency and cost reductions.
+                </div>
+                <Nav.Link as = {Link} to = "/services" className = "navbarItem">
                     <div className={"button"}>
-                        View Portfolio
+                        Learn More
                     </div>
                 </Nav.Link>
+                
+            </div>
+
+            <div className={"spacer"}/>
+            <div className={"contentBanner"}>
+                <div className={"centerHeader"}>
+                    AN EXAMPLE
+                </div>
+                <div className={"centerSubheader"}>Click on the images for a step by step breakdown of our latest work</div>
+                <div className={"contain"}>
+                    <div className={"item hidden image1"} onClick={()=>openInfoBox(0)}>
+                        <div className='coverText'>
+                        {clients[0]}
+                        </div>
+                    </div>
+                    <div className={"item hidden image2"} onClick={()=>openInfoBox(1)}>
+                        <div className='coverText'>
+                        {clients[1]}
+                        </div>
+                    </div>
+                    <div className={"item hidden image3"} onClick={()=>openInfoBox(2)}>
+                        <div className='coverText'>
+                        {clients[2]}
+                        </div>
+                    </div>
+
+                    <div className={"infoBox flat"} id={"infoBox"}>
+                        <div id={"x"} className={"hidden"} onClick={()=>closeInfoBox()}>
+                            <div className="bar"/>
+                            <div className="bar"/>
+                        </div>
+                        <div id = 'infoBoxContent'>
+                            <div className={"forty"}>
+                                <img className={"infoImage"} src = {clientImages[infoBoxIndex]} alt = "Example portfolio from previous client"/>
+                            </div>
+                            <div className={"sixty"}>
+                                <div className={"centerHeader"}>{clients[infoBoxIndex]}</div>
+                                <div className={"separateBarWhite"}/>
+                                <div className={"leftText"}>
+                                    {clientDescriptions[infoBoxIndex]}
+                                    <br/>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className={"spacer2"}/>

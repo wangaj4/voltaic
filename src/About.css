@@ -263,6 +263,12 @@
 
 
 @media(max-width:1024px){
+
+    .carousel{
+        min-height:50rem;
+    }
+
+
     .aboutBanner{
         width: 100%;
         margin-inline: 0;
@@ -292,7 +298,8 @@
     }
 }
 
-@media(max-width:700px){
+@media(max-width:800px){
+
     .culture{   
         flex-wrap: wrap;
     }
@@ -316,7 +323,7 @@
 
     .carousel{
         width:100%;
-        min-height:60rem;
+        min-height:80rem;
         margin:0;
     }
 }

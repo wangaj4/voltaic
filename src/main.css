@@ -188,6 +188,8 @@ body{
 }
 
 @media(max-width:1024px){
+
+    
     .fifty{
         flex-basis:100%;
     }
