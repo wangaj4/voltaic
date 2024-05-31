@@ -1,32 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.db63c070.css",
-    "main.js": "/static/js/main.099210c8.js",
+    "main.css": "/static/css/main.c272ce38.css",
+    "main.js": "/static/js/main.0fc3f552.js",
     "static/media/temporarytitle.jpg": "/static/media/temporarytitle.2e9960e948fd435c3027.jpg",
     "static/media/water2.jpg": "/static/media/water2.37ca40904a9d04835e37.jpg",
     "static/media/ucr.jpeg": "/static/media/ucr.0bc1d08f3a0c35f2951d.jpeg",
     "static/media/westernportfoliopic1.png": "/static/media/westernportfoliopic1.79609630394bac18e339.png",
-    "static/media/tempstep3.png": "/static/media/tempstep3.76251b339d01566a04b0.png",
+    "static/media/presentation.png": "/static/media/presentation.76251b339d01566a04b0.png",
+    "static/media/henrysamueli.jpg": "/static/media/henrysamueli.42e9dbd5da1ce3742752.jpg",
     "static/media/temppro.png": "/static/media/temppro.b99e9592e16dd113144b.png",
     "static/media/DMSans-VariableFont_opsz,wght.ttf": "/static/media/DMSans-VariableFont_opsz,wght.90130db6a4fc53f17a88.ttf",
     "static/media/collegeofengineering.jpg": "/static/media/collegeofengineering.1d7e523c53400164f883.jpg",
     "static/media/tempstep2.png": "/static/media/tempstep2.57891570cdb03cd7722b.png",
     "static/media/water3.jpeg": "/static/media/water3.5f329af76a3465b2f4a6.jpeg",
+    "static/media/western2.jpg": "/static/media/western2.f0ce23a9d546d5cad06c.jpg",
+    "static/media/tanklevels.png": "/static/media/tanklevels.712c40348b9b5513e60a.png",
     "static/media/tempstep1.png": "/static/media/tempstep1.d161351f3dbfdacaf6b1.png",
     "static/media/westerngraph4.png": "/static/media/westerngraph4.5cec28db609a46264458.png",
     "static/media/westerngraph2.png": "/static/media/westerngraph2.376b0691cda717eff63f.png",
+    "static/media/templogo.png": "/static/media/templogo.f4804c80320ad862d2ed.png",
     "static/media/westerngraph1.png": "/static/media/westerngraph1.4fc42d8d9d5317490e47.png",
     "static/media/water1.jpg": "/static/media/water1.3b5f4833bb7e45dc28bc.jpg",
     "static/media/westerngraph3.png": "/static/media/westerngraph3.42c68b0899e1007d9afd.png",
     "static/media/Acumin-RPro.woff": "/static/media/Acumin-RPro.619962d87c184a44be27.woff",
+    "static/media/recommendation.png": "/static/media/recommendation.6bbf7ac757cfe9a500e7.png",
     "static/media/marker.png": "/static/media/marker.c4a7366e56bbd37d7e14.png",
     "static/media/westernlogo.png": "/static/media/westernlogo.1d4181124002ff47ad18.png",
     "index.html": "/index.html",
-    "main.db63c070.css.map": "/static/css/main.db63c070.css.map",
-    "main.099210c8.js.map": "/static/js/main.099210c8.js.map"
+    "main.c272ce38.css.map": "/static/css/main.c272ce38.css.map",
+    "main.0fc3f552.js.map": "/static/js/main.0fc3f552.js.map"
   },
   "entrypoints": [
-    "static/css/main.db63c070.css",
-    "static/js/main.099210c8.js"
+    "static/css/main.c272ce38.css",
+    "static/js/main.0fc3f552.js"
   ]
 }

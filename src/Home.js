@@ -16,11 +16,11 @@ import Email from './Email';
 
 
 
-let clients = ["1 - District Contact", "2 - Analytical Processes", "3 - Results"]
+let steps = ["1 - District Contact", "2 - Data Analysis", "3 - Results"]
 
-let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Holcomb is one such site, where we gathered its 15-minute interval pump activity data, as well as the district's detailed electric billing, among other requested information.",
-                            "Glendale Water and Power is a water utility company we've served in the past, saving them up to 40% in their individual water districts. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                            "Holcomb began saving an average of 46% over 12 months on their pump costs after our recommendations were implemented by the district, compared to the previous year. "]
+let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Holcomb is one such site, where we gathered its 15-minute interval Supervision Control And Data Acquisition (SCADA)data, as well as the district's detailed electric billing, among other needed information we requested.",
+                            "In this situation, based on the district's pump information, we ",
+                            "Holcomb began saving an average of 46% on their pumps' energy costs over 12 months after our recommendations were implemented by the district, compared to the previous year. Electric costs were significantly reduced compared to pre-implementation activity."]
 
 let clientImages = [clientImage1,clientImage2,clientImage3]
 
@@ -190,21 +190,21 @@ function Home(props) {
                 <div className={"centerHeader"}>
                     AN EXAMPLE
                 </div>
-                <div className={"centerSubheader"}>Click on the images for a step by step breakdown of our latest work</div>
+                <div className={"centerSubheader"}>Click on the images for a step by step breakdown of past work</div>
                 <div className={"contain"}>
                     <div className={"item hidden image1"} onClick={()=>openInfoBox(0)}>
                         <div className='coverText'>
-                        {clients[0]}
+                        {steps[0]}
                         </div>
                     </div>
                     <div className={"item hidden image2"} onClick={()=>openInfoBox(1)}>
                         <div className='coverText'>
-                        {clients[1]}
+                        {steps[1]}
                         </div>
                     </div>
                     <div className={"item hidden image3"} onClick={()=>openInfoBox(2)}>
                         <div className='coverText'>
-                        {clients[2]}
+                        {steps[2]}
                         </div>
                     </div>
 
@@ -218,7 +218,7 @@ function Home(props) {
                                 <img className={"infoImage"} src = {clientImages[infoBoxIndex]} alt = "Example portfolio from previous client"/>
                             </div>
                             <div className={"sixty"}>
-                                <div className={"centerHeader"}>{clients[infoBoxIndex]}</div>
+                                <div className={"centerHeader"}>{steps[infoBoxIndex]}</div>
                                 <div className={"separateBarWhite"}/>
                                 <div className={"leftText"}>
                                     {clientDescriptions[infoBoxIndex]}
