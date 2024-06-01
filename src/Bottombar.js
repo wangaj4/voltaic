@@ -14,12 +14,8 @@ function Bottombar(props){
                     <img src = {templogo} id="bigLogo"/>
                 </div>
                 <div className={"bottomCol"}>
+                    <br/><br/>
                     business@voltaicanalytica.com
-                    <br/><br/>
-                    (000)000-0000
-                    <br/><br/>
-                    1234 Riverside Ave, Riverside, CA
-                    <div className='spacer'/>
                 </div>
                 
                 <div className={"bottomCol"}>

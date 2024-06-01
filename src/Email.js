@@ -46,7 +46,7 @@ function Email(){
       };
 
     return (
-        <form onSubmit={handleFormSubmit} id = "emailForm">
+        <form action = "https://formspree.io/f/mjvnejrl" id = "emailForm" method = "POST">
             <label htmlFor="name">Your Name</label>
             <input type="text" id="name" name="name" required />
 

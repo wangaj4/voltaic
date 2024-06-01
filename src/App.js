@@ -8,6 +8,7 @@ import About from './About';
 import Services from './Services';
 import Contact from './Contact';
 import Nomatch from './Nomatch';
+import Thanks from './Thanks';
 
 import Portfolio from './Portfolio/Portfolio';
 
@@ -56,6 +57,7 @@ function App() {
                 
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<Nomatch />} />
+                <Route path="/success" element={<Thanks />} />
           </Routes>
           
           <Bottombar/>

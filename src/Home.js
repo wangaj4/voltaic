@@ -18,8 +18,8 @@ import Email from './Email';
 
 let steps = ["1 - District Contact", "2 - Data Analysis", "3 - Results"]
 
-let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Holcomb is one such site, where we gathered its 15-minute interval Supervision Control And Data Acquisition (SCADA)data, as well as the district's detailed electric billing, among other needed information we requested.",
-                            "In this situation, based on the district's pump information, we ",
+let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Holcomb is one such site, where there are multiple electric and gas pumps. We discussed new innovative energy saving methods to reduce peak electrical demand while still satisfying water needs.",
+                            "In this situation, based on the district's pump information, we gathered its 15-minute interval Supervision Control And Data Acquisition (SCADA)data, as well as the district's detailed electric billing, among other needed information we requested. From this information, we altered pump scheduling to more efficiently supply pump needs with lower cost electricity.",
                             "Holcomb began saving an average of 46% on their pumps' energy costs over 12 months after our recommendations were implemented by the district, compared to the previous year. Electric costs were significantly reduced compared to pre-implementation activity."]
 
 let clientImages = [clientImage1,clientImage2,clientImage3]
