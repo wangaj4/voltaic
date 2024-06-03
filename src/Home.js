@@ -194,16 +194,19 @@ function Home(props) {
                 <div className={"contain"}>
                     <div className={"item hidden image1"} onClick={()=>openInfoBox(0)}>
                         <div className='coverText'>
+                        <br/>
                         {steps[0]}
                         </div>
                     </div>
                     <div className={"item hidden image2"} onClick={()=>openInfoBox(1)}>
                         <div className='coverText'>
+                        <br/>
                         {steps[1]}
                         </div>
                     </div>
                     <div className={"item hidden image3"} onClick={()=>openInfoBox(2)}>
                         <div className='coverText'>
+                        <br/>
                         {steps[2]}
                         </div>
                     </div>
