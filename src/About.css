@@ -237,9 +237,11 @@
 
 #profileImage{
     width:auto;
-    height:35rem;
+    max-width:24rem;
+    height:28rem;
     margin-block:5%;
     object-position: center;
+    margin-top:6rem;
     
 }
 
