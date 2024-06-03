@@ -93,7 +93,7 @@ function Services(){
                     <div className={"stepImage25"}/>
                 </div>
                 <div className={"sixty"}>
-                    <div className={"centerHeader"}>Step 2.5 - Data Cleaning and Clarification</div>
+                    <div className={"centerHeader"}>Step 2.5 - Data Cleaning, Clarification</div>
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team1">
                         Throughout the process, we will occasionally schedule meetings in order to clarify any unclear data, or to collect any additional
