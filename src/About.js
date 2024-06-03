@@ -5,9 +5,9 @@ import React, {useState, useEffect, useRef} from 'react';
 
 import { useLocation } from 'react-router-dom';
 
-import profile1 from './img/temppro.png';
-import profile2 from './img/echo.png';
-import profile3 from './img/darius.png';
+import profile1 from './img/saqifprofessional.png';
+import profile2 from './img/jeffpro.png';
+import profile3 from './img/andrewpro.png';
 
 import aboutImage from "./img/collegeofengineering.jpg";
 
