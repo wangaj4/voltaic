@@ -29,14 +29,14 @@
 }
 
 #logo{
-    width:9rem;
+    width:7rem;
     height: auto;
     transition: 0.3s all;
     cursor: pointer;
     background-color: transparent;
 }
 #logo.shrink{
-    width:6rem;
+    width:5rem;
 }
 
 

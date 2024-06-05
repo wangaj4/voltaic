@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 import './Navbar.css';
 
-import templogo from './img/templogo.png'
+import templogo from './img/logo.png'
 
 function Navbar(props){
 
