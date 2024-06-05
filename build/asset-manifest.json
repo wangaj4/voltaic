@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.81dd6dd5.css",
-    "main.js": "/static/js/main.b56a472b.js",
+    "main.css": "/static/css/main.ac58b8c6.css",
+    "main.js": "/static/js/main.86342620.js",
     "static/media/temporarytitle.jpg": "/static/media/temporarytitle.2e9960e948fd435c3027.jpg",
     "static/media/water2.jpg": "/static/media/water2.37ca40904a9d04835e37.jpg",
     "static/media/ucr.jpeg": "/static/media/ucr.0bc1d08f3a0c35f2951d.jpeg",
@@ -29,11 +29,11 @@
     "static/media/marker.png": "/static/media/marker.c4a7366e56bbd37d7e14.png",
     "static/media/westernlogo.png": "/static/media/westernlogo.1d4181124002ff47ad18.png",
     "index.html": "/index.html",
-    "main.81dd6dd5.css.map": "/static/css/main.81dd6dd5.css.map",
-    "main.b56a472b.js.map": "/static/js/main.b56a472b.js.map"
+    "main.ac58b8c6.css.map": "/static/css/main.ac58b8c6.css.map",
+    "main.86342620.js.map": "/static/js/main.86342620.js.map"
   },
   "entrypoints": [
-    "static/css/main.81dd6dd5.css",
-    "static/js/main.b56a472b.js"
+    "static/css/main.ac58b8c6.css",
+    "static/js/main.86342620.js"
   ]
 }
