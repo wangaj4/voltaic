@@ -244,6 +244,9 @@
     margin-top:6rem;
     
 }
+#profileImage.hidePic{
+    display:none;
+}
 
 .leftHeader{
     text-align: left;

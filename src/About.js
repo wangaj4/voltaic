@@ -90,6 +90,7 @@ function About() {
         
         let nav = document.getElementById("carouselNav");
         let wrapper = document.getElementById("carouselWrapper");
+        let pictures = document.getElementById("profileContainer");
         
         for(let x=0;x<nav.children.length;x++){
             if(i===x){
@@ -98,10 +99,13 @@ function About() {
                 setTimeout(() => {
                     setProfileIndex(i);
                     wrapper.classList.remove("fade");
-                    
+                    pictures.children[x].classList.remove("hidePic");
                 }, 220);
             }else{
                 nav.children[x].classList.remove("highlight");
+                setTimeout(() => {
+                    pictures.children[x].classList.add("hidePic");
+                }, 100);
                 
             }
         }
@@ -190,7 +194,12 @@ function About() {
                 <div className = "carousel" data-aos="zoom-out-up">
                     <div id = "carouselWrapper">
                         <div className={"fifty center"}>
-                                <img id={"profileImage"} src = {pics[profileIndex]} alt = "Profile of one of the founders"/>
+                            <div id = "profileContainer">
+                                <img id={"profileImage"} src = {pics[0]} alt = "Profile of one of the founders"/>
+                                <img id={"profileImage"} className = {"hidePic"}  src = {pics[1]} alt = "Profile of one of the founders"/>
+                                <img id={"profileImage"} className = {"hidePic"}  src = {pics[2]} alt = "Profile of one of the founders"/>
+                            </div>
+
                         </div>
                         <div className={"fifty"}>
                             <div className={"leftHeader"}>{names[profileIndex]}</div>
