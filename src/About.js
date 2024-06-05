@@ -87,6 +87,9 @@ function About() {
     const [profileIndex,setProfileIndex] = useState(0)
 
     const changeProfile = (i) =>{
+        if(i===profileIndex){
+            return;
+        }
         
         let nav = document.getElementById("carouselNav");
         let wrapper = document.getElementById("carouselWrapper");
