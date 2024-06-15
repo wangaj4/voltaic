@@ -37,6 +37,9 @@ function Bottombar(props){
                     <div className='spacer'/>
                 </div>
             </div>
+            <div className={"bottomContent"}>
+                ©2024 Voltaic Analytica
+            </div>
         </div>
     );
 }
