@@ -128,7 +128,7 @@ function Services(){
             <div className={"spacer2"}/>
             <div className={"clearBanner"} data-aos = "fade-right">
                 <div className={"sixty"}>
-                    <div className={"centerHeader"}>Step 4 - Repeat/Maintenance</div>
+                    <div className={"centerHeader"}>Step 4 - Maintenance/Upkeep</div>
                     <div className={"separateBar"}/>
                     <div className={"leftText"} id = "team1">
                         After our initial recommendations presentation and documents are received by the district, our team will continue to keep in contact,

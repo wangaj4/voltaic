@@ -166,7 +166,7 @@ function Home(props) {
 
             <div className={"contentBanner"}>
                 <div className={"centerHeader"}>
-                    WHAT WE DO
+                    WHO ARE WE
                 </div>
                 <div className={"separateBar"}/>
                 <div className={"centerText"} id = "mainDescription" data-aos="fade-up" data-aos-duration="800">
@@ -185,57 +185,10 @@ function Home(props) {
                 
             </div>
 
-            <div className={"spacer"}/>
-            <div className={"contentBanner"}>
-                <div className={"centerHeader"}>
-                    AN EXAMPLE
-                </div>
-                <div className={"centerSubheader"}>Click on the images for a step by step breakdown of past work</div>
-                <div className={"contain"}>
-                    <div className={"item hidden image1"} onClick={()=>openInfoBox(0)}>
-                        <div className='coverText'>
-                        <br/>
-                        {steps[0]}
-                        </div>
-                    </div>
-                    <div className={"item hidden image2"} onClick={()=>openInfoBox(1)}>
-                        <div className='coverText'>
-                        <br/>
-                        {steps[1]}
-                        </div>
-                    </div>
-                    <div className={"item hidden image3"} onClick={()=>openInfoBox(2)}>
-                        <div className='coverText'>
-                        <br/>
-                        {steps[2]}
-                        </div>
-                    </div>
-
-                    <div className={"infoBox flat"} id={"infoBox"}>
-                        <div id={"x"} className={"hidden"} onClick={()=>closeInfoBox()}>
-                            <div className="bar"/>
-                            <div className="bar"/>
-                        </div>
-                        <div id = 'infoBoxContent'>
-                            <div className={"forty"}>
-                                <img className={"infoImage"} src = {clientImages[infoBoxIndex]} alt = "Example portfolio from previous client"/>
-                            </div>
-                            <div className={"sixty"}>
-                                <div className={"centerHeader"}>{steps[infoBoxIndex]}</div>
-                                <div className={"separateBarWhite"}/>
-                                <div className={"leftText"}>
-                                    {clientDescriptions[infoBoxIndex]}
-                                    <br/>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
 
             <div className={"spacer2"}/>
-            <div className={"centerHeader"}>WHO WE ARE</div>
+            <div className={"centerHeader"}>OUR BACKGROUND</div>
 
 
             <div className={"flexBanner reverse"}>
@@ -289,6 +242,57 @@ function Home(props) {
                 </div>
             </div>
 
+
+            <div className={"spacer2"}/>
+            <div className={"contentBanner"}>
+                <div className={"centerHeader"}>
+                    AN EXAMPLE
+                </div>
+                <div className={"centerSubheader"}>Click on the images for a step by step breakdown of past work</div>
+                <div className={"contain"}>
+                    <div className={"item hidden image1"} onClick={()=>openInfoBox(0)}>
+                        <div className='coverText'>
+                        <br/>
+                        {steps[0]}
+                        </div>
+                    </div>
+                    <div className={"item hidden image2"} onClick={()=>openInfoBox(1)}>
+                        <div className='coverText'>
+                        <br/>
+                        {steps[1]}
+                        </div>
+                    </div>
+                    <div className={"item hidden image3"} onClick={()=>openInfoBox(2)}>
+                        <div className='coverText'>
+                        <br/>
+                        {steps[2]}
+                        </div>
+                    </div>
+
+                    <div className={"infoBox flat"} id={"infoBox"}>
+                        <div id={"x"} className={"hidden"} onClick={()=>closeInfoBox()}>
+                            <div className="bar"/>
+                            <div className="bar"/>
+                        </div>
+                        <div id = 'infoBoxContent'>
+                            <div className={"forty"}>
+                                <img className={"infoImage"} src = {clientImages[infoBoxIndex]} alt = "Example portfolio from previous client"/>
+                            </div>
+                            <div className={"sixty"}>
+                                <div className={"centerHeader"}>{steps[infoBoxIndex]}</div>
+                                <div className={"separateBarWhite"}/>
+                                <div className={"leftText"}>
+                                    {clientDescriptions[infoBoxIndex]}
+                                    <br/>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={"spacer"}/>
             <div className={"spacer2"}/>
             <div className={"centerHeader"}>LET'S TALK</div>
             <div className={"centerSubheader"}>Questions? Business inquiries? Use the form to get in touch.</div>
