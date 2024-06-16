@@ -20,7 +20,7 @@ let steps = ["1 - District Contact", "2 - Data Analysis", "3 - Results"]
 
 let clientDescriptions = ["Western Municipal Water District consists of several individual sites, each addressed separately by our analytics methods. Holcomb is one such site, where there are multiple electric and gas pumps. We discussed new innovative energy saving methods to reduce peak electrical demand while still satisfying water needs.",
                             "In this situation, based on the district's pump information, we gathered its 15-minute interval Supervision Control And Data Acquisition (SCADA)data, as well as the district's detailed electric billing, among other needed information we requested. From this information, we altered pump scheduling to more efficiently supply pump needs with lower cost electricity.",
-                            "Holcomb began saving an average of 46% on their pumps' energy costs over 12 months after our recommendations were implemented by the district, compared to the previous year. Electric costs were significantly reduced compared to pre-implementation activity."]
+                            "Our examination of Holcomb's system data focused around the given data, and with our proprietary algorithmic calculations, we optimized Holcomb's pump scheduling without sacrificing output requirements. Holcomb stated a noticeable difference in energy pump costs after our team's customized plan, with an average cost saving rate of 46% compared with same month last year rates."]
 
 let clientImages = [clientImage1,clientImage2,clientImage3]
 

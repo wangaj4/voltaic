@@ -29,6 +29,9 @@ function Navbar(props){
             </Nav.Link>
 
             <div id = "linkContainer">
+                <Nav.Link as = {Link} to = "/" className = "navbarItem" onClick = {()=>handleNavbarOff()}>
+                    Home
+                </Nav.Link>
                 <Nav.Link as = {Link} to = "/about" className = "navbarItem" onClick = {()=>handleNavbarOff()}>
                     About Us
                 </Nav.Link>
