@@ -242,6 +242,7 @@
     margin-block:5%;
     object-position: center;
     margin-top:6rem;
+    object-fit: cover;
     
 }
 #profileImage.hidePic{
@@ -299,7 +300,6 @@
 
     #profileImage{
         height:25rem;
-        margin-block:auto;
     }
 }
 
