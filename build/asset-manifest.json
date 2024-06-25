@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.91a40ebc.css",
-    "main.js": "/static/js/main.a7161fbc.js",
+    "main.js": "/static/js/main.8d2d6cc6.js",
     "static/media/temporarytitle.jpg": "/static/media/temporarytitle.2e9960e948fd435c3027.jpg",
     "static/media/water2.jpg": "/static/media/water2.37ca40904a9d04835e37.jpg",
     "static/media/ucr.jpeg": "/static/media/ucr.0bc1d08f3a0c35f2951d.jpeg",
-    "static/media/saqifprofessional.png": "/static/media/saqifprofessional.ce0962fad56ae258d3db.png",
     "static/media/data.jpg": "/static/media/data.f623d09d61324652f2fd.jpg",
     "static/media/presentation.jpg": "/static/media/presentation.b2c561a5738fd2d4eea1.jpg",
     "static/media/westernportfoliopic1.png": "/static/media/westernportfoliopic1.79609630394bac18e339.png",
     "static/media/outsidepumps.jpg": "/static/media/outsidepumps.500074a7b7e4a6802be7.jpg",
     "static/media/andrewpro.png": "/static/media/andrewpro.90d5bc958c6c31a0063a.png",
+    "static/media/saqifprofessional.png": "/static/media/saqifprofessional.5c1f1637ceb5a76b84e2.png",
     "static/media/jeffpro.png": "/static/media/jeffpro.a79ec1382b927433aa11.png",
     "static/media/logo.png": "/static/media/logo.f448e4f3da31f4668f56.png",
     "static/media/henrysamueli.jpg": "/static/media/henrysamueli.42e9dbd5da1ce3742752.jpg",
@@ -30,10 +30,10 @@
     "static/media/westernlogo.png": "/static/media/westernlogo.1d4181124002ff47ad18.png",
     "index.html": "/index.html",
     "main.91a40ebc.css.map": "/static/css/main.91a40ebc.css.map",
-    "main.a7161fbc.js.map": "/static/js/main.a7161fbc.js.map"
+    "main.8d2d6cc6.js.map": "/static/js/main.8d2d6cc6.js.map"
   },
   "entrypoints": [
     "static/css/main.91a40ebc.css",
-    "static/js/main.a7161fbc.js"
+    "static/js/main.8d2d6cc6.js"
   ]
 }
