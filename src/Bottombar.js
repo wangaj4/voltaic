@@ -38,7 +38,7 @@ function Bottombar(props){
                 </div>
             </div>
             <div className={"bottomContent"}>
-                ©2024 Voltaic Analytica
+                ©2026 Voltaic Analytica
             </div>
         </div>
     );
